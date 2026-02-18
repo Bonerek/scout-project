@@ -6,6 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Input } from "@/components/ui/input";
 import { NetworkConfig } from "@/lib/configTypes";
 import { Search, Monitor, MonitorOff } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface ScanTableProps {
   network: NetworkConfig;
@@ -106,6 +107,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
               <TableRow>
                 <TableHead className="w-[140px]">IP Address</TableHead>
                 <TableHead>Hostname</TableHead>
+                <TableHead className="w-[80px]">Status</TableHead>
                 <TableHead className="hidden md:table-cell">MAC</TableHead>
                 <TableHead className="hidden lg:table-cell">Vendor</TableHead>
                 <TableHead>Ports</TableHead>
@@ -116,6 +118,24 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableRow key={host.ip}>
                   <TableCell className="font-mono text-sm">{host.ip}</TableCell>
                   <TableCell className="text-sm">{host.hostname || "—"}</TableCell>
+                  <TableCell>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <span
+                            className={`inline-block h-3 w-3 rounded-full ${
+                              host.state === "up"
+                                ? "bg-green-500"
+                                : "bg-red-500"
+                            }`}
+                          />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          {host.state === "up" ? "Online" : "Offline"}
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </TableCell>
                   <TableCell className="hidden md:table-cell font-mono text-xs text-muted-foreground">
                     {host.mac || "—"}
                   </TableCell>
@@ -142,7 +162,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
               ))}
               {filtered.length === 0 && (
                 <TableRow>
-                  <TableCell colSpan={5} className="text-center py-8 text-muted-foreground">
+                  <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
                     No hosts match the filter.
                   </TableCell>
                 </TableRow>
