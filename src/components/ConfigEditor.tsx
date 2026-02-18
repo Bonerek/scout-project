@@ -12,11 +12,27 @@ interface ConfigEditorProps {
   onSave: (networks: NetworkConfig[]) => void;
 }
 
+interface ValidationErrors {
+  [key: string]: { name?: string; vlan?: string };
+}
+
+const validateName = (name: string): string | undefined => {
+  if (!name.trim()) return "Name is required.";
+  if (!/^[A-Z0-9-]+$/.test(name)) return "Only uppercase letters, digits and '-' allowed, no spaces.";
+  return undefined;
+};
+
+const validateVlan = (vlan: string): string | undefined => {
+  if (!vlan.trim()) return "VLAN is required.";
+  const num = Number(vlan);
+  if (!Number.isInteger(num) || num < 1 || num > 1001) return "VLAN must be a number between 1 and 1001.";
+  return undefined;
+};
+
 const generateScanFile = (subnet: string, vlan: string): string => {
   if (!subnet.trim() || !vlan.trim()) return "";
   const sanitizedSubnet = subnet.replace(/[./]/g, "_");
-  const sanitizedVlan = vlan.replace(/\s+/g, "_");
-  return `/scans/scan_${sanitizedSubnet}_${sanitizedVlan}.xml`;
+  return `/scans/scan_${sanitizedSubnet}_VLAN_${vlan}.xml`;
 };
 
 const emptyNetwork: NetworkConfig = {
@@ -29,11 +45,13 @@ const emptyNetwork: NetworkConfig = {
 const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
   const [open, setOpen] = useState(false);
   const [draft, setDraft] = useState<NetworkConfig[]>([]);
+  const [errors, setErrors] = useState<ValidationErrors>({});
   const { toast } = useToast();
 
   const handleOpen = (isOpen: boolean) => {
     if (isOpen) {
       setDraft(networks.map((n) => ({ ...n })));
+      setErrors({});
     }
     setOpen(isOpen);
   };
@@ -52,6 +70,16 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
         return updated;
       })
     );
+    // Clear field error on change
+    if (field === "name" || field === "vlan") {
+      setErrors((prev) => {
+        const copy = { ...prev };
+        if (copy[index]) {
+          copy[index] = { ...copy[index], [field]: undefined };
+        }
+        return copy;
+      });
+    }
   };
 
   const addNetwork = () => {
@@ -63,17 +91,31 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
   };
 
   const handleSave = () => {
-    const invalid = draft.some(
-      (n) => !n.name.trim() || !n.subnet.trim() || !n.vlan.trim() || !n.scanFile.trim()
-    );
-    if (invalid) {
+    const newErrors: ValidationErrors = {};
+    let hasError = false;
+
+    draft.forEach((n, idx) => {
+      const nameErr = validateName(n.name);
+      const vlanErr = validateVlan(n.vlan);
+      if (nameErr || vlanErr || !n.subnet.trim()) {
+        hasError = true;
+        newErrors[idx] = { name: nameErr, vlan: vlanErr };
+      }
+    });
+
+    if (draft.some((n) => !n.subnet.trim())) hasError = true;
+
+    if (hasError) {
+      setErrors(newErrors);
       toast({
         title: "Validation error",
-        description: "All fields are required for every network entry.",
+        description: "Please fix the highlighted fields.",
         variant: "destructive",
       });
       return;
     }
+
+    setErrors({});
     onSave(draft);
     setOpen(false);
     toast({ title: "Configuration updated", description: "Network list has been saved." });
@@ -118,9 +160,12 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                   <Input
                     id={`name-${idx}`}
                     value={net.name}
-                    onChange={(e) => updateField(idx, "name", e.target.value)}
-                    placeholder="e.g. REF OPS"
+                    onChange={(e) => updateField(idx, "name", e.target.value.toUpperCase())}
+                    placeholder="e.g. REF-OPS"
                   />
+                  {errors[idx]?.name && (
+                    <p className="text-xs text-destructive">{errors[idx].name}</p>
+                  )}
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor={`subnet-${idx}`} className="text-xs">Subnet</Label>
@@ -132,13 +177,19 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                   />
                 </div>
                 <div className="space-y-1">
-                  <Label htmlFor={`vlan-${idx}`} className="text-xs">VLAN</Label>
+                  <Label htmlFor={`vlan-${idx}`} className="text-xs">VLAN (1–1001)</Label>
                   <Input
                     id={`vlan-${idx}`}
+                    type="number"
+                    min={1}
+                    max={1001}
                     value={net.vlan}
                     onChange={(e) => updateField(idx, "vlan", e.target.value)}
-                    placeholder="e.g. VLAN 128"
+                    placeholder="e.g. 128"
                   />
+                  {errors[idx]?.vlan && (
+                    <p className="text-xs text-destructive">{errors[idx].vlan}</p>
+                  )}
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor={`scanFile-${idx}`} className="text-xs">Scan File Path (auto-generated)</Label>

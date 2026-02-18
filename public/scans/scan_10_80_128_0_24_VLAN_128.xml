@@ -1,0 +1,3220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Feb 18 20:50:56 2026 as: nmap -p 21,22,23,80,443,8080,3389 -T2 -&#45;max-retries 1 -&#45;host-timeout 15s -&#45;max-rate 50 -PE -&#45;reason -oX scan_10.80.128.0_24.xml 10.80.128.0/24 -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,23,80,443,8080,3389 -T2 -&#45;max-retries 1 -&#45;host-timeout 15s -&#45;max-rate 50 -PE -&#45;reason -oX scan_10.80.128.0_24.xml 10.80.128.0/24" start="1771447856" startstr="Wed Feb 18 20:50:56 2026" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="7" services="21-23,80,443,3389,8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.3" addrtype="ipv4"/>
+<address addr="10:BF:48:D7:F5:CF" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.6" addrtype="ipv4"/>
+<address addr="00:50:56:96:80:EC" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.9" addrtype="ipv4"/>
+<address addr="AC:1F:6B:49:A0:5A" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.112" addrtype="ipv4"/>
+<address addr="98:4B:E1:01:30:04" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.115" addrtype="ipv4"/>
+<address addr="00:50:56:8A:47:15" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.118" addrtype="ipv4"/>
+<address addr="7C:10:C9:44:33:75" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.121" addrtype="ipv4"/>
+<address addr="00:10:E0:C0:05:FE" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.219" addrtype="ipv4"/>
+<address addr="00:30:D3:04:9C:F8" addrtype="mac" vendor="Agilent Technologies"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.222" addrtype="ipv4"/>
+<address addr="00:50:56:8A:6C:CD" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.70" addrtype="ipv4"/>
+<address addr="4C:52:62:1C:56:91" addrtype="mac" vendor="Fujitsu Technology Solutions GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.73" addrtype="ipv4"/>
+<address addr="00:80:2F:10:03:DF" addrtype="mac" vendor="National Instruments"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.76" addrtype="ipv4"/>
+<address addr="00:50:56:8A:3F:DA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.242" addrtype="ipv4"/>
+<address addr="30:85:A9:A8:5D:40" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.245" addrtype="ipv4"/>
+<address addr="00:50:56:8A:0A:91" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.248" addrtype="ipv4"/>
+<address addr="00:50:56:8A:D7:97" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.251" addrtype="ipv4"/>
+<address addr="04:62:73:57:9E:BC" addrtype="mac" vendor="Cisco Systems"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.254" addrtype="ipv4"/>
+<address addr="00:0C:29:8E:CB:25" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.1" addrtype="ipv4"/>
+<address addr="A2:EB:03:00:00:10" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.250" addrtype="ipv4"/>
+<address addr="74:56:3C:4E:CE:15" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.127" addrtype="ipv4"/>
+<address addr="00:30:56:F1:17:C0" addrtype="mac" vendor="HMS Industrial Networks"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.130" addrtype="ipv4"/>
+<address addr="00:0C:29:34:9F:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.133" addrtype="ipv4"/>
+<address addr="00:50:56:8A:AA:7D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.136" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3E:6C" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.139" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3F:06" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.142" addrtype="ipv4"/>
+<address addr="00:12:B4:00:47:BE" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.145" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3E:82" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.148" addrtype="ipv4"/>
+<address addr="00:50:56:8A:F7:49" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.151" addrtype="ipv4"/>
+<address addr="00:50:56:8A:1F:27" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.154" addrtype="ipv4"/>
+<address addr="00:50:56:8A:98:30" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.157" addrtype="ipv4"/>
+<address addr="00:14:4F:F9:92:9F" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.160" addrtype="ipv4"/>
+<address addr="00:50:56:B9:54:B3" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.163" addrtype="ipv4"/>
+<address addr="00:50:56:8A:54:F7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.171" addrtype="ipv4"/>
+<address addr="7C:10:C9:44:33:74" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.174" addrtype="ipv4"/>
+<address addr="00:1B:82:31:22:DE" addrtype="mac" vendor="Taiwan Semiconductor"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.17" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:84:BA" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.20" addrtype="ipv4"/>
+<address addr="00:0F:C9:16:D6:78" addrtype="mac" vendor="Allnet GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.23" addrtype="ipv4"/>
+<address addr="00:0C:29:0E:82:63" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.184" addrtype="ipv4"/>
+<address addr="00:50:56:B9:E0:32" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.187" addrtype="ipv4"/>
+<address addr="00:50:56:B9:FF:8F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.190" addrtype="ipv4"/>
+<address addr="00:50:56:96:52:F1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.98" addrtype="ipv4"/>
+<address addr="00:50:56:8A:EE:C7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.101" addrtype="ipv4"/>
+<address addr="A8:A1:59:B0:B2:05" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.104" addrtype="ipv4"/>
+<address addr="00:50:56:96:DF:81" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.107" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A6:AA" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.110" addrtype="ipv4"/>
+<address addr="00:50:56:8A:EB:59" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.114" addrtype="ipv4"/>
+<address addr="00:50:56:96:0E:FD" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.119" addrtype="ipv4"/>
+<address addr="00:50:56:8A:AB:13" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.123" addrtype="ipv4"/>
+<address addr="00:50:56:B9:D8:68" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.47" addrtype="ipv4"/>
+<address addr="AC:22:0B:8B:F8:71" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.50" addrtype="ipv4"/>
+<address addr="00:50:56:8A:70:D8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.53" addrtype="ipv4"/>
+<address addr="10:BF:48:D7:F5:62" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.56" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:82:6A" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.59" addrtype="ipv4"/>
+<address addr="00:0C:29:DC:AF:0B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.62" addrtype="ipv4"/>
+<address addr="00:50:56:8A:96:5C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.65" addrtype="ipv4"/>
+<address addr="00:50:56:8A:90:83" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.68" addrtype="ipv4"/>
+<address addr="00:A0:6E:04:01:A3" addrtype="mac" vendor="Austron"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.75" addrtype="ipv4"/>
+<address addr="00:80:2F:11:0B:87" addrtype="mac" vendor="National Instruments"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.80" addrtype="ipv4"/>
+<address addr="00:0C:29:8B:6C:70" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.83" addrtype="ipv4"/>
+<address addr="00:50:56:8A:C5:40" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.86" addrtype="ipv4"/>
+<address addr="00:50:56:8A:FF:19" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.89" addrtype="ipv4"/>
+<address addr="00:50:56:B9:B0:5E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.37" addrtype="ipv4"/>
+<address addr="00:14:4F:FB:0C:A1" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.40" addrtype="ipv4"/>
+<address addr="00:50:56:8A:EF:F6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.28" addrtype="ipv4"/>
+<address addr="00:50:56:8A:25:4F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.31" addrtype="ipv4"/>
+<address addr="00:50:56:8A:C3:11" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.34" addrtype="ipv4"/>
+<address addr="00:50:56:8A:1A:02" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.38" addrtype="ipv4"/>
+<address addr="00:14:4F:F9:8A:BA" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.42" addrtype="ipv4"/>
+<address addr="00:50:56:8A:3F:73" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.45" addrtype="ipv4"/>
+<address addr="00:50:56:8A:AE:24" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.49" addrtype="ipv4"/>
+<address addr="AC:22:0B:8B:F6:E7" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.54" addrtype="ipv4"/>
+<address addr="00:50:56:8A:75:87" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.43" addrtype="ipv4"/>
+<address addr="00:50:56:8A:8E:8C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.66" addrtype="ipv4"/>
+<address addr="00:50:56:8A:06:50" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.71" addrtype="ipv4"/>
+<address addr="00:80:2F:11:2C:43" addrtype="mac" vendor="National Instruments"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.77" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4C:D8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.82" addrtype="ipv4"/>
+<address addr="00:50:56:8A:55:9E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.87" addrtype="ipv4"/>
+<address addr="00:50:56:8A:82:06" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.91" addrtype="ipv4"/>
+<address addr="00:50:56:8A:A7:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.95" addrtype="ipv4"/>
+<address addr="00:50:56:8F:D3:9E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.99" addrtype="ipv4"/>
+<address addr="00:50:56:8A:9C:52" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.103" addrtype="ipv4"/>
+<address addr="00:0C:29:E0:D2:04" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.108" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A7:50" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.113" addrtype="ipv4"/>
+<address addr="00:50:56:8A:02:CC" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.120" addrtype="ipv4"/>
+<address addr="00:10:E0:C0:06:07" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.213" addrtype="ipv4"/>
+<address addr="EC:EB:B8:95:0F:38" addrtype="mac" vendor="Hewlett Packard Enterprise"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.216" addrtype="ipv4"/>
+<address addr="00:0C:29:63:97:D0" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.220" addrtype="ipv4"/>
+<address addr="00:40:9D:D7:46:5F" addrtype="mac" vendor="DigiBoard"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.224" addrtype="ipv4"/>
+<address addr="40:16:7E:35:E4:05" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.228" addrtype="ipv4"/>
+<address addr="00:14:4F:F8:0A:0B" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.232" addrtype="ipv4"/>
+<address addr="58:97:BD:50:49:9A" addrtype="mac" vendor="Cisco Systems"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.235" addrtype="ipv4"/>
+<address addr="00:50:56:B9:84:29" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.238" addrtype="ipv4"/>
+<address addr="00:30:D3:04:FC:FF" addrtype="mac" vendor="Agilent Technologies"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.241" addrtype="ipv4"/>
+<address addr="74:56:3C:4A:25:E3" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.246" addrtype="ipv4"/>
+<address addr="74:56:3C:4D:E8:62" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.252" addrtype="ipv4"/>
+<address addr="74:D0:2B:97:74:71" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.2" addrtype="ipv4"/>
+<address addr="A2:EB:03:00:00:11" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.8" addrtype="ipv4"/>
+<address addr="AC:1F:6B:EE:28:DB" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.13" addrtype="ipv4"/>
+<address addr="9C:6B:00:16:1D:20" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.18" addrtype="ipv4"/>
+<address addr="54:04:A6:B9:2D:78" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.165" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:F2:DC" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.25" addrtype="ipv4"/>
+<address addr="00:60:9F:AB:0B:64" addrtype="mac" vendor="Phast"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.201" addrtype="ipv4"/>
+<address addr="00:0C:29:2B:8F:25" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.204" addrtype="ipv4"/>
+<address addr="00:50:56:8A:B3:F7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.207" addrtype="ipv4"/>
+<address addr="00:0C:29:E6:2E:8E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.210" addrtype="ipv4"/>
+<address addr="00:50:56:B9:5B:E2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.214" addrtype="ipv4"/>
+<address addr="2C:4D:54:46:09:93" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.218" addrtype="ipv4"/>
+<address addr="10:7C:61:58:FC:BB" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.226" addrtype="ipv4"/>
+<address addr="00:50:56:B9:03:00" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.179" addrtype="ipv4"/>
+<address addr="00:50:56:8A:FD:A6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.182" addrtype="ipv4"/>
+<address addr="00:0C:29:BA:96:54" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.186" addrtype="ipv4"/>
+<address addr="00:50:56:B9:95:84" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.191" addrtype="ipv4"/>
+<address addr="00:0C:29:D9:9D:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.196" addrtype="ipv4"/>
+<address addr="00:50:56:8A:F1:9F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.140" addrtype="ipv4"/>
+<address addr="00:12:B4:00:36:20" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.144" addrtype="ipv4"/>
+<address addr="00:12:B4:00:31:B2" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.149" addrtype="ipv4"/>
+<address addr="00:50:56:8A:24:24" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.153" addrtype="ipv4"/>
+<address addr="00:50:56:8A:F0:6C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.158" addrtype="ipv4"/>
+<address addr="24:5E:BE:86:0A:E7" addrtype="mac" vendor="Qnap Systems"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.162" addrtype="ipv4"/>
+<address addr="00:50:56:8A:D5:5F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.170" addrtype="ipv4"/>
+<address addr="7C:10:C9:3D:17:74" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.175" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E1:27" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.178" addrtype="ipv4"/>
+<address addr="00:50:56:8A:12:A1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.183" addrtype="ipv4"/>
+<address addr="D4:F0:C9:0E:C5:67" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.125" addrtype="ipv4"/>
+<address addr="00:50:56:96:EB:AB" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.200" addrtype="ipv4"/>
+<address addr="00:0C:29:C6:99:E5" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.205" addrtype="ipv4"/>
+<address addr="00:0C:29:8B:F5:3A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.36" addrtype="ipv4"/>
+<address addr="00:14:4F:F9:8E:3C" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.44" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4C:6F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.150" addrtype="ipv4"/>
+<address addr="00:50:56:8A:3E:C7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.156" addrtype="ipv4"/>
+<address addr="00:10:E0:E1:2F:2B" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.164" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:F2:BC" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.185" addrtype="ipv4"/>
+<address addr="00:50:56:B9:48:FB" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.197" addrtype="ipv4"/>
+<address addr="00:0C:29:C1:C6:6B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.203" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E9:E9" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.211" addrtype="ipv4"/>
+<address addr="00:50:56:8A:5D:C2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.240" addrtype="ipv4"/>
+<address addr="00:50:56:96:89:F1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.247" addrtype="ipv4"/>
+<address addr="00:50:56:8A:30:EA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.27" addrtype="ipv4"/>
+<address addr="00:30:64:14:CC:5D" addrtype="mac" vendor="Adlink Technology"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.33" addrtype="ipv4"/>
+<address addr="00:50:56:8A:DB:BA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.41" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E9:37" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.52" addrtype="ipv4"/>
+<address addr="00:0F:C9:16:C0:B8" addrtype="mac" vendor="Allnet GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.60" addrtype="ipv4"/>
+<address addr="00:0C:29:53:18:95" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.67" addrtype="ipv4"/>
+<address addr="00:50:56:8A:A7:F0" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.176" addrtype="ipv4"/>
+<address addr="00:17:C8:1D:4F:8E" addrtype="mac" vendor="Kyocera Display"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.181" addrtype="ipv4"/>
+<address addr="3C:EC:EF:0E:C2:C4" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.198" addrtype="ipv4"/>
+<address addr="00:50:56:8A:A5:5C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.94" addrtype="ipv4"/>
+<address addr="2C:4D:54:46:27:8C" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.35" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E0:C2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.14" addrtype="ipv4"/>
+<address addr="D8:3A:DD:CC:3A:21" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.24" addrtype="ipv4"/>
+<address addr="00:0F:C9:16:BE:C6" addrtype="mac" vendor="Allnet GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.55" addrtype="ipv4"/>
+<address addr="00:50:56:8A:8B:72" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.64" addrtype="ipv4"/>
+<address addr="00:50:56:8A:28:6A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.233" addrtype="ipv4"/>
+<address addr="00:20:4A:8B:2E:24" addrtype="mac" vendor="Pronet Gmbh"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.46" addrtype="ipv4"/>
+<address addr="00:0C:29:EA:94:9D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.69" addrtype="ipv4"/>
+<address addr="00:13:95:0F:BE:C2" addrtype="mac" vendor="congatec AG"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.84" addrtype="ipv4"/>
+<address addr="00:50:56:96:28:E8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.90" addrtype="ipv4"/>
+<address addr="00:50:56:8A:41:CB" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.97" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A7:5B" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.161" addrtype="ipv4"/>
+<address addr="00:50:56:B9:3D:7E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.177" addrtype="ipv4"/>
+<address addr="00:50:56:8A:C2:21" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.192" addrtype="ipv4"/>
+<address addr="00:50:56:8A:74:5C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.212" addrtype="ipv4"/>
+<address addr="00:50:56:B9:E9:2D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.223" addrtype="ipv4"/>
+<address addr="00:10:5F:00:01:57" addrtype="mac" vendor="Zodiac Data Systems"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.234" addrtype="ipv4"/>
+<address addr="00:50:56:B9:1F:EF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.239" addrtype="ipv4"/>
+<address addr="74:56:3C:4E:8A:DA" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.249" addrtype="ipv4"/>
+<address addr="C8:1F:66:F5:75:C0" addrtype="mac" vendor="Dell"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.7" addrtype="ipv4"/>
+<address addr="9C:8E:99:5A:95:80" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.21" addrtype="ipv4"/>
+<address addr="3C:EC:EF:9B:F7:78" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.221" addrtype="ipv4"/>
+<address addr="00:50:56:8A:D7:7F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.236" addrtype="ipv4"/>
+<address addr="00:12:B4:80:1A:3D" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.4" addrtype="ipv4"/>
+<address addr="F4:1E:57:4A:3A:26" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.29" addrtype="ipv4"/>
+<address addr="D4:5D:64:BA:D4:A1" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.63" addrtype="ipv4"/>
+<address addr="00:50:56:8A:03:B6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.85" addrtype="ipv4"/>
+<address addr="00:50:56:8A:08:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.96" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A7:66" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.109" addrtype="ipv4"/>
+<address addr="00:50:56:8A:2C:70" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.117" addrtype="ipv4"/>
+<address addr="7C:10:C9:3D:17:75" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.134" addrtype="ipv4"/>
+<address addr="E0:3F:49:E8:09:B3" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.138" addrtype="ipv4"/>
+<address addr="00:12:B4:00:38:97" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.146" addrtype="ipv4"/>
+<address addr="00:50:56:96:FE:AA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.155" addrtype="ipv4"/>
+<address addr="00:10:E0:E1:2F:22" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.180" addrtype="ipv4"/>
+<address addr="3C:EC:EF:E7:38:4D" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.206" addrtype="ipv4"/>
+<address addr="00:0C:29:B0:A6:0A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.229" addrtype="ipv4"/>
+<address addr="00:14:4F:FB:F8:3D" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.244" addrtype="ipv4"/>
+<address addr="74:56:3C:49:CB:A0" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.19" addrtype="ipv4"/>
+<address addr="00:50:56:8A:48:3A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.72" addrtype="ipv4"/>
+<address addr="00:0C:29:D7:87:BC" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.105" addrtype="ipv4"/>
+<address addr="00:50:56:8A:81:C0" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.122" addrtype="ipv4"/>
+<address addr="00:0C:29:D7:AA:A1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.137" addrtype="ipv4"/>
+<address addr="00:12:B4:00:38:74" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.147" addrtype="ipv4"/>
+<address addr="00:50:56:96:3B:B2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.172" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E2:61" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.215" addrtype="ipv4"/>
+<address addr="E8:FC:AF:E7:A4:60" addrtype="mac" vendor="Netgear"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.253" addrtype="ipv4"/>
+<address addr="00:0C:29:47:A9:9D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.81" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E5:6A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.111" addrtype="ipv4"/>
+<address addr="00:50:56:96:4D:4F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.135" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3F:23" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.152" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4C:20" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.227" addrtype="ipv4"/>
+<address addr="00:50:56:B9:C8:EF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.32" addrtype="ipv4"/>
+<address addr="00:50:56:8A:FE:22" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.116" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4B:0F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.102" addrtype="ipv4"/>
+<address addr="A8:A1:59:B0:B1:DC" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.88" addrtype="ipv4"/>
+<address addr="08:62:66:A0:64:38" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.243" addrtype="ipv4"/>
+<address addr="00:0C:29:28:3A:72" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.141" addrtype="ipv4"/>
+<address addr="00:12:B4:00:33:0C" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.10" addrtype="ipv4"/>
+<address addr="C8:1F:66:BF:7A:CE" addrtype="mac" vendor="Dell"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.131" addrtype="ipv4"/>
+<address addr="40:16:7E:36:89:17" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1771447936" percent="23.29" remaining="136" etc="1771448071"/>
+<host starttime="1771447905" endtime="1771447920" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.1" addrtype="ipv4"/>
+<address addr="A2:EB:03:00:00:10" addrtype="mac"/>
+<hostnames>
+<hostname name="router-cisco.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="281" rttvar="3751" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.2" addrtype="ipv4"/>
+<address addr="A2:EB:03:00:00:11" addrtype="mac"/>
+<hostnames>
+<hostname name="switch1-cisco.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="190" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.3" addrtype="ipv4"/>
+<address addr="10:BF:48:D7:F5:CF" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="pss1-test.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="295" rttvar="3799" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.4" addrtype="ipv4"/>
+<address addr="F4:1E:57:4A:3A:26" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="159" rttvar="3818" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.6" addrtype="ipv4"/>
+<address addr="00:50:56:96:80:EC" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-console-rhel9.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="433" rttvar="1364" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.7" addrtype="ipv4"/>
+<address addr="9C:8E:99:5A:95:80" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+<hostname name="hrdfep1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="274" rttvar="3775" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.8" addrtype="ipv4"/>
+<address addr="AC:1F:6B:EE:28:DB" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="cortex1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="254" rttvar="3815" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.9" addrtype="ipv4"/>
+<address addr="AC:1F:6B:49:A0:5A" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="nuron1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="234" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.10" addrtype="ipv4"/>
+<address addr="C8:1F:66:BF:7A:CE" addrtype="mac" vendor="Dell"/>
+<hostnames>
+</hostnames>
+<times srtt="358" rttvar="3826" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.13" addrtype="ipv4"/>
+<address addr="9C:6B:00:16:1D:20" addrtype="mac"/>
+<hostnames>
+<hostname name="gppc2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="236" rttvar="3825" to="400000"/>
+</host>
+<host starttime="1771448112" endtime="1771448122"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.14" addrtype="ipv4"/>
+<address addr="D8:3A:DD:CC:3A:21" addrtype="mac"/>
+<hostnames>
+<hostname name="gppc3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="216" rttvar="698" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.17" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:84:BA" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+</hostnames>
+<times srtt="258" rttvar="3769" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.18" addrtype="ipv4"/>
+<address addr="54:04:A6:B9:2D:78" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="gstvi1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="240" rttvar="3810" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.19" addrtype="ipv4"/>
+<address addr="00:50:56:8A:48:3A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="tmtcs1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="379" rttvar="948" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.20" addrtype="ipv4"/>
+<address addr="00:0F:C9:16:D6:78" addrtype="mac" vendor="Allnet GmbH"/>
+<hostnames>
+</hostnames>
+<times srtt="298" rttvar="3819" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.21" addrtype="ipv4"/>
+<address addr="3C:EC:EF:9B:F7:78" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="cortex3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="276" rttvar="2849" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.23" addrtype="ipv4"/>
+<address addr="00:0C:29:0E:82:63" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsds5.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="353" rttvar="3871" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.24" addrtype="ipv4"/>
+<address addr="00:0F:C9:16:BE:C6" addrtype="mac" vendor="Allnet GmbH"/>
+<hostnames>
+</hostnames>
+<times srtt="295" rttvar="3830" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.25" addrtype="ipv4"/>
+<address addr="00:60:9F:AB:0B:64" addrtype="mac" vendor="Phast"/>
+<hostnames>
+<hostname name="timedis1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="214" rttvar="2869" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.27" addrtype="ipv4"/>
+<address addr="00:30:64:14:CC:5D" addrtype="mac" vendor="Adlink Technology"/>
+<hostnames>
+<hostname name="specan1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="317" rttvar="3761" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.28" addrtype="ipv4"/>
+<address addr="00:50:56:8A:25:4F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="matlab.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="323" rttvar="3808" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.29" addrtype="ipv4"/>
+<address addr="D4:5D:64:BA:D4:A1" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+</hostnames>
+<times srtt="523" rttvar="3892" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.31" addrtype="ipv4"/>
+<address addr="00:50:56:8A:C3:11" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfsa-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="421" rttvar="3836" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.32" addrtype="ipv4"/>
+<address addr="00:50:56:8A:FE:22" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfsb-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="201" rttvar="3820" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.33" addrtype="ipv4"/>
+<address addr="00:50:56:8A:DB:BA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfca-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="531" rttvar="3782" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.34" addrtype="ipv4"/>
+<address addr="00:50:56:8A:1A:02" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfcb-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="239" rttvar="3838" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.35" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E0:C2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmca.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="493" rttvar="3772" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.36" addrtype="ipv4"/>
+<address addr="00:14:4F:F9:8E:3C" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stca.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="254" rttvar="3792" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.37" addrtype="ipv4"/>
+<address addr="00:14:4F:FB:0C:A1" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stcb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="238" rttvar="927" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.38" addrtype="ipv4"/>
+<address addr="00:14:4F:F9:8A:BA" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="sce266.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="254" rttvar="3792" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.40" addrtype="ipv4"/>
+<address addr="00:50:56:8A:EF:F6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-sim00.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="375" rttvar="2856" to="400000"/>
+</host>
+<host starttime="1771448111" endtime="1771448121"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.41" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E9:37" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-sim01.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="455" rttvar="760" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.42" addrtype="ipv4"/>
+<address addr="00:50:56:8A:3F:73" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-sim02.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="397" rttvar="3776" to="400000"/>
+</host>
+<host starttime="1771447896" endtime="1771447911" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.43" addrtype="ipv4"/>
+<address addr="00:50:56:8A:8E:8C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-sim03.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="1612660" rttvar="1612660" to="8063300"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.44" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4C:6F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-sim04.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="494" rttvar="3819" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.45" addrtype="ipv4"/>
+<address addr="00:50:56:8A:AE:24" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-sim05.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="325" rttvar="3782" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.46" addrtype="ipv4"/>
+<address addr="00:0C:29:EA:94:9D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="esu3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="604" rttvar="3759" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.47" addrtype="ipv4"/>
+<address addr="AC:22:0B:8B:F8:71" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="onigstvi-t2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="240" rttvar="941" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.49" addrtype="ipv4"/>
+<address addr="AC:22:0B:8B:F6:E7" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="esxi2-sfs.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="192" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.50" addrtype="ipv4"/>
+<address addr="00:50:56:8A:70:D8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmc-dev.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="396" rttvar="3818" to="400000"/>
+</host>
+<host starttime="1771448111" endtime="1771448122"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.52" addrtype="ipv4"/>
+<address addr="00:0F:C9:16:C0:B8" addrtype="mac" vendor="Allnet GmbH"/>
+<hostnames>
+<hostname name="ism-20.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="351" rttvar="705" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.53" addrtype="ipv4"/>
+<address addr="10:BF:48:D7:F5:62" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="tmtcs1-dev.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="248" rttvar="3766" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.54" addrtype="ipv4"/>
+<address addr="00:50:56:8A:75:87" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="tmtcs2-dev.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="330" rttvar="3837" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.55" addrtype="ipv4"/>
+<address addr="00:50:56:8A:8B:72" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmcb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="493" rttvar="1023" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.56" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:82:6A" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="tmtcs1-dev-kvm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="366" rttvar="3880" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.59" addrtype="ipv4"/>
+<address addr="00:0C:29:DC:AF:0B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmcc.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="331" rttvar="3840" to="400000"/>
+</host>
+<host starttime="1771448111" endtime="1771448119"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.60" addrtype="ipv4"/>
+<address addr="00:0C:29:53:18:95" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmcd.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="397" rttvar="700" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.62" addrtype="ipv4"/>
+<address addr="00:50:56:8A:96:5C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="448" rttvar="3825" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.63" addrtype="ipv4"/>
+<address addr="00:50:56:8A:03:B6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfcb-test-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="462" rttvar="2932" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.64" addrtype="ipv4"/>
+<address addr="00:50:56:8A:28:6A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfsa-test-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="412" rttvar="2180" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.65" addrtype="ipv4"/>
+<address addr="00:50:56:8A:90:83" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsds14.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="365" rttvar="3844" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.66" addrtype="ipv4"/>
+<address addr="00:50:56:8A:06:50" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsds15.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="397" rttvar="2935" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.67" addrtype="ipv4"/>
+<address addr="00:50:56:8A:A7:F0" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfsb-test-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="399" rttvar="780" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.68" addrtype="ipv4"/>
+<address addr="00:A0:6E:04:01:A3" addrtype="mac" vendor="Austron"/>
+<hostnames>
+</hostnames>
+<times srtt="3439" rttvar="4035" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.69" addrtype="ipv4"/>
+<address addr="00:13:95:0F:BE:C2" addrtype="mac" vendor="congatec AG"/>
+<hostnames>
+</hostnames>
+<times srtt="264" rttvar="2854" to="400000"/>
+</host>
+<host starttime="1771448102" endtime="1771448117" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.70" addrtype="ipv4"/>
+<address addr="4C:52:62:1C:56:91" addrtype="mac" vendor="Fujitsu Technology Solutions GmbH"/>
+<hostnames>
+<hostname name="imbu3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="312" rttvar="1232" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.71" addrtype="ipv4"/>
+<address addr="00:80:2F:11:2C:43" addrtype="mac" vendor="National Instruments"/>
+<hostnames>
+</hostnames>
+<times srtt="496" rttvar="2896" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.72" addrtype="ipv4"/>
+<address addr="00:0C:29:D7:87:BC" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmce.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="403" rttvar="2233" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.73" addrtype="ipv4"/>
+<address addr="00:80:2F:10:03:DF" addrtype="mac" vendor="National Instruments"/>
+<hostnames>
+</hostnames>
+<times srtt="474" rttvar="3926" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.75" addrtype="ipv4"/>
+<address addr="00:80:2F:11:0B:87" addrtype="mac" vendor="National Instruments"/>
+<hostnames>
+</hostnames>
+<times srtt="516" rttvar="1677" to="400000"/>
+</host>
+<host starttime="1771448081" endtime="1771448096" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.76" addrtype="ipv4"/>
+<address addr="00:50:56:8A:3F:DA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="winvm2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="335" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.77" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4C:D8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="winvm4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="255" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448102" endtime="1771448117" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.80" addrtype="ipv4"/>
+<address addr="00:0C:29:8B:6C:70" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="printserver.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="370" rttvar="1705" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.81" addrtype="ipv4"/>
+<address addr="00:30:D3:9A:00:39" addrtype="mac" vendor="Agilent Technologies"/>
+<hostnames>
+<hostname name="fec-vm01.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="345" rttvar="2171" to="400000"/>
+</host>
+<host starttime="1771448094" endtime="1771448109" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.82" addrtype="ipv4"/>
+<address addr="00:50:56:8A:55:9E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm02.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="348" rttvar="1699" to="400000"/>
+</host>
+<host starttime="1771448082" endtime="1771448097" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.83" addrtype="ipv4"/>
+<address addr="00:50:56:8A:C5:40" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm03.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="393" rttvar="3896" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.84" addrtype="ipv4"/>
+<address addr="00:50:56:96:28:E8" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm04.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="357" rttvar="2196" to="400000"/>
+</host>
+<host starttime="1771448088" endtime="1771448103" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.85" addrtype="ipv4"/>
+<address addr="00:50:56:8A:08:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm05.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="363" rttvar="1697" to="400000"/>
+</host>
+<host starttime="1771448082" endtime="1771448097" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.86" addrtype="ipv4"/>
+<address addr="00:50:56:8A:FF:19" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-sim.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="464" rttvar="3866" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.87" addrtype="ipv4"/>
+<address addr="00:50:56:8A:82:06" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-console.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="361" rttvar="2179" to="400000"/>
+</host>
+<host starttime="1771448077" endtime="1771448092" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.88" addrtype="ipv4"/>
+<address addr="08:62:66:A0:64:38" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="spacesim.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="606" rttvar="2901" to="400000"/>
+</host>
+<host starttime="1771448082" endtime="1771448097" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.89" addrtype="ipv4"/>
+<address addr="00:50:56:B9:B0:5E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="syscon1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="294" rttvar="2864" to="400000"/>
+</host>
+<host starttime="1771448102" endtime="1771448115"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.90" addrtype="ipv4"/>
+<address addr="00:50:56:8A:41:CB" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="icdb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="128"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="128"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="128"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="128"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="332" rttvar="703" to="400000"/>
+</host>
+<host starttime="1771448077" endtime="1771448092" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.91" addrtype="ipv4"/>
+<address addr="00:50:56:8A:A7:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsds16.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="400" rttvar="1258" to="400000"/>
+</host>
+<host starttime="1771448082" endtime="1771448097" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.94" addrtype="ipv4"/>
+<address addr="2C:4D:54:46:27:8C" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="esxi1-kvm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="426" rttvar="2895" to="400000"/>
+</host>
+<host starttime="1771448077" endtime="1771448092" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.95" addrtype="ipv4"/>
+<address addr="00:50:56:8F:D3:9E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsds17.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="401" rttvar="3904" to="400000"/>
+</host>
+<host starttime="1771448077" endtime="1771448092" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.96" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A7:66" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+<hostname name="gspc1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="416" rttvar="3903" to="400000"/>
+</host>
+<host starttime="1771448082" endtime="1771448097" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.97" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A7:5B" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+<hostname name="gspc2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="523" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448077" endtime="1771448092" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.98" addrtype="ipv4"/>
+<address addr="00:50:56:8A:EE:C7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="lmsea.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="507" rttvar="3805" to="400000"/>
+</host>
+<host starttime="1771448089" endtime="1771448104" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.99" addrtype="ipv4"/>
+<address addr="00:50:56:8A:9C:52" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="lmseb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="423" rttvar="1697" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.101" addrtype="ipv4"/>
+<address addr="A8:A1:59:B0:B2:05" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+<hostname name="gspc3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="308" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448077" endtime="1771448092" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.102" addrtype="ipv4"/>
+<address addr="A8:A1:59:B0:B1:DC" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+<hostname name="gspc4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="398" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448089" endtime="1771448104" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.103" addrtype="ipv4"/>
+<address addr="00:0C:29:E0:D2:04" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="nis2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="471" rttvar="2254" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.104" addrtype="ipv4"/>
+<address addr="00:50:56:96:DF:81" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="linvm1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="328" rttvar="1279" to="400000"/>
+</host>
+<host starttime="1771448106" endtime="1771448119"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.105" addrtype="ipv4"/>
+<address addr="00:50:56:8A:81:C0" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="ospms-lc1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="405" rttvar="712" to="400000"/>
+</host>
+<host starttime="1771448089" endtime="1771448104" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.107" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A6:AA" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+<hostname name="gspc5.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="703" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448096" endtime="1771448111" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.108" addrtype="ipv4"/>
+<address addr="A8:A1:59:D0:A7:50" addrtype="mac" vendor="ASRock Incorporation"/>
+<hostnames>
+<hostname name="gspc6.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="666" rttvar="3777" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.109" addrtype="ipv4"/>
+<address addr="00:50:56:8A:2C:70" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sftr1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="414" rttvar="3892" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.110" addrtype="ipv4"/>
+<address addr="00:50:56:8A:EB:59" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sftr2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="418" rttvar="2176" to="400000"/>
+</host>
+<host starttime="1771448106" endtime="1771448119"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.111" addrtype="ipv4"/>
+<address addr="00:50:56:96:4D:4F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmcf.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="430" rttvar="742" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.112" addrtype="ipv4"/>
+<address addr="98:4B:E1:01:30:04" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+<hostname name="esxi2-sfc.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="285" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448106" endtime="1771448121" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.113" addrtype="ipv4"/>
+<address addr="00:50:56:8A:02:CC" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="winserver1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="420" rttvar="2204" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.114" addrtype="ipv4"/>
+<address addr="00:50:56:96:0E:FD" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmcg.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="464" rttvar="2194" to="400000"/>
+</host>
+<host starttime="1771448106" endtime="1771448117"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.115" addrtype="ipv4"/>
+<address addr="00:50:56:8A:47:15" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-tcs.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="380" rttvar="578" to="400000"/>
+</host>
+<host starttime="1771448090" endtime="1771448105" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.116" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4B:0F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="winvm1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="292" rttvar="3795" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.117" addrtype="ipv4"/>
+<address addr="7C:10:C9:3D:17:75" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="sonic1-kvm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="372" rttvar="2942" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.118" addrtype="ipv4"/>
+<address addr="7C:10:C9:44:33:75" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="sonic2-kvm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="349" rttvar="3863" to="400000"/>
+</host>
+<host starttime="1771448107" endtime="1771448122"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.119" addrtype="ipv4"/>
+<address addr="00:50:56:8A:AB:13" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="winvm3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="491" rttvar="2286" to="400000"/>
+</host>
+<host starttime="1771448106" endtime="1771448120"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.120" addrtype="ipv4"/>
+<address addr="00:10:E0:C0:06:07" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stc-s7-mnt.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="667" rttvar="1406" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.121" addrtype="ipv4"/>
+<address addr="00:10:E0:C0:05:FE" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stc-s7.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="195" rttvar="3788" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.122" addrtype="ipv4"/>
+<address addr="00:0C:29:D7:AA:A1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="pss1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="296" rttvar="1652" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.123" addrtype="ipv4"/>
+<address addr="00:50:56:B9:D8:68" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="tmtcs2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="410" rttvar="1702" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.125" addrtype="ipv4"/>
+<address addr="00:50:56:96:EB:AB" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmch.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="594" rttvar="3760" to="400000"/>
+</host>
+<host starttime="1771448111" endtime="1771448119"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.127" addrtype="ipv4"/>
+<address addr="00:30:56:F1:17:C0" addrtype="mac" vendor="HMS Industrial Networks"/>
+<hostnames>
+<hostname name="icu6.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="3845" rttvar="1871" to="400000"/>
+</host>
+<host starttime="1771448084" endtime="1771448099" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.130" addrtype="ipv4"/>
+<address addr="00:0C:29:34:9F:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="lmsa.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="388" rttvar="2178" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.131" addrtype="ipv4"/>
+<address addr="40:16:7E:36:89:17" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="rlas1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="221" rttvar="2881" to="400000"/>
+</host>
+<host starttime="1771448111" endtime="1771448122"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.133" addrtype="ipv4"/>
+<address addr="00:50:56:8A:AA:7D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="lmsb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="406" rttvar="729" to="400000"/>
+</host>
+<host starttime="1771448084" endtime="1771448099" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.134" addrtype="ipv4"/>
+<address addr="E0:3F:49:E8:09:B3" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="gstvi-dev.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="246" rttvar="3815" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.135" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3F:23" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-135.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="368" rttvar="3887" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.136" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3E:6C" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-136.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="348" rttvar="3899" to="400000"/>
+</host>
+<host starttime="1771448084" endtime="1771448099" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.137" addrtype="ipv4"/>
+<address addr="00:12:B4:00:38:74" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-137.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="313" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.138" addrtype="ipv4"/>
+<address addr="00:12:B4:00:38:97" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-138.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="391" rttvar="3020" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.139" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3F:06" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-139.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="356" rttvar="3880" to="400000"/>
+</host>
+<host starttime="1771448107" endtime="1771448122"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.140" addrtype="ipv4"/>
+<address addr="00:12:B4:00:36:20" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-140.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="544" rttvar="1814" to="400000"/>
+</host>
+<host starttime="1771448084" endtime="1771448099" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.141" addrtype="ipv4"/>
+<address addr="00:12:B4:00:33:0C" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+</hostnames>
+<times srtt="299" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448085" endtime="1771448100" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.142" addrtype="ipv4"/>
+<address addr="00:12:B4:00:47:BE" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="fec-vm04-copy.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="262" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448079" endtime="1771448094" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.144" addrtype="ipv4"/>
+<address addr="00:12:B4:00:31:B2" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-144.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="373" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448109" endtime="1771448124" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.145" addrtype="ipv4"/>
+<address addr="00:12:B4:00:3E:82" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="dhcp-10-80-128-145.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="441" rttvar="2384" to="400000"/>
+</host>
+<host starttime="1771448114" endtime="1771448127"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.146" addrtype="ipv4"/>
+<address addr="00:50:56:96:FE:AA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-rhel9-dev.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="394" rttvar="723" to="400000"/>
+</host>
+<host starttime="1771448109" endtime="1771448119"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.147" addrtype="ipv4"/>
+<address addr="00:50:56:96:3B:B2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-rhel9.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="415" rttvar="791" to="400000"/>
+</host>
+<host starttime="1771448092" endtime="1771448107" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.148" addrtype="ipv4"/>
+<address addr="00:50:56:8A:F7:49" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm06.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="393" rttvar="3834" to="400000"/>
+</host>
+<host starttime="1771448112" endtime="1771448127" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.149" addrtype="ipv4"/>
+<address addr="00:50:56:8A:24:24" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm07.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="383" rttvar="729" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.150" addrtype="ipv4"/>
+<address addr="00:50:56:8A:3E:C7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="527" rttvar="2939" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.151" addrtype="ipv4"/>
+<address addr="00:50:56:8A:1F:27" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="351" rttvar="3889" to="400000"/>
+</host>
+<host starttime="1771448092" endtime="1771448107" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.152" addrtype="ipv4"/>
+<address addr="00:50:56:8A:4C:20" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="295" rttvar="3003" to="400000"/>
+</host>
+<host starttime="1771448105" endtime="1771448120" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.153" addrtype="ipv4"/>
+<address addr="00:50:56:8A:F0:6C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="webspan1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="381" rttvar="974" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.154" addrtype="ipv4"/>
+<address addr="00:50:56:8A:98:30" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="webspan2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="298" rttvar="2887" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.155" addrtype="ipv4"/>
+<address addr="00:10:E0:E1:2F:22" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="s7-stc2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="158" rttvar="3799" to="400000"/>
+</host>
+<host starttime="1771448092" endtime="1771448107" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.156" addrtype="ipv4"/>
+<address addr="00:10:E0:E1:2F:2B" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="s7-stc2-mnt.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="562" rttvar="3841" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.157" addrtype="ipv4"/>
+<address addr="00:14:4F:F9:92:9F" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stc2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="239" rttvar="2869" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.158" addrtype="ipv4"/>
+<address addr="24:5E:BE:86:0A:E7" addrtype="mac" vendor="Qnap Systems"/>
+<hostnames>
+</hostnames>
+<times srtt="160" rttvar="3790" to="400000"/>
+</host>
+<host starttime="1771448093" endtime="1771448108" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.160" addrtype="ipv4"/>
+<address addr="00:50:56:B9:54:B3" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmci.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="286" rttvar="2180" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.161" addrtype="ipv4"/>
+<address addr="00:50:56:B9:3D:7E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gsmcj.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="565" rttvar="2864" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.162" addrtype="ipv4"/>
+<address addr="00:50:56:8A:D5:5F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="spanserver1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="347" rttvar="3836" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.163" addrtype="ipv4"/>
+<address addr="00:50:56:8A:54:F7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="spanserver2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="291" rttvar="2234" to="400000"/>
+</host>
+<host starttime="1771448099" endtime="1771448112"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.164" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:F2:BC" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="ttcp07.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="157" rttvar="687" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.165" addrtype="ipv4"/>
+<address addr="0C:C4:7A:CD:F2:DC" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="ttcp08.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="217" rttvar="3784" to="400000"/>
+</host>
+<host starttime="1771448093" endtime="1771448108" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.170" addrtype="ipv4"/>
+<address addr="7C:10:C9:3D:17:74" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="sonic1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="436" rttvar="1796" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.171" addrtype="ipv4"/>
+<address addr="7C:10:C9:44:33:74" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="sonic2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="192" rttvar="2860" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.172" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E2:61" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="maxsim1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="408" rttvar="3836" to="400000"/>
+</host>
+<host starttime="1771448097" endtime="1771448112" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.174" addrtype="ipv4"/>
+<address addr="00:1B:82:31:22:DE" addrtype="mac" vendor="Taiwan Semiconductor"/>
+<hostnames>
+<hostname name="printer-tsc-ttp-343-c.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="101710" rttvar="86937" to="449458"/>
+</host>
+<host starttime="1771448099" endtime="1771448114" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.175" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E1:27" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="cfdp1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="354" rttvar="1259" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.176" addrtype="ipv4"/>
+<address addr="00:17:C8:1D:4F:8E" addrtype="mac" vendor="Kyocera Display"/>
+<hostnames>
+</hostnames>
+<times srtt="550" rttvar="3916" to="400000"/>
+</host>
+<host starttime="1771447905" endtime="1771447920" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.177" addrtype="ipv4"/>
+<address addr="00:50:56:8A:C2:21" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="maxsim2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="368" rttvar="1621" to="400000"/>
+</host>
+<host starttime="1771448076" endtime="1771448091" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.178" addrtype="ipv4"/>
+<address addr="00:50:56:8A:12:A1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mcma.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="263" rttvar="2857" to="400000"/>
+</host>
+<host starttime="1771447904" endtime="1771447919" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.179" addrtype="ipv4"/>
+<address addr="00:50:56:8A:FD:A6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mcmb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="418" rttvar="3800" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.180" addrtype="ipv4"/>
+<address addr="3C:EC:EF:E7:38:4D" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="hedlabc3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="344" rttvar="1710" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448142"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.181" addrtype="ipv4"/>
+<address addr="3C:EC:EF:0E:C2:C4" addrtype="mac" vendor="Super Micro Computer"/>
+<hostnames>
+<hostname name="hedlabc4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="693" rttvar="1756" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.182" addrtype="ipv4"/>
+<address addr="00:0C:29:BA:96:54" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="hedlabp1cr.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="415" rttvar="1218" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.183" addrtype="ipv4"/>
+<address addr="D4:F0:C9:0E:C5:67" addrtype="mac"/>
+<hostnames>
+<hostname name="hedlabsim.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="39402" rttvar="59720" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.184" addrtype="ipv4"/>
+<address addr="00:50:56:B9:E0:32" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-node1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="389" rttvar="1224" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.185" addrtype="ipv4"/>
+<address addr="00:50:56:B9:48:FB" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-node2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="451" rttvar="1269" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.186" addrtype="ipv4"/>
+<address addr="00:50:56:B9:95:84" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-node3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="398" rttvar="732" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.187" addrtype="ipv4"/>
+<address addr="00:50:56:B9:FF:8F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="csmc-node4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="414" rttvar="1241" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.190" addrtype="ipv4"/>
+<address addr="00:50:56:96:52:F1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="wsds1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="391" rttvar="1269" to="400000"/>
+</host>
+<host starttime="1771448144" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.191" addrtype="ipv4"/>
+<address addr="00:0C:29:D9:9D:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="wsds2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="353" rttvar="750" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.192" addrtype="ipv4"/>
+<address addr="00:50:56:8A:74:5C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="wsds3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="360" rttvar="1255" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.196" addrtype="ipv4"/>
+<address addr="00:50:56:8A:F1:9F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mcm4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="302" rttvar="1222" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.197" addrtype="ipv4"/>
+<address addr="00:0C:29:C1:C6:6B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mcm4-dev.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="380" rttvar="743" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.198" addrtype="ipv4"/>
+<address addr="00:50:56:8A:A5:5C" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="signpost1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="387" rttvar="1240" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.200" addrtype="ipv4"/>
+<address addr="00:0C:29:C6:99:E5" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="inst1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="380" rttvar="1289" to="400000"/>
+</host>
+<host starttime="1771448144" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.201" addrtype="ipv4"/>
+<address addr="00:0C:29:2B:8F:25" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="web1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="309" rttvar="758" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.203" addrtype="ipv4"/>
+<address addr="00:50:56:8A:E9:E9" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mon1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="293" rttvar="1236" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.204" addrtype="ipv4"/>
+<address addr="00:50:56:8A:B3:F7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gstvi3-vm.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="344" rttvar="946" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.205" addrtype="ipv4"/>
+<address addr="00:0C:29:8B:F5:3A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mon2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="287" rttvar="710" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.206" addrtype="ipv4"/>
+<address addr="00:0C:29:B0:A6:0A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="mon-lc1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="398" rttvar="981" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.207" addrtype="ipv4"/>
+<address addr="00:0C:29:E6:2E:8E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="dev1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="358" rttvar="966" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.210" addrtype="ipv4"/>
+<address addr="00:50:56:B9:5B:E2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm10.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="326" rttvar="709" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.211" addrtype="ipv4"/>
+<address addr="00:50:56:8A:5D:C2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="ns1.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="217" rttvar="931" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.212" addrtype="ipv4"/>
+<address addr="00:50:56:B9:E9:2D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="signpost1-ng.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="338" rttvar="934" to="400000"/>
+</host>
+<host starttime="1771448144" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.213" addrtype="ipv4"/>
+<address addr="EC:EB:B8:95:0F:38" addrtype="mac" vendor="Hewlett Packard Enterprise"/>
+<hostnames>
+<hostname name="sfca.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="258" rttvar="691" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.214" addrtype="ipv4"/>
+<address addr="2C:4D:54:46:09:93" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="gstvi3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="408" rttvar="1005" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.215" addrtype="ipv4"/>
+<address addr="E8:FC:AF:E7:A4:60" addrtype="mac" vendor="Netgear"/>
+<hostnames>
+<hostname name="nas1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="314" rttvar="1033" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.216" addrtype="ipv4"/>
+<address addr="00:0C:29:63:97:D0" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfcb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="357" rttvar="737" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.218" addrtype="ipv4"/>
+<address addr="10:7C:61:58:FC:BB" addrtype="mac"/>
+<hostnames>
+<hostname name="ndiu1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="356" rttvar="1045" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.219" addrtype="ipv4"/>
+<address addr="00:30:D3:04:9C:F8" addrtype="mac" vendor="Agilent Technologies"/>
+<hostnames>
+</hostnames>
+<times srtt="462" rttvar="952" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.220" addrtype="ipv4"/>
+<address addr="00:40:9D:D7:46:5F" addrtype="mac" vendor="DigiBoard"/>
+<hostnames>
+<hostname name="ndiu3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="588" rttvar="747" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448140"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.221" addrtype="ipv4"/>
+<address addr="00:50:56:8A:D7:7F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gspc01.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="503" rttvar="3989" to="400000"/>
+</host>
+<host starttime="1771448128" endtime="1771448143" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.222" addrtype="ipv4"/>
+<address addr="00:50:56:8A:6C:CD" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gspc02.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="366" rttvar="5000" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.223" addrtype="ipv4"/>
+<address addr="00:10:5F:00:01:57" addrtype="mac" vendor="Zodiac Data Systems"/>
+<hostnames>
+<hostname name="ndiu4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="1962" rttvar="2835" to="400000"/>
+</host>
+<host starttime="1771448138" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.224" addrtype="ipv4"/>
+<address addr="40:16:7E:35:E4:05" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="ndiu5.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="617" rttvar="3780" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.226" addrtype="ipv4"/>
+<address addr="00:50:56:B9:03:00" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="hrdfep2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="314" rttvar="728" to="400000"/>
+</host>
+<host starttime="1771448141" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.227" addrtype="ipv4"/>
+<address addr="00:50:56:B9:C8:EF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="hrdfep3.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="498" rttvar="846" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.228" addrtype="ipv4"/>
+<address addr="00:14:4F:F8:0A:0B" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stc-lc2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="246" rttvar="733" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.229" addrtype="ipv4"/>
+<address addr="00:14:4F:FB:F8:3D" addrtype="mac" vendor="Oracle"/>
+<hostnames>
+<hostname name="stc-lc4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="216" rttvar="2176" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.232" addrtype="ipv4"/>
+<address addr="58:97:BD:50:49:9A" addrtype="mac" vendor="Cisco Systems"/>
+<hostnames>
+</hostnames>
+<times srtt="357" rttvar="2218" to="400000"/>
+</host>
+<host starttime="1771448143" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.233" addrtype="ipv4"/>
+<address addr="00:20:4A:8B:2E:24" addrtype="mac" vendor="Pronet Gmbh"/>
+<hostnames>
+<hostname name="gspc709.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="310" rttvar="704" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.234" addrtype="ipv4"/>
+<address addr="00:50:56:B9:1F:EF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="freeipa-poc.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="349" rttvar="2155" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.235" addrtype="ipv4"/>
+<address addr="00:50:56:B9:84:29" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="fec-vm09.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="366" rttvar="2219" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.236" addrtype="ipv4"/>
+<address addr="00:12:B4:80:1A:3D" addrtype="mac" vendor="Work Microwave GmbH"/>
+<hostnames>
+<hostname name="adig-front.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="3636" rttvar="3758" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.238" addrtype="ipv4"/>
+<address addr="00:30:D3:04:FC:FF" addrtype="mac" vendor="Agilent Technologies"/>
+<hostnames>
+<hostname name="specan2.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="417" rttvar="2173" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.239" addrtype="ipv4"/>
+<address addr="74:56:3C:4E:8A:DA" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="203" rttvar="2169" to="400000"/>
+</host>
+<host starttime="1771448145" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.240" addrtype="ipv4"/>
+<address addr="00:50:56:96:89:F1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfsc.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="504" rttvar="886" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.241" addrtype="ipv4"/>
+<address addr="74:56:3C:4A:25:E3" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="147" rttvar="1630" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.242" addrtype="ipv4"/>
+<address addr="30:85:A9:A8:5D:40" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="sfsa.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="288" rttvar="1255" to="400000"/>
+</host>
+<host starttime="1771448140" endtime="1771448149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.243" addrtype="ipv4"/>
+<address addr="00:0C:29:28:3A:72" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="sfsb.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="302" rttvar="807" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.244" addrtype="ipv4"/>
+<address addr="00:0C:29:E4:62:1D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="248" rttvar="984" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.245" addrtype="ipv4"/>
+<address addr="00:50:56:8A:0A:91" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gspc10.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="323" rttvar="1252" to="400000"/>
+</host>
+<host starttime="1771448140" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.246" addrtype="ipv4"/>
+<address addr="74:56:3C:4D:E8:62" addrtype="mac"/>
+<hostnames>
+<hostname name="sfs-aws-rhel.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="230" rttvar="802" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448143"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.247" addrtype="ipv4"/>
+<address addr="00:50:56:8A:30:EA" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gspc11.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="386" rttvar="738" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.248" addrtype="ipv4"/>
+<address addr="00:50:56:8A:D7:97" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="gspc12.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="251" rttvar="1615" to="400000"/>
+</host>
+<host starttime="1771448134" endtime="1771448147"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.249" addrtype="ipv4"/>
+<address addr="C8:1F:66:F5:75:C0" addrtype="mac" vendor="Dell"/>
+<hostnames>
+<hostname name="ddor4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="301" rttvar="713" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448140"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.250" addrtype="ipv4"/>
+<address addr="74:56:3C:4E:CE:15" addrtype="mac"/>
+<hostnames>
+<hostname name="ddor1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="444" rttvar="772" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.251" addrtype="ipv4"/>
+<address addr="04:62:73:57:9E:BC" addrtype="mac" vendor="Cisco Systems"/>
+<hostnames>
+</hostnames>
+<times srtt="298" rttvar="1686" to="400000"/>
+</host>
+<host starttime="1771448134" endtime="1771448148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.252" addrtype="ipv4"/>
+<address addr="74:D0:2B:97:74:71" addrtype="mac" vendor="Asustek Computer"/>
+<hostnames>
+<hostname name="ntp1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="252" rttvar="704" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448140"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.253" addrtype="ipv4"/>
+<address addr="00:0C:29:47:A9:9D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="275" rttvar="733" to="400000"/>
+</host>
+<host starttime="1771448129" endtime="1771448144" timedout="true"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.80.128.254" addrtype="ipv4"/>
+<address addr="00:0C:29:8E:CB:25" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="dns4.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<times srtt="389" rttvar="1655" to="400000"/>
+</host>
+<host starttime="1771448150" endtime="1771448152"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="10.80.128.15" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gppc1.ref.ops.esa.int" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="102" rttvar="908" to="400000"/>
+</host>
+<runstats><finished time="1771448152" timestr="Wed Feb 18 20:55:52 2026" summary="Nmap done at Wed Feb 18 20:55:52 2026; 256 IP addresses (208 hosts up) scanned in 296.66 seconds" elapsed="296.66" exit="success"/><hosts up="208" down="48" total="256"/>
+</runstats>
+</nmaprun>
