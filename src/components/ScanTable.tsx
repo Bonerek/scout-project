@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { NetworkConfig } from "@/lib/configTypes";
 import { Search, Monitor, MonitorOff } from "lucide-react";
 
@@ -23,7 +24,7 @@ function PortBadge({ state, portid, service }: { state: string; portid: string; 
 
 const ScanTable = ({ network, result }: ScanTableProps) => {
   const [filter, setFilter] = useState("");
-
+  const [selectedHost, setSelectedHost] = useState<NmapHost | null>(null);
   const filtered = useMemo(() => {
     if (!filter) return result.hosts;
     const q = filter.toLowerCase();
@@ -113,7 +114,11 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
             </TableHeader>
             <TableBody>
               {filtered.map((host) => (
-                <TableRow key={host.ip}>
+                <TableRow
+                  key={host.ip}
+                  className="cursor-pointer hover:bg-muted/50"
+                  onClick={() => setSelectedHost(host)}
+                >
                   <TableCell className="font-mono text-sm">{host.ip}</TableCell>
                   <TableCell className="text-sm">{host.hostname || "—"}</TableCell>
                   <TableCell className="hidden md:table-cell font-mono text-xs text-muted-foreground">
@@ -151,6 +156,55 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
           </Table>
         </CardContent>
       </Card>
+
+      {/* Host detail dialog */}
+      <Dialog open={!!selectedHost} onOpenChange={(open) => !open && setSelectedHost(null)}>
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle className="font-mono">{selectedHost?.ip}</DialogTitle>
+            <DialogDescription>
+              {selectedHost?.hostname || "No hostname"} — {selectedHost?.vendor || "Unknown vendor"}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-2 text-sm">
+              <div><span className="text-muted-foreground">MAC:</span> <span className="font-mono">{selectedHost?.mac || "—"}</span></div>
+              <div><span className="text-muted-foreground">State:</span> <Badge variant="outline">{selectedHost?.state}</Badge></div>
+              <div><span className="text-muted-foreground">Reason:</span> {selectedHost?.reason || "—"}</div>
+            </div>
+            {selectedHost && selectedHost.ports.length > 0 ? (
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Port</TableHead>
+                    <TableHead>Protocol</TableHead>
+                    <TableHead>State</TableHead>
+                    <TableHead>Service</TableHead>
+                    <TableHead>Reason</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {selectedHost.ports.map((p) => (
+                    <TableRow key={`${p.protocol}-${p.portid}`}>
+                      <TableCell className="font-mono">{p.portid}</TableCell>
+                      <TableCell>{p.protocol}</TableCell>
+                      <TableCell>
+                        <Badge variant={p.state === "open" ? "default" : p.state === "closed" ? "secondary" : "outline"}>
+                          {p.state}
+                        </Badge>
+                      </TableCell>
+                      <TableCell>{p.service || "—"}</TableCell>
+                      <TableCell className="text-muted-foreground text-xs">{p.reason || "—"}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            ) : (
+              <p className="text-sm text-muted-foreground text-center py-4">No port data available for this host.</p>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
