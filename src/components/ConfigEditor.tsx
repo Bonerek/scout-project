@@ -12,6 +12,13 @@ interface ConfigEditorProps {
   onSave: (networks: NetworkConfig[]) => void;
 }
 
+const generateScanFile = (subnet: string, vlan: string): string => {
+  if (!subnet.trim() || !vlan.trim()) return "";
+  const sanitizedSubnet = subnet.replace(/[./]/g, "_");
+  const sanitizedVlan = vlan.replace(/\s+/g, "_");
+  return `/scans/scan_${sanitizedSubnet}_${sanitizedVlan}.xml`;
+};
+
 const emptyNetwork: NetworkConfig = {
   name: "",
   subnet: "",
@@ -33,7 +40,17 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
 
   const updateField = (index: number, field: keyof NetworkConfig, value: string) => {
     setDraft((prev) =>
-      prev.map((n, i) => (i === index ? { ...n, [field]: value } : n))
+      prev.map((n, i) => {
+        if (i !== index) return n;
+        const updated = { ...n, [field]: value };
+        if (field === "subnet" || field === "vlan") {
+          updated.scanFile = generateScanFile(
+            field === "subnet" ? value : n.subnet,
+            field === "vlan" ? value : n.vlan
+          );
+        }
+        return updated;
+      })
     );
   };
 
@@ -124,12 +141,12 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                   />
                 </div>
                 <div className="space-y-1">
-                  <Label htmlFor={`scanFile-${idx}`} className="text-xs">Scan File Path</Label>
+                  <Label htmlFor={`scanFile-${idx}`} className="text-xs">Scan File Path (auto-generated)</Label>
                   <Input
                     id={`scanFile-${idx}`}
                     value={net.scanFile}
-                    onChange={(e) => updateField(idx, "scanFile", e.target.value)}
-                    placeholder="e.g. /scans/scan_10.80.128.0_24.xml"
+                    readOnly
+                    className="bg-muted text-muted-foreground cursor-not-allowed"
                   />
                 </div>
               </div>
