@@ -124,14 +124,14 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         <TooltipTrigger>
                           <span
                             className={`inline-block h-3 w-3 rounded-full ${
-                              host.state === "up"
+                              !host.timedout
                                 ? "bg-green-500"
                                 : "bg-red-500"
                             }`}
                           />
                         </TooltipTrigger>
                         <TooltipContent>
-                          {host.state === "up" ? "Online" : "Offline"}
+                          {!host.timedout ? "Online" : "Offline"}
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
