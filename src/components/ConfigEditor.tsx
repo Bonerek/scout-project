@@ -30,6 +30,10 @@ const validateSubnet = (subnet: string): string | undefined => {
   if (octets.some((o) => o > 255)) return "Each octet must be 0–255.";
   const mask = Number(match[5]);
   if (mask < 0 || mask > 32) return "Mask must be 0–32.";
+  // Verify it's a valid network address (host bits must be zero)
+  const ip = ((octets[0] << 24) | (octets[1] << 16) | (octets[2] << 8) | octets[3]) >>> 0;
+  const netmask = mask === 0 ? 0 : (0xFFFFFFFF << (32 - mask)) >>> 0;
+  if ((ip & netmask) !== ip) return "Not a valid network address (host bits must be zero).";
   return undefined;
 };
 
