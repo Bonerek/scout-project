@@ -18,7 +18,7 @@ interface ValidationErrors {
 
 const validateName = (name: string): string | undefined => {
   if (!name.trim()) return "Name is required.";
-  if (!/^[A-Z0-9-]+$/.test(name)) return "Only uppercase letters, digits and '-' allowed, no spaces.";
+  if (!/^[A-Z0-9&\-_]+$/.test(name)) return "Only uppercase letters, digits, &, - and _ allowed.";
   return undefined;
 };
 
