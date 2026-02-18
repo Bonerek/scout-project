@@ -90,7 +90,7 @@ const NetworkTabs = () => {
           <TabsList className="w-full flex-wrap h-auto gap-1 justify-start bg-card">
             {networks.map((net) => (
               <TabsTrigger key={net.subnet} value={net.subnet} className="text-xs md:text-sm">
-                {net.name} — {net.subnet}
+                {net.name}
               </TabsTrigger>
             ))}
           </TabsList>
