@@ -13,12 +13,23 @@ interface ConfigEditorProps {
 }
 
 interface ValidationErrors {
-  [key: string]: { name?: string; vlan?: string };
+  [key: string]: { name?: string; subnet?: string; vlan?: string };
 }
 
 const validateName = (name: string): string | undefined => {
   if (!name.trim()) return "Name is required.";
   if (!/^[A-Z0-9&\-_]+$/.test(name)) return "Only uppercase letters, digits, &, - and _ allowed.";
+  return undefined;
+};
+
+const validateSubnet = (subnet: string): string | undefined => {
+  if (!subnet.trim()) return "Subnet is required.";
+  const match = subnet.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\/(\d{1,2})$/);
+  if (!match) return "Must be in CIDR format (e.g. 10.80.128.0/24).";
+  const octets = [match[1], match[2], match[3], match[4]].map(Number);
+  if (octets.some((o) => o > 255)) return "Each octet must be 0–255.";
+  const mask = Number(match[5]);
+  if (mask < 0 || mask > 32) return "Mask must be 0–32.";
   return undefined;
 };
 
@@ -71,7 +82,7 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
       })
     );
     // Clear field error on change
-    if (field === "name" || field === "vlan") {
+    if (field === "name" || field === "vlan" || field === "subnet") {
       setErrors((prev) => {
         const copy = { ...prev };
         if (copy[index]) {
@@ -96,14 +107,13 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
 
     draft.forEach((n, idx) => {
       const nameErr = validateName(n.name);
+      const subnetErr = validateSubnet(n.subnet);
       const vlanErr = validateVlan(n.vlan);
-      if (nameErr || vlanErr || !n.subnet.trim()) {
+      if (nameErr || subnetErr || vlanErr) {
         hasError = true;
-        newErrors[idx] = { name: nameErr, vlan: vlanErr };
+        newErrors[idx] = { name: nameErr, subnet: subnetErr, vlan: vlanErr };
       }
     });
-
-    if (draft.some((n) => !n.subnet.trim())) hasError = true;
 
     if (hasError) {
       setErrors(newErrors);
@@ -175,6 +185,9 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                     onChange={(e) => updateField(idx, "subnet", e.target.value)}
                     placeholder="e.g. 10.80.128.0/24"
                   />
+                  {errors[idx]?.subnet && (
+                    <p className="text-xs text-destructive">{errors[idx].subnet}</p>
+                  )}
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor={`vlan-${idx}`} className="text-xs">VLAN (1–1001)</Label>
