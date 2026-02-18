@@ -13,6 +13,7 @@ export interface NmapHost {
   hostname: string;
   state: string;
   reason: string;
+  timedout: boolean;
   ports: NmapPort[];
 }
 
@@ -80,6 +81,7 @@ export function parseNmapXml(xmlText: string): NmapResult {
       hostname: hostnameEl?.getAttribute("name") || "",
       state: status?.getAttribute("state") || "",
       reason: status?.getAttribute("reason") || "",
+      timedout: hostEl.getAttribute("timedout") === "true",
       ports,
     });
   });
