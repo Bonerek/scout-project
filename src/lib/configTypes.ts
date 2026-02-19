@@ -12,6 +12,7 @@ export interface GeneralConfig {
   ntp1: string;
   ntp2: string;
   ntp3: string;
+  refreshInterval: number; // in seconds, 0 = disabled
 }
 
 export interface AppConfig {

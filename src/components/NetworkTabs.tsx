@@ -9,7 +9,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 const CONFIG_KEY = "scout_config";
 const NETWORKS_KEY = "scout_networks";
-const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "" };
+const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "", refreshInterval: 0 };
 
 const NetworkTabs = () => {
   const [networks, setNetworks] = useState<NetworkConfig[]>([]);
@@ -119,6 +119,15 @@ const NetworkTabs = () => {
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [loadScans]);
+
+  // Auto-refresh
+  useEffect(() => {
+    if (!general.refreshInterval || general.refreshInterval <= 0 || networks.length === 0) return;
+    const id = setInterval(() => {
+      loadScans(networks);
+    }, general.refreshInterval * 1000);
+    return () => clearInterval(id);
+  }, [general.refreshInterval, networks, loadScans]);
 
   const handleSaveConfig = (updatedNetworks: NetworkConfig[], updatedGeneral: GeneralConfig) => {
     localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: updatedGeneral }));
