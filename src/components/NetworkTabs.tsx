@@ -48,6 +48,7 @@ const NetworkTabs = () => {
         // Migrate .xml to .json
         const migrated = nets.map((n) => ({
           ...n,
+          gateway: n.gateway || "",
           scanFile: n.scanFile.replace(/\.xml$/, ".json"),
         }));
         localStorage.setItem(CONFIG_KEY, JSON.stringify(migrated));
@@ -103,8 +104,9 @@ const NetworkTabs = () => {
 
           {networks.map((net) => (
             <TabsContent key={net.subnet} value={net.subnet}>
-              <div className="mb-2 text-sm text-muted-foreground">
-                VLAN: <span className="font-medium text-foreground">{net.vlan}</span>
+              <div className="mb-2 text-sm text-muted-foreground flex gap-4">
+                <span>VLAN: <span className="font-medium text-foreground">{net.vlan}</span></span>
+                {net.gateway && <span>Gateway: <span className="font-medium text-foreground">{net.gateway}</span></span>}
               </div>
               {errors[net.subnet] ? (
                 <div className="p-12 text-center text-muted-foreground">

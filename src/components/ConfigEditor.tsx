@@ -14,8 +14,30 @@ interface ConfigEditorProps {
 }
 
 interface ValidationErrors {
-  [key: string]: { name?: string; subnet?: string; vlan?: string };
+  [key: string]: { name?: string; subnet?: string; vlan?: string; gateway?: string };
 }
+
+const validateGateway = (gateway: string, subnet: string): string | undefined => {
+  if (!gateway.trim()) return undefined; // optional
+  const gwMatch = gateway.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/);
+  if (!gwMatch) return "Must be a valid IP address.";
+  const gwOctets = [gwMatch[1], gwMatch[2], gwMatch[3], gwMatch[4]].map(Number);
+  if (gwOctets.some((o) => o > 255)) return "Each octet must be 0–255.";
+
+  // Check if gateway is within subnet range
+  const subMatch = subnet.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\/(\d{1,2})$/);
+  if (!subMatch) return undefined; // can't validate without valid subnet
+  const subOctets = [subMatch[1], subMatch[2], subMatch[3], subMatch[4]].map(Number);
+  const mask = Number(subMatch[5]);
+  const netIp = ((subOctets[0] << 24) | (subOctets[1] << 16) | (subOctets[2] << 8) | subOctets[3]) >>> 0;
+  const netmask = mask === 0 ? 0 : (0xFFFFFFFF << (32 - mask)) >>> 0;
+  const gwIp = ((gwOctets[0] << 24) | (gwOctets[1] << 16) | (gwOctets[2] << 8) | gwOctets[3]) >>> 0;
+  if ((gwIp & netmask) !== (netIp & netmask)) return "Gateway must be within the subnet range.";
+  if (gwIp === netIp) return "Gateway cannot be the network address.";
+  const broadcast = (netIp | ~netmask) >>> 0;
+  if (gwIp === broadcast) return "Gateway cannot be the broadcast address.";
+  return undefined;
+};
 
 const validateName = (name: string): string | undefined => {
   if (!name.trim()) return "Name is required.";
@@ -55,6 +77,7 @@ const emptyNetwork: NetworkConfig = {
   name: "",
   subnet: "",
   vlan: "",
+  gateway: "",
   scanFile: "",
 };
 
@@ -87,7 +110,7 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
       })
     );
     // Clear field error on change
-    if (field === "name" || field === "vlan" || field === "subnet") {
+    if (field === "name" || field === "vlan" || field === "subnet" || field === "gateway") {
       setErrors((prev) => {
         const copy = { ...prev };
         if (copy[index]) {
@@ -114,9 +137,10 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
       const nameErr = validateName(n.name);
       const subnetErr = validateSubnet(n.subnet);
       const vlanErr = validateVlan(n.vlan);
-      if (nameErr || subnetErr || vlanErr) {
+      const gatewayErr = n.gateway ? validateGateway(n.gateway, n.subnet) : undefined;
+      if (nameErr || subnetErr || vlanErr || gatewayErr) {
         hasError = true;
-        newErrors[idx] = { name: nameErr, subnet: subnetErr, vlan: vlanErr };
+        newErrors[idx] = { name: nameErr, subnet: subnetErr, vlan: vlanErr, gateway: gatewayErr };
       }
     });
 
@@ -222,6 +246,18 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                   />
                   {errors[idx]?.vlan && (
                     <p className="text-xs text-destructive">{errors[idx].vlan}</p>
+                  )}
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor={`gateway-${idx}`} className="text-xs">Default Gateway</Label>
+                  <Input
+                    id={`gateway-${idx}`}
+                    value={net.gateway}
+                    onChange={(e) => updateField(idx, "gateway", e.target.value)}
+                    placeholder="e.g. 10.80.128.1"
+                  />
+                  {errors[idx]?.gateway && (
+                    <p className="text-xs text-destructive">{errors[idx].gateway}</p>
                   )}
                 </div>
                 <div className="space-y-1">
