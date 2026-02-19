@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import tuxLogo from "@/assets/tux-linux.png";
+import tuxLogo from "@/assets/tux-linux.svg";
 import { ScanHost, ScanResult } from "@/lib/scanParser";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
