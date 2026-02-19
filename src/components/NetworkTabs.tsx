@@ -44,6 +44,23 @@ const NetworkTabs = () => {
   }, []);
 
   useEffect(() => {
+    // Migrate old localStorage keys to new unified format
+    const oldNetworks = localStorage.getItem("scout_network_config");
+    const oldGeneral = localStorage.getItem("scout_general_config");
+    if (oldNetworks && !localStorage.getItem(CONFIG_KEY)) {
+      try {
+        const nets: NetworkConfig[] = JSON.parse(oldNetworks);
+        let gen = defaultGeneral;
+        if (oldGeneral) {
+          try { gen = { ...defaultGeneral, ...JSON.parse(oldGeneral) }; } catch { /* ignore */ }
+        }
+        const cfg: AppConfig = { general: gen, networks: nets };
+        localStorage.setItem(CONFIG_KEY, JSON.stringify(cfg));
+        localStorage.removeItem("scout_network_config");
+        localStorage.removeItem("scout_general_config");
+      } catch { /* ignore */ }
+    }
+
     const stored = localStorage.getItem(CONFIG_KEY);
     if (stored) {
       try {
