@@ -251,6 +251,8 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                   OS <SortIcon field="os" />
                 </TableHead>
                 
+                <TableHead className="hidden lg:table-cell">NetBIOS Name</TableHead>
+                <TableHead className="hidden lg:table-cell">NetBIOS Group</TableHead>
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
                 <TableHead>Ports</TableHead>
               </TableRow>
@@ -300,6 +302,12 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                   <TableCell className="hidden md:table-cell text-lg text-muted-foreground">
                     {host.os || "—"}
                   </TableCell>
+                  <TableCell className="hidden lg:table-cell text-lg">
+                    {host.netbiosName || "—"}
+                  </TableCell>
+                  <TableCell className="hidden lg:table-cell text-lg">
+                    {host.netbiosGroup || "—"}
+                  </TableCell>
                   <TableCell className="hidden md:table-cell">
                     {host.roles && host.roles.length > 0 ? (
                       <div className="flex flex-wrap gap-1">
@@ -330,7 +338,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
               ))}
               {filtered.length === 0 && (
                 <TableRow>
-                  <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
+                  <TableCell colSpan={8} className="text-center py-8 text-muted-foreground">
                     No hosts match the filter.
                   </TableCell>
                 </TableRow>
