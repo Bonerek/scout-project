@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
+import { createPortal } from "react-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
@@ -137,17 +138,29 @@ const NetworkTabs = () => {
     loadScans(updatedNetworks);
   };
 
+  const portalTarget = document.getElementById("config-button-portal");
+  const configPortal = portalTarget
+    ? createPortal(
+        <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />,
+        portalTarget
+      )
+    : null;
+
   if (loading) {
     return (
-      <div className="space-y-4 p-6">
-        <Skeleton className="h-10 w-full max-w-md" />
-        <Skeleton className="h-[400px] w-full" />
-      </div>
+      <>
+        {configPortal}
+        <div className="space-y-4 p-6">
+          <Skeleton className="h-10 w-full max-w-md" />
+          <Skeleton className="h-[400px] w-full" />
+        </div>
+      </>
     );
   }
 
   return (
     <div className="space-y-2">
+      {configPortal}
 
       {networks.length === 0 ? (
         <div className="p-6 text-center text-muted-foreground">
@@ -155,16 +168,13 @@ const NetworkTabs = () => {
         </div>
       ) : (
         <Tabs defaultValue={networks[0].subnet} className="w-full">
-          <div className="flex flex-wrap items-center gap-1">
-            <TabsList className="flex-wrap h-auto gap-1 justify-start bg-card p-1 flex-1">
-              {networks.map((net) => (
-                <TabsTrigger key={net.subnet} value={net.subnet} className="text-sm md:text-base font-semibold px-4 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md">
-                  {net.name}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-            <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />
-          </div>
+          <TabsList className="w-full flex-wrap h-auto gap-1 justify-start bg-card p-1">
+            {networks.map((net) => (
+              <TabsTrigger key={net.subnet} value={net.subnet} className="text-sm md:text-base font-semibold px-4 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md">
+                {net.name}
+              </TabsTrigger>
+            ))}
+          </TabsList>
 
           {networks.map((net) => (
             <TabsContent key={net.subnet} value={net.subnet} className="space-y-4">
