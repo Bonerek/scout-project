@@ -248,7 +248,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableHead className="w-[120px] text-center cursor-pointer select-none whitespace-nowrap" onClick={() => toggleSort("status")}>
                   Status <SortIcon field="status" />
                 </TableHead>
-                <TableHead className="hidden md:table-cell w-[50px] text-center cursor-pointer select-none" onClick={() => toggleSort("os")}>
+                <TableHead className="hidden md:table-cell w-[80px] text-center cursor-pointer select-none whitespace-nowrap" onClick={() => toggleSort("os")}>
                   OS <SortIcon field="os" />
                 </TableHead>
                 
