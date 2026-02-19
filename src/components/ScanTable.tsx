@@ -264,7 +264,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
               {filtered.map((host) => (
                 <TableRow key={host.ip}>
                   <TableCell className="font-mono text-lg">{host.ip}</TableCell>
-                  <TableCell className="text-lg">{host.hostname || "—"}</TableCell>
+                  <TableCell className="text-lg">{host.hostname || ""}</TableCell>
                   <TableCell className="text-center">
                     {(() => {
                       const isOnline = host.status === "online";
@@ -319,7 +319,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         </Tooltip>
                       </TooltipProvider>
                     ) : (
-                      <span className="text-muted-foreground">—</span>
+                      null
                     )}
                   </TableCell>
                   <TableCell className="hidden lg:table-cell text-center">
@@ -333,7 +333,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         </Tooltip>
                       </TooltipProvider>
                     ) : (
-                      <span className="text-muted-foreground">—</span>
+                      null
                     )}
                   </TableCell>
                   <TableCell className="hidden lg:table-cell text-center">
@@ -347,7 +347,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         </Tooltip>
                       </TooltipProvider>
                     ) : (
-                      <span className="text-muted-foreground">—</span>
+                      null
                     )}
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
@@ -360,7 +360,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         ))}
                       </div>
                     ) : (
-                      <span className="text-xs text-muted-foreground">—</span>
+                      null
                     )}
                   </TableCell>
                   <TableCell>
@@ -373,7 +373,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                           ))}
                       </div>
                     ) : (
-                      <span className="text-xs text-muted-foreground">—</span>
+                      null
                     )}
                   </TableCell>
                 </TableRow>
