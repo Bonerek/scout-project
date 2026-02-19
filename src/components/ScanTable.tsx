@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
 import { NetworkConfig } from "@/lib/configTypes";
-import { Search, Monitor, MonitorOff, ArrowUp, ArrowDown, ArrowUpDown, Cable } from "lucide-react";
+import { Search, Monitor, MonitorOff, ArrowUp, ArrowDown, ArrowUpDown, Cable, MonitorSmartphone } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
@@ -247,7 +247,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableHead className="w-[120px] text-center cursor-pointer select-none whitespace-nowrap" onClick={() => toggleSort("status")}>
                   Status <SortIcon field="status" />
                 </TableHead>
-                <TableHead className="hidden md:table-cell cursor-pointer select-none" onClick={() => toggleSort("os")}>
+                <TableHead className="hidden md:table-cell w-[50px] text-center cursor-pointer select-none" onClick={() => toggleSort("os")}>
                   OS <SortIcon field="os" />
                 </TableHead>
                 
@@ -300,8 +300,25 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       );
                     })()}
                   </TableCell>
-                  <TableCell className="hidden md:table-cell text-lg text-muted-foreground">
-                    {host.os || "—"}
+                  <TableCell className="hidden md:table-cell text-center">
+                    {host.os ? (
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger>
+                            {host.os.toLowerCase().includes("windows") ? (
+                              <svg className="inline-block h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.5l8-1.1V12H3zm9-6.8L22 3.5V12H12V5.2zM12 13h10v8.5l-10-1.3V13zM3 13h8v6.6l-8-1.1V13z"/></svg>
+                            ) : host.os.toLowerCase().includes("linux") ? (
+                              <svg className="inline-block h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2c-1.6 0-2.9 1.3-3.1 3-.1.5 0 1 .1 1.5-.6.5-1 1.1-1.3 1.8-.5 1.1-.7 2.4-.7 3.7 0 1 .1 2 .4 2.8-.8.5-1.4 1.1-1.8 1.7-.6.9-.8 1.9-.4 2.7.3.6.9 1 1.6 1.1.6.1 1.3 0 2-.3.3.5.8.8 1.3 1 .7.3 1.5.4 2.2.4s1.5-.1 2.2-.4c.5-.2 1-.5 1.3-1 .7.3 1.4.4 2 .3.7-.1 1.3-.5 1.6-1.1.4-.8.2-1.8-.4-2.7-.4-.6-1-1.2-1.8-1.7.3-.8.4-1.8.4-2.8 0-1.3-.2-2.6-.7-3.7-.3-.7-.7-1.3-1.3-1.8.1-.5.2-1 .1-1.5-.2-1.7-1.5-3-3.1-3zm0 1.5c.8 0 1.4.7 1.5 1.5 0 .3 0 .5-.1.8-.4-.2-.9-.3-1.4-.3s-1 .1-1.4.3c-.1-.3-.1-.5-.1-.8.1-.8.7-1.5 1.5-1.5z"/></svg>
+                            ) : (
+                              <MonitorSmartphone className="inline-block h-5 w-5" />
+                            )}
+                          </TooltipTrigger>
+                          <TooltipContent>{host.os}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    ) : (
+                      <span className="text-muted-foreground">—</span>
+                    )}
                   </TableCell>
                   <TableCell className="hidden lg:table-cell text-center">
                     {host.mac ? (
