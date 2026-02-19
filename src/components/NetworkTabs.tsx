@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
+import { createPortal } from "react-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
@@ -146,11 +147,14 @@ const NetworkTabs = () => {
     );
   }
 
+  const portalTarget = document.getElementById("config-button-portal");
+
   return (
     <div className="space-y-2">
-      <div className="flex justify-end">
-        <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />
-      </div>
+      {portalTarget && createPortal(
+        <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />,
+        portalTarget
+      )}
 
       {networks.length === 0 ? (
         <div className="p-6 text-center text-muted-foreground">
