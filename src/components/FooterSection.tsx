@@ -10,7 +10,7 @@ const FooterSection = () => {
             <span className="font-serif font-semibold text-foreground">Scout</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2026 Scout. Navigate the unknown.
+            © 2026 Roman Sevcik. All rights reserved.
           </p>
         </div>
       </div>
