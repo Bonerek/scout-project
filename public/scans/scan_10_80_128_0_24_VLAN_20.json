@@ -1,6 +1,6 @@
 {
   "subnet": "10.80.128.0/24",
-  "status": "Scan done at Thu Feb 19 10:57:24 2026; scanned in 13.27 seconds",
+  "status": "Scan done at Thu Feb 19 12:31:23 2026; scanned in 3.66 seconds",
   "results": [
     {
       "ip": "10.80.128.1",
@@ -9,8 +9,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -129,8 +127,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -246,11 +242,9 @@
       "ip": "10.80.128.3",
       "ptr": "pss1-test.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -366,14 +360,12 @@
       "ip": "10.80.128.4",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -492,8 +484,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -609,13 +599,11 @@
       "ip": "10.80.128.6",
       "ptr": "fec-console-rhel9.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?"
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -731,14 +719,12 @@
       "ip": "10.80.128.7",
       "ptr": "hrdfep1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?",
-        "vnc?"
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -854,15 +840,13 @@
       "ip": "10.80.128.8",
       "ptr": "cortex1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "vnc?",
-        "rdp?"
+        "file-server",
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -978,13 +962,11 @@
       "ip": "10.80.128.9",
       "ptr": "nuron1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "rdp?"
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1100,13 +1082,11 @@
       "ip": "10.80.128.10",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1225,8 +1205,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1345,8 +1323,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1462,14 +1438,12 @@
       "ip": "10.80.128.13",
       "ptr": "gppc2.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "nfs?",
-        "rdp?"
+        "nfs",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1585,13 +1559,11 @@
       "ip": "10.80.128.14",
       "ptr": "gppc3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1707,14 +1679,12 @@
       "ip": "10.80.128.15",
       "ptr": "gppc1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "nfs?",
-        "rdp?"
+        "nfs",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1833,8 +1803,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1950,11 +1918,9 @@
       "ip": "10.80.128.17",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -2070,15 +2036,13 @@
       "ip": "10.80.128.18",
       "ptr": "gstvi1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "mysql?",
-        "vnc?"
+        "ftp",
+        "mysql",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2194,13 +2158,11 @@
       "ip": "10.80.128.19",
       "ptr": "tmtcs1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -2316,14 +2278,12 @@
       "ip": "10.80.128.20",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2439,14 +2399,12 @@
       "ip": "10.80.128.21",
       "ptr": "cortex3.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -2565,8 +2523,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -2682,18 +2638,16 @@
       "ip": "10.80.128.23",
       "ptr": "gsds5.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "directory?",
-        "nfs?",
-        "ftp?",
-        "mysql?",
-        "web?",
-        "vnc?"
+        "directory-service",
+        "nfs",
+        "ftp",
+        "mysql",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2809,14 +2763,12 @@
       "ip": "10.80.128.24",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2932,15 +2884,13 @@
       "ip": "10.80.128.25",
       "ptr": "timedis1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "dns?",
-        "ftp?",
-        "web?"
+        "dns",
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -3059,8 +3009,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -3176,16 +3124,14 @@
       "ip": "10.80.128.27",
       "ptr": "specan1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "nfs?",
-        "web?",
-        "rdp?"
+        "nas",
+        "nfs",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -3301,13 +3247,11 @@
       "ip": "10.80.128.28",
       "ptr": "matlab.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3423,16 +3367,14 @@
       "ip": "10.80.128.29",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "mysql?",
-        "vmware?",
-        "vnc?"
+        "ftp",
+        "mysql",
+        "vmware",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -3551,8 +3493,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -3668,13 +3608,11 @@
       "ip": "10.80.128.31",
       "ptr": "sfsa-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3790,14 +3728,12 @@
       "ip": "10.80.128.32",
       "ptr": "sfsb-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?",
-        "vnc?"
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3913,13 +3849,11 @@
       "ip": "10.80.128.33",
       "ptr": "sfca-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4035,11 +3969,9 @@
       "ip": "10.80.128.34",
       "ptr": "sfcb-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4155,14 +4087,12 @@
       "ip": "10.80.128.35",
       "ptr": "gsmca.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "postgres?",
-        "web?"
+        "postgres",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4278,14 +4208,12 @@
       "ip": "10.80.128.36",
       "ptr": "stca.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -4401,14 +4329,12 @@
       "ip": "10.80.128.37",
       "ptr": "stcb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -4524,15 +4450,13 @@
       "ip": "10.80.128.38",
       "ptr": "sce266.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -4651,8 +4575,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -4768,11 +4690,9 @@
       "ip": "10.80.128.40",
       "ptr": "csmc-sim00.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4888,14 +4808,12 @@
       "ip": "10.80.128.41",
       "ptr": "csmc-sim01.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?",
-        "vnc?"
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -5011,17 +4929,15 @@
       "ip": "10.80.128.42",
       "ptr": "csmc-sim02.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "ftp?",
-        "mssql?",
-        "web?",
-        "rdp?"
+        "nas",
+        "ftp",
+        "mssql",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5136,14 +5052,10 @@
     {
       "ip": "10.80.128.43",
       "ptr": "csmc-sim03.ref.ops.esa.int",
-      "status": "online",
-      "os": "windows?",
-      "roles": [
-        "rdp?"
-      ],
-      "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
+      "status": "offline",
+      "os": "",
+      "roles": [],
+      "confidence": 0,
       "ports": {
         "21": {
           "state": "filtered",
@@ -5234,8 +5146,8 @@
           "reason": "timeout"
         },
         "3389": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5900": {
           "state": "filtered",
@@ -5259,15 +5171,13 @@
       "ip": "10.80.128.44",
       "ptr": "csmc-sim04.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5383,15 +5293,13 @@
       "ip": "10.80.128.45",
       "ptr": "csmc-sim05.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5507,14 +5415,12 @@
       "ip": "10.80.128.46",
       "ptr": "esu3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5630,15 +5536,13 @@
       "ip": "10.80.128.47",
       "ptr": "onigstvi-t2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "mysql?",
-        "vnc?"
+        "ftp",
+        "mysql",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5757,8 +5661,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -5874,14 +5776,12 @@
       "ip": "10.80.128.49",
       "ptr": "esxi2-sfs.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vmware?",
-        "web?"
+        "vmware",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -5997,11 +5897,9 @@
       "ip": "10.80.128.50",
       "ptr": "gsmc-dev.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -6120,8 +6018,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -6237,14 +6133,12 @@
       "ip": "10.80.128.52",
       "ptr": "ism-20.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -6360,15 +6254,13 @@
       "ip": "10.80.128.53",
       "ptr": "tmtcs1-dev.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -6484,13 +6376,11 @@
       "ip": "10.80.128.54",
       "ptr": "tmtcs2-dev.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?"
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -6606,14 +6496,12 @@
       "ip": "10.80.128.55",
       "ptr": "gsmcb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "postgres?",
-        "web?"
+        "postgres",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -6729,14 +6617,12 @@
       "ip": "10.80.128.56",
       "ptr": "tmtcs1-dev-kvm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?",
-        "vnc?"
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -6855,8 +6741,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -6975,8 +6859,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -7092,13 +6974,11 @@
       "ip": "10.80.128.59",
       "ptr": "gsmcc.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7214,11 +7094,9 @@
       "ip": "10.80.128.60",
       "ptr": "gsmcd.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7337,8 +7215,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -7454,14 +7330,12 @@
       "ip": "10.80.128.62",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -7577,14 +7451,12 @@
       "ip": "10.80.128.63",
       "ptr": "sfcb-test-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -7700,14 +7572,12 @@
       "ip": "10.80.128.64",
       "ptr": "sfsa-test-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -7823,13 +7693,11 @@
       "ip": "10.80.128.65",
       "ptr": "gsds14.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7945,13 +7813,11 @@
       "ip": "10.80.128.66",
       "ptr": "gsds15.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8067,14 +7933,12 @@
       "ip": "10.80.128.67",
       "ptr": "sfsb-test-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -8193,8 +8057,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8257,8 +8119,8 @@
           "reason": "refused"
         },
         "445": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "902": {
           "state": "filtered",
@@ -8289,20 +8151,20 @@
           "reason": "timeout"
         },
         "5900": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5901": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5985": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5986": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         }
       }
     },
@@ -8310,14 +8172,12 @@
       "ip": "10.80.128.69",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -8433,14 +8293,12 @@
       "ip": "10.80.128.70",
       "ptr": "imbu3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -8559,8 +8417,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8676,13 +8532,11 @@
       "ip": "10.80.128.72",
       "ptr": "gsmce.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "postgres?"
+        "postgres"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8801,8 +8655,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8921,8 +8773,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9041,8 +8891,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -9158,14 +9006,12 @@
       "ip": "10.80.128.76",
       "ptr": "winvm2.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9281,14 +9127,12 @@
       "ip": "10.80.128.77",
       "ptr": "winvm4.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9407,8 +9251,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9527,8 +9369,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9644,14 +9484,12 @@
       "ip": "10.80.128.80",
       "ptr": "printserver.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -9767,14 +9605,12 @@
       "ip": "10.80.128.81",
       "ptr": "fec-vm01.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "vnc?"
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -9890,15 +9726,13 @@
       "ip": "10.80.128.82",
       "ptr": "fec-vm02.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10014,14 +9848,12 @@
       "ip": "10.80.128.83",
       "ptr": "fec-vm03.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "vnc?"
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10137,15 +9969,13 @@
       "ip": "10.80.128.84",
       "ptr": "fec-vm04.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10261,15 +10091,13 @@
       "ip": "10.80.128.85",
       "ptr": "fec-vm05.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10387,14 +10215,12 @@
       "status": "online",
       "os": "",
       "roles": [
-        "smb?",
-        "ftp?",
-        "web?",
-        "vnc?"
+        "nas",
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10510,14 +10336,12 @@
       "ip": "10.80.128.87",
       "ptr": "fec-console.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "vnc?"
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10633,11 +10457,9 @@
       "ip": "10.80.128.88",
       "ptr": "spacesim.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -10753,16 +10575,14 @@
       "ip": "10.80.128.89",
       "ptr": "syscon1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "web?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10878,17 +10698,15 @@
       "ip": "10.80.128.90",
       "ptr": "icdb.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "dns?",
-        "smb?",
-        "ftp?",
-        "web?",
-        "rdp?"
+        "dns",
+        "nas",
+        "ftp",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -11004,13 +10822,11 @@
       "ip": "10.80.128.91",
       "ptr": "gsds16.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11129,8 +10945,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11249,8 +11063,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11366,13 +11178,11 @@
       "ip": "10.80.128.94",
       "ptr": "esxi1-kvm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11488,13 +11298,11 @@
       "ip": "10.80.128.95",
       "ptr": "gsds17.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?"
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11610,15 +11418,13 @@
       "ip": "10.80.128.96",
       "ptr": "gspc1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "web?",
-        "rdp?"
+        "file-server",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11734,15 +11540,13 @@
       "ip": "10.80.128.97",
       "ptr": "gspc2.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "web?",
-        "rdp?"
+        "file-server",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11858,13 +11662,11 @@
       "ip": "10.80.128.98",
       "ptr": "lmsea.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "mysql?"
+        "mysql"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11980,13 +11782,11 @@
       "ip": "10.80.128.99",
       "ptr": "lmseb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -12105,8 +11905,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12222,14 +12020,12 @@
       "ip": "10.80.128.101",
       "ptr": "gspc3.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "web?",
-        "rdp?"
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12345,15 +12141,13 @@
       "ip": "10.80.128.102",
       "ptr": "gspc4.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "web?",
-        "rdp?"
+        "file-server",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12469,16 +12263,14 @@
       "ip": "10.80.128.103",
       "ptr": "nis2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "mysql?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "mysql",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -12594,14 +12386,12 @@
       "ip": "10.80.128.104",
       "ptr": "linvm1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "nfs?",
-        "rdp?"
+        "nfs",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -12717,13 +12507,11 @@
       "ip": "10.80.128.105",
       "ptr": "ospms-lc1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "rdp?"
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -12842,8 +12630,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12959,15 +12745,13 @@
       "ip": "10.80.128.107",
       "ptr": "gspc5.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "web?",
-        "rdp?"
+        "file-server",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13083,15 +12867,13 @@
       "ip": "10.80.128.108",
       "ptr": "gspc6.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "web?",
-        "rdp?"
+        "file-server",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13207,14 +12989,12 @@
       "ip": "10.80.128.109",
       "ptr": "sftr1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "vnc?"
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -13330,14 +13110,12 @@
       "ip": "10.80.128.110",
       "ptr": "sftr2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "vnc?"
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -13453,11 +13231,9 @@
       "ip": "10.80.128.111",
       "ptr": "gsmcf.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -13575,12 +13351,10 @@
       "status": "online",
       "os": "",
       "roles": [
-        "vmware?",
-        "web?"
+        "vmware",
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13696,14 +13470,12 @@
       "ip": "10.80.128.113",
       "ptr": "winserver1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13819,11 +13591,9 @@
       "ip": "10.80.128.114",
       "ptr": "gsmcg.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -13939,13 +13709,11 @@
       "ip": "10.80.128.115",
       "ptr": "fec-tcs.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14061,14 +13829,12 @@
       "ip": "10.80.128.116",
       "ptr": "winvm1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -14184,13 +13950,11 @@
       "ip": "10.80.128.117",
       "ptr": "sonic1-kvm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14306,13 +14070,11 @@
       "ip": "10.80.128.118",
       "ptr": "sonic2-kvm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14428,14 +14190,12 @@
       "ip": "10.80.128.119",
       "ptr": "winvm3.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -14551,13 +14311,11 @@
       "ip": "10.80.128.120",
       "ptr": "stc-s7-mnt.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -14673,13 +14431,11 @@
       "ip": "10.80.128.121",
       "ptr": "stc-s7.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?"
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14795,14 +14551,12 @@
       "ip": "10.80.128.122",
       "ptr": "pss1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "ftp?",
-        "rdp?"
+        "ftp",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -14918,14 +14672,12 @@
       "ip": "10.80.128.123",
       "ptr": "tmtcs2.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "nfs?",
-        "rdp?"
+        "nfs",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -15044,8 +14796,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15161,11 +14911,9 @@
       "ip": "10.80.128.125",
       "ptr": "gsmch.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -15284,8 +15032,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15404,16 +15150,14 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
           "reason": "refused"
         },
         "22": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "23": {
           "state": "closed",
@@ -15512,8 +15256,8 @@
           "reason": "refused"
         },
         "5986": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         }
       }
     },
@@ -15524,8 +15268,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15644,8 +15386,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15761,13 +15501,11 @@
       "ip": "10.80.128.130",
       "ptr": "lmsa.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "mysql?"
+        "mysql"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -15883,13 +15621,11 @@
       "ip": "10.80.128.131",
       "ptr": "rlas1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?"
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -16008,8 +15744,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16125,13 +15859,11 @@
       "ip": "10.80.128.133",
       "ptr": "lmsb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "mysql?"
+        "mysql"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -16247,16 +15979,14 @@
       "ip": "10.80.128.134",
       "ptr": "gstvi-dev.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "mysql?",
-        "vmware?",
-        "vnc?"
+        "ftp",
+        "mysql",
+        "vmware",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -16372,13 +16102,11 @@
       "ip": "10.80.128.135",
       "ptr": "dhcp-10-80-128-135.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16494,13 +16222,11 @@
       "ip": "10.80.128.136",
       "ptr": "dhcp-10-80-128-136.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16616,13 +16342,11 @@
       "ip": "10.80.128.137",
       "ptr": "dhcp-10-80-128-137.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16738,13 +16462,11 @@
       "ip": "10.80.128.138",
       "ptr": "dhcp-10-80-128-138.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16860,13 +16582,11 @@
       "ip": "10.80.128.139",
       "ptr": "dhcp-10-80-128-139.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16982,13 +16702,11 @@
       "ip": "10.80.128.140",
       "ptr": "dhcp-10-80-128-140.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17104,13 +16822,11 @@
       "ip": "10.80.128.141",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17226,13 +16942,11 @@
       "ip": "10.80.128.142",
       "ptr": "fec-vm04-copy.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17351,8 +17065,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17468,13 +17180,11 @@
       "ip": "10.80.128.144",
       "ptr": "dhcp-10-80-128-144.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17590,13 +17300,11 @@
       "ip": "10.80.128.145",
       "ptr": "dhcp-10-80-128-145.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17712,15 +17420,13 @@
       "ip": "10.80.128.146",
       "ptr": "fec-rhel9-dev.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -17836,15 +17542,13 @@
       "ip": "10.80.128.147",
       "ptr": "fec-rhel9.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -17960,15 +17664,13 @@
       "ip": "10.80.128.148",
       "ptr": "fec-vm06.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -18084,15 +17786,13 @@
       "ip": "10.80.128.149",
       "ptr": "fec-vm07.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -18208,14 +17908,12 @@
       "ip": "10.80.128.150",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "web?"
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18331,14 +18029,12 @@
       "ip": "10.80.128.151",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "web?"
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18454,14 +18150,12 @@
       "ip": "10.80.128.152",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "web?"
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18577,13 +18271,11 @@
       "ip": "10.80.128.153",
       "ptr": "webspan1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18699,13 +18391,11 @@
       "ip": "10.80.128.154",
       "ptr": "webspan2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18821,13 +18511,11 @@
       "ip": "10.80.128.155",
       "ptr": "s7-stc2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?"
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18943,13 +18631,11 @@
       "ip": "10.80.128.156",
       "ptr": "s7-stc2-mnt.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -19065,14 +18751,12 @@
       "ip": "10.80.128.157",
       "ptr": "stc2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19188,14 +18872,12 @@
       "ip": "10.80.128.158",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "smb?",
-        "web?"
+        "file-server",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -19314,8 +18996,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -19431,13 +19111,11 @@
       "ip": "10.80.128.160",
       "ptr": "gsmci.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -19553,13 +19231,11 @@
       "ip": "10.80.128.161",
       "ptr": "gsmcj.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "postgres?"
+        "postgres"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -19675,13 +19351,11 @@
       "ip": "10.80.128.162",
       "ptr": "spanserver1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?"
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19797,13 +19471,11 @@
       "ip": "10.80.128.163",
       "ptr": "spanserver2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?"
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19919,15 +19591,13 @@
       "ip": "10.80.128.164",
       "ptr": "ttcp07.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -20043,15 +19713,13 @@
       "ip": "10.80.128.165",
       "ptr": "ttcp08.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -20170,8 +19838,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20290,8 +19956,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20410,8 +20074,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20530,8 +20192,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20647,14 +20307,12 @@
       "ip": "10.80.128.170",
       "ptr": "sonic1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "vnc?",
-        "rdp?"
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -20770,15 +20428,13 @@
       "ip": "10.80.128.171",
       "ptr": "sonic2.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "web?",
-        "vnc?",
-        "rdp?"
+        "vnc",
+        "rdp",
+        "web"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -20894,13 +20550,11 @@
       "ip": "10.80.128.172",
       "ptr": "maxsim1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21019,8 +20673,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -21138,11 +20790,9 @@
       "status": "online",
       "os": "",
       "roles": [
-        "ftp?"
+        "ftp"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21249,8 +20899,8 @@
           "reason": "refused"
         },
         "5986": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         }
       }
     },
@@ -21258,13 +20908,11 @@
       "ip": "10.80.128.175",
       "ptr": "cfdp1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21382,13 +21030,11 @@
       "status": "online",
       "os": "",
       "roles": [
-        "smb?",
-        "ftp?",
-        "web?"
+        "nas",
+        "ftp",
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21504,13 +21150,11 @@
       "ip": "10.80.128.177",
       "ptr": "maxsim2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21626,15 +21270,13 @@
       "ip": "10.80.128.178",
       "ptr": "mcma.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21750,15 +21392,13 @@
       "ip": "10.80.128.179",
       "ptr": "mcmb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21874,14 +21514,12 @@
       "ip": "10.80.128.180",
       "ptr": "hedlabc3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?",
-        "vnc?"
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21999,12 +21637,10 @@
       "status": "online",
       "os": "",
       "roles": [
-        "vmware?",
-        "web?"
+        "vmware",
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -22120,15 +21756,13 @@
       "ip": "10.80.128.182",
       "ptr": "hedlabp1cr.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22246,13 +21880,11 @@
       "status": "online",
       "os": "",
       "roles": [
-        "smb?",
-        "ftp?",
-        "web?"
+        "nas",
+        "ftp",
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22339,28 +21971,28 @@
           "reason": "timeout"
         },
         "5432": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "3389": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5900": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5901": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5985": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "5986": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         }
       }
     },
@@ -22368,15 +22000,13 @@
       "ip": "10.80.128.184",
       "ptr": "csmc-node1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "ftp?",
-        "vnc?",
-        "rdp?"
+        "ftp",
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22492,15 +22122,13 @@
       "ip": "10.80.128.185",
       "ptr": "csmc-node2.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "ftp?",
-        "vnc?",
-        "rdp?"
+        "ftp",
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22616,15 +22244,13 @@
       "ip": "10.80.128.186",
       "ptr": "csmc-node3.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "ftp?",
-        "vnc?",
-        "rdp?"
+        "ftp",
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22740,15 +22366,13 @@
       "ip": "10.80.128.187",
       "ptr": "csmc-node4.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "ftp?",
-        "vnc?",
-        "rdp?"
+        "ftp",
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22867,8 +22491,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -22987,8 +22609,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23104,16 +22724,14 @@
       "ip": "10.80.128.190",
       "ptr": "wsds1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "mysql?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "mysql",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -23229,17 +22847,15 @@
       "ip": "10.80.128.191",
       "ptr": "wsds2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "mysql?",
-        "web?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "mysql",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -23355,14 +22971,12 @@
       "ip": "10.80.128.192",
       "ptr": "wsds3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "vnc?"
+        "ftp",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -23481,8 +23095,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23601,8 +23213,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23721,8 +23331,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23838,14 +23446,12 @@
       "ip": "10.80.128.196",
       "ptr": "mcm4.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?",
-        "vnc?"
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -23961,15 +23567,13 @@
       "ip": "10.80.128.197",
       "ptr": "mcm4-dev.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -24085,13 +23689,11 @@
       "ip": "10.80.128.198",
       "ptr": "signpost1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24210,8 +23812,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -24327,15 +23927,13 @@
       "ip": "10.80.128.200",
       "ptr": "inst1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "smb?",
-        "nfs?",
-        "web?"
+        "nas",
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24451,15 +24049,13 @@
       "ip": "10.80.128.201",
       "ptr": "web1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "mysql?",
-        "web?"
+        "nfs",
+        "mysql",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24578,8 +24174,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -24695,13 +24289,11 @@
       "ip": "10.80.128.203",
       "ptr": "mon1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24817,14 +24409,12 @@
       "ip": "10.80.128.204",
       "ptr": "gstvi3-vm.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "mysql?",
-        "vnc?"
+        "mysql",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24940,13 +24530,11 @@
       "ip": "10.80.128.205",
       "ptr": "mon2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25062,15 +24650,13 @@
       "ip": "10.80.128.206",
       "ptr": "mon-lc1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "mysql?",
-        "web?"
+        "nfs",
+        "mysql",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25186,13 +24772,11 @@
       "ip": "10.80.128.207",
       "ptr": "dev1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?"
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25311,8 +24895,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -25431,8 +25013,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -25548,16 +25128,14 @@
       "ip": "10.80.128.210",
       "ptr": "fec-vm10.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "web?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -25673,13 +25251,11 @@
       "ip": "10.80.128.211",
       "ptr": "ns1.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "dns?"
+        "dns"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25795,11 +25371,9 @@
       "ip": "10.80.128.212",
       "ptr": "signpost1-ng.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25915,15 +25489,13 @@
       "ip": "10.80.128.213",
       "ptr": "sfca.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26039,15 +25611,13 @@
       "ip": "10.80.128.214",
       "ptr": "gstvi3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "mysql?",
-        "vnc?"
+        "ftp",
+        "mysql",
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26163,16 +25733,14 @@
       "ip": "10.80.128.215",
       "ptr": "nas1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "smb?",
-        "nfs?",
-        "ftp?",
-        "web?"
+        "nas",
+        "nfs",
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26288,14 +25856,12 @@
       "ip": "10.80.128.216",
       "ptr": "sfcb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26414,8 +25980,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -26531,15 +26095,13 @@
       "ip": "10.80.128.218",
       "ptr": "ndiu1.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "nfs?",
-        "vnc?",
-        "rdp?"
+        "nfs",
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -26655,14 +26217,12 @@
       "ip": "10.80.128.219",
       "ptr": "",
       "status": "online",
-      "os": "embedded?",
+      "os": "Embedded",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 45,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26780,12 +26340,10 @@
       "status": "online",
       "os": "",
       "roles": [
-        "ftp?",
-        "web?"
+        "ftp",
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26901,14 +26459,12 @@
       "ip": "10.80.128.221",
       "ptr": "gspc01.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27024,14 +26580,12 @@
       "ip": "10.80.128.222",
       "ptr": "gspc02.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "smb?",
-        "rdp?"
+        "file-server",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27150,8 +26704,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27267,14 +26819,12 @@
       "ip": "10.80.128.224",
       "ptr": "ndiu5.ref.ops.esa.int",
       "status": "online",
-      "os": "windows?",
+      "os": "Windows",
       "roles": [
-        "vnc?",
-        "rdp?"
+        "vnc",
+        "rdp"
       ],
       "confidence": 60,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27393,8 +26943,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27510,14 +27058,12 @@
       "ip": "10.80.128.226",
       "ptr": "hrdfep2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "dns?",
-        "nfs?"
+        "dns",
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -27633,14 +27179,12 @@
       "ip": "10.80.128.227",
       "ptr": "hrdfep3.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "dns?",
-        "nfs?"
+        "dns",
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -27756,14 +27300,12 @@
       "ip": "10.80.128.228",
       "ptr": "stc-lc2.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -27879,14 +27421,12 @@
       "ip": "10.80.128.229",
       "ptr": "stc-lc4.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -28005,8 +27545,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -28125,8 +27663,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -28242,11 +27778,9 @@
       "ip": "10.80.128.232",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -28364,11 +27898,9 @@
       "status": "online",
       "os": "",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -28484,16 +28016,14 @@
       "ip": "10.80.128.234",
       "ptr": "freeipa-poc.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "dns?",
-        "directory?",
-        "nfs?",
-        "web?"
+        "dns",
+        "directory-service",
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -28609,16 +28139,14 @@
       "ip": "10.80.128.235",
       "ptr": "fec-vm09.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "web?",
-        "vnc?"
+        "nfs",
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -28736,11 +28264,9 @@
       "status": "online",
       "os": "",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -28859,8 +28385,6 @@
       "os": "",
       "roles": [],
       "confidence": 0,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -28976,14 +28500,12 @@
       "ip": "10.80.128.238",
       "ptr": "specan2.ref.ops.esa.int",
       "status": "online",
-      "os": "embedded?",
+      "os": "Embedded",
       "roles": [
-        "nfs?",
-        "ftp?"
+        "nfs",
+        "ftp"
       ],
       "confidence": 45,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29099,14 +28621,12 @@
       "ip": "10.80.128.239",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "web?"
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29222,15 +28742,13 @@
       "ip": "10.80.128.240",
       "ptr": "sfsc.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "web?"
+        "nfs",
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29346,14 +28864,12 @@
       "ip": "10.80.128.241",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "web?"
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29469,15 +28985,13 @@
       "ip": "10.80.128.242",
       "ptr": "sfsa.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?",
-        "web?",
-        "vnc?"
+        "ftp",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29593,15 +29107,13 @@
       "ip": "10.80.128.243",
       "ptr": "sfsb.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "web?"
+        "nfs",
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29717,14 +29229,12 @@
       "ip": "10.80.128.244",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "web?"
+        "nfs",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29840,13 +29350,11 @@
       "ip": "10.80.128.245",
       "ptr": "gspc10.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29962,15 +29470,13 @@
       "ip": "10.80.128.246",
       "ptr": "sfs-aws-rhel.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "nfs?",
-        "ftp?",
-        "web?"
+        "nfs",
+        "ftp",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -30086,13 +29592,11 @@
       "ip": "10.80.128.247",
       "ptr": "gspc11.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30208,13 +29712,11 @@
       "ip": "10.80.128.248",
       "ptr": "gspc12.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "vnc?"
+        "vnc"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30330,13 +29832,11 @@
       "ip": "10.80.128.249",
       "ptr": "ddor4.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "ftp?"
+        "ftp"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -30452,11 +29952,9 @@
       "ip": "10.80.128.250",
       "ptr": "ddor1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30572,11 +30070,9 @@
       "ip": "10.80.128.251",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30692,17 +30188,15 @@
       "ip": "10.80.128.252",
       "ptr": "silo1.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "smb?",
-        "ftp?",
-        "vmware?",
-        "web?",
-        "vnc?"
+        "nas",
+        "ftp",
+        "vmware",
+        "vnc",
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -30818,13 +30312,11 @@
       "ip": "10.80.128.253",
       "ptr": "",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "web?"
+        "web"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30940,14 +30432,12 @@
       "ip": "10.80.128.254",
       "ptr": "dns4.ref.ops.esa.int",
       "status": "online",
-      "os": "linux/unix?",
+      "os": "Linux(Unix)",
       "roles": [
-        "dns?",
-        "nfs?"
+        "dns",
+        "nfs"
       ],
       "confidence": 55,
-      "netbios_name": "",
-      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
