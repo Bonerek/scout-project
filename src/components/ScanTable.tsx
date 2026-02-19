@@ -254,7 +254,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 </TableHead>
                 
                 <TableHead className="hidden lg:table-cell w-[50px] text-center">MAC</TableHead>
-                <TableHead className="hidden lg:table-cell">NetBIOS</TableHead>
+                <TableHead className="hidden lg:table-cell w-[50px] text-center">NetBIOS</TableHead>
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
                 <TableHead>Ports</TableHead>
               </TableRow>
@@ -335,10 +335,21 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       <span className="text-muted-foreground">—</span>
                     )}
                   </TableCell>
-                  <TableCell className="hidden lg:table-cell text-lg">
-                    {host.netbiosName || host.netbiosGroup
-                      ? `${host.netbiosName || "—"}/${host.netbiosGroup || "—"}`
-                      : "—"}
+                  <TableCell className="hidden lg:table-cell text-center">
+                    {host.netbiosName || host.netbiosGroup ? (
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger>
+                            <svg className="inline-block h-7 w-7 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M3 12V6.5l8-1.1V12H3zm9-6.8L22 3.5V12H12V5.2zM12 13h10v8.5l-10-1.3V13zM3 13h8v6.6l-8-1.1V13z"/>
+                            </svg>
+                          </TooltipTrigger>
+                          <TooltipContent>{host.netbiosName || "—"}/{host.netbiosGroup || "—"}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    ) : (
+                      <span className="text-muted-foreground">—</span>
+                    )}
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
                     {host.roles && host.roles.length > 0 ? (
