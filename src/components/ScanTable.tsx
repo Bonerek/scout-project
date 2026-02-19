@@ -36,6 +36,31 @@ function PortBadge({ portid }: { portid: string }) {
   );
 }
 
+function PortBadgeWithTooltip({ portid, host }: { portid: string; host: ScanHost }) {
+  const isHttp = portid === "80" || portid === "443";
+  const protocol = portid === "443" ? "https" : "http";
+  const target = host.hostname || host.ip;
+  const url = `${protocol}://${target}`;
+
+  const badge = <PortBadge portid={portid} />;
+
+  if (isHttp) {
+    return (
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <a href={url} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              {badge}
+            </a>
+          </TooltipTrigger>
+          <TooltipContent>{url}</TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    );
+  }
+  return badge;
+}
+
 const ScanTable = ({ network, result }: ScanTableProps) => {
   const [filter, setFilter] = useState("");
 
@@ -120,7 +145,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[140px]">IP Address</TableHead>
-                <TableHead>Hostname</TableHead>
+                <TableHead>Reverse DNS</TableHead>
                 <TableHead className="w-[80px]">Status</TableHead>
                 <TableHead className="hidden md:table-cell">OS</TableHead>
                 <TableHead className="hidden lg:table-cell">NetBIOS</TableHead>
@@ -162,7 +187,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         {host.ports
                           .filter((p) => p.state === "open")
                           .map((p) => (
-                            <PortBadge key={p.portid} portid={p.portid} />
+                            <PortBadgeWithTooltip key={p.portid} portid={p.portid} host={host} />
                           ))}
                       </div>
                     ) : (
