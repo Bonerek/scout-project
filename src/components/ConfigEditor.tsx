@@ -166,24 +166,24 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
           Configure
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+      <DialogContent className="max-w-2xl h-[80vh] flex flex-col">
         <DialogHeader>
           <DialogTitle>Settings</DialogTitle>
         </DialogHeader>
 
-        <Tabs defaultValue="general" className="w-full">
+        <Tabs defaultValue="general" className="w-full flex-1 flex flex-col min-h-0">
           <TabsList className="w-full">
             <TabsTrigger value="general" className="flex-1">General</TabsTrigger>
             <TabsTrigger value="networks" className="flex-1">Networks</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="general" className="space-y-4 py-4">
+          <TabsContent value="general" className="space-y-4 py-4 flex-1 overflow-y-auto">
             <div className="p-6 text-center text-muted-foreground">
               <p className="text-sm">General settings will be available here.</p>
             </div>
           </TabsContent>
 
-          <TabsContent value="networks" className="space-y-4 py-4">
+          <TabsContent value="networks" className="space-y-4 py-4 flex-1 overflow-y-auto">
             {draft.map((net, idx) => (
               <div
                 key={idx}
