@@ -13,22 +13,38 @@ interface ScanTableProps {
   result: ScanResult;
 }
 
-const portColors = [
-  "bg-blue-600", "bg-emerald-600", "bg-violet-600", "bg-amber-600",
-  "bg-rose-600", "bg-cyan-600", "bg-pink-600", "bg-teal-600",
-  "bg-indigo-600", "bg-orange-600", "bg-fuchsia-600", "bg-lime-600",
+const portColorMap: Record<string, string> = {
+  "22": "bg-emerald-600",
+  "80": "bg-blue-600",
+  "443": "bg-violet-600",
+  "8080": "bg-cyan-600",
+  "3389": "bg-rose-600",
+  "445": "bg-amber-600",
+  "139": "bg-orange-600",
+  "53": "bg-teal-600",
+  "25": "bg-pink-600",
+  "21": "bg-indigo-600",
+  "23": "bg-fuchsia-600",
+  "3306": "bg-lime-600",
+};
+
+const fallbackColors = [
+  "bg-blue-500", "bg-emerald-500", "bg-violet-500", "bg-amber-500",
+  "bg-rose-500", "bg-cyan-500", "bg-pink-500", "bg-teal-500",
+  "bg-indigo-500", "bg-orange-500", "bg-fuchsia-500", "bg-lime-500",
 ];
 
-function hashPort(portid: string): number {
+function getPortColor(portid: string): string {
+  if (portColorMap[portid]) return portColorMap[portid];
   let hash = 0;
   for (let i = 0; i < portid.length; i++) {
-    hash = (hash * 31 + portid.charCodeAt(i)) | 0;
+    hash = (hash * 37 + portid.charCodeAt(i) + 7) | 0;
   }
-  return Math.abs(hash) % portColors.length;
+  return fallbackColors[Math.abs(hash) % fallbackColors.length];
 }
 
 function PortBadge({ portid }: { portid: string }) {
-  const color = portColors[hashPort(portid)];
+  const color = getPortColor(portid);
   return (
     <Badge className={`mr-0.5 mb-0.5 text-sm rounded-md px-2 py-0.5 border-transparent text-white ${color}`}>
       {portid}
@@ -37,10 +53,12 @@ function PortBadge({ portid }: { portid: string }) {
 }
 
 function PortBadgeWithTooltip({ portid, host }: { portid: string; host: ScanHost }) {
-  const isHttp = portid === "80" || portid === "443";
-  const protocol = portid === "443" ? "https" : "http";
+  const httpPorts = ["80", "443", "8080", "8443"];
+  const isHttp = httpPorts.includes(portid);
+  const protocol = portid === "443" || portid === "8443" ? "https" : "http";
+  const port = portid === "80" || portid === "443" ? "" : `:${portid}`;
   const target = host.hostname || host.ip;
-  const url = `${protocol}://${target}`;
+  const url = `${protocol}://${target}${port}`;
 
   const badge = <PortBadge portid={portid} />;
 
