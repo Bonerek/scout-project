@@ -138,23 +138,29 @@ const NetworkTabs = () => {
     loadScans(updatedNetworks);
   };
 
+  const portalTarget = document.getElementById("config-button-portal");
+  const configPortal = portalTarget
+    ? createPortal(
+        <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />,
+        portalTarget
+      )
+    : null;
+
   if (loading) {
     return (
-      <div className="space-y-4 p-6">
-        <Skeleton className="h-10 w-full max-w-md" />
-        <Skeleton className="h-[400px] w-full" />
-      </div>
+      <>
+        {configPortal}
+        <div className="space-y-4 p-6">
+          <Skeleton className="h-10 w-full max-w-md" />
+          <Skeleton className="h-[400px] w-full" />
+        </div>
+      </>
     );
   }
 
-  const portalTarget = document.getElementById("config-button-portal");
-
   return (
     <div className="space-y-2">
-      {portalTarget && createPortal(
-        <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />,
-        portalTarget
-      )}
+      {configPortal}
 
       {networks.length === 0 ? (
         <div className="p-6 text-center text-muted-foreground">
