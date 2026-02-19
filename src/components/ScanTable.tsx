@@ -228,39 +228,41 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                   <TableCell className="font-mono text-lg">{host.ip}</TableCell>
                   <TableCell className="text-lg">{host.hostname || "—"}</TableCell>
                   <TableCell className="text-center">
-                    <TooltipProvider>
-                      <Tooltip>
-                        <TooltipTrigger>
-                          {(() => {
-                            const isOnline = host.status === "online";
-                            const isUnregistered = isOnline && !host.hostname;
-                            const color = isOnline
-                              ? isUnregistered
-                                ? "bg-yellow-500 shadow-yellow-500/40"
-                                : "bg-green-500 shadow-green-500/40"
-                              : "bg-red-500 shadow-red-500/40";
-                            const glow = isOnline
-                              ? isUnregistered
-                                ? "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(234,179,8,0.4)"
-                                : "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(34,197,94,0.4)"
-                              : "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(239,68,68,0.4)";
-                            return (
+                    {(() => {
+                      const isOnline = host.status === "online";
+                      const isFree = !isOnline && !host.hostname;
+                      const isUnregistered = isOnline && !host.hostname;
+                      const color = isOnline
+                        ? isUnregistered
+                          ? "bg-yellow-500 shadow-yellow-500/40"
+                          : "bg-green-500 shadow-green-500/40"
+                        : isFree
+                          ? "bg-gray-400 shadow-gray-400/40"
+                          : "bg-red-500 shadow-red-500/40";
+                      const glow = isOnline
+                        ? isUnregistered
+                          ? "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(234,179,8,0.4)"
+                          : "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(34,197,94,0.4)"
+                        : isFree
+                          ? "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(156,163,175,0.4)"
+                          : "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(239,68,68,0.4)";
+                      const label = isOnline
+                        ? isUnregistered ? "Online, unregistered" : "Online"
+                        : isFree ? "Free" : "Offline";
+                      return (
+                        <TooltipProvider>
+                          <Tooltip>
+                            <TooltipTrigger>
                               <span
                                 className={`inline-block h-5 w-5 rounded-full shadow-md ${color}`}
                                 style={{ boxShadow: glow }}
                               />
-                            );
-                          })()}
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          {host.status === "online"
-                            ? host.hostname
-                              ? "Online"
-                              : "Online, unregistered"
-                            : "Offline"}
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
+                            </TooltipTrigger>
+                            <TooltipContent>{label}</TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      );
+                    })()}
                   </TableCell>
                   <TableCell className="hidden md:table-cell text-lg text-muted-foreground">
                     {host.os || "—"}
