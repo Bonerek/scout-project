@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AppConfig, NetworkConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
 import ScanTable from "@/components/ScanTable";
+import SubnetInfo from "@/components/SubnetInfo";
 import ConfigEditor from "@/components/ConfigEditor";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -103,11 +104,8 @@ const NetworkTabs = () => {
           </TabsList>
 
           {networks.map((net) => (
-            <TabsContent key={net.subnet} value={net.subnet}>
-              <div className="mb-2 text-sm text-muted-foreground flex gap-4">
-                <span>VLAN: <span className="font-medium text-foreground">{net.vlan}</span></span>
-                {net.gateway && <span>Gateway: <span className="font-medium text-foreground">{net.gateway}</span></span>}
-              </div>
+            <TabsContent key={net.subnet} value={net.subnet} className="space-y-4">
+              <SubnetInfo network={net} />
               {errors[net.subnet] ? (
                 <div className="p-12 text-center text-muted-foreground">
                   <p className="text-lg font-medium">No scan data available</p>
