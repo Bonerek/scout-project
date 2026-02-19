@@ -211,7 +211,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableHead className="cursor-pointer select-none" onClick={() => toggleSort("hostname")}>
                   Reverse DNS <SortIcon field="hostname" />
                 </TableHead>
-                <TableHead className="w-[80px] text-center cursor-pointer select-none" onClick={() => toggleSort("status")}>
+                <TableHead className="w-[120px] text-center cursor-pointer select-none whitespace-nowrap" onClick={() => toggleSort("status")}>
                   Status <SortIcon field="status" />
                 </TableHead>
                 <TableHead className="hidden md:table-cell cursor-pointer select-none" onClick={() => toggleSort("os")}>
