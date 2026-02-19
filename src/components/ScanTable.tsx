@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { NetworkConfig } from "@/lib/configTypes";
 import { Search, Monitor, MonitorOff, ArrowUp, ArrowDown, ArrowUpDown } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 type SortField = "ip" | "hostname" | "status" | "os" | null;
 type SortDir = "asc" | "desc";
@@ -91,8 +92,16 @@ function PortBadgeWithTooltip({ portid, host }: { portid: string; host: ScanHost
   return badge;
 }
 
+type StatusFilter = "online" | "offline" | "free" | "unregistered";
+
+function getHostStatus(host: ScanHost): StatusFilter {
+  if (host.status === "online") return host.hostname ? "online" : "unregistered";
+  return host.hostname ? "offline" : "free";
+}
+
 const ScanTable = ({ network, result }: ScanTableProps) => {
   const [filter, setFilter] = useState("");
+  const [statusFilters, setStatusFilters] = useState<StatusFilter[]>([]);
   const [sortField, setSortField] = useState<SortField>(null);
   const [sortDir, setSortDir] = useState<SortDir>("asc");
 
@@ -112,6 +121,9 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
 
   const filtered = useMemo(() => {
     let hosts = result.hosts;
+    if (statusFilters.length > 0) {
+      hosts = hosts.filter((h) => statusFilters.includes(getHostStatus(h)));
+    }
     if (filter) {
       const q = filter.toLowerCase();
       hosts = hosts.filter(
@@ -135,7 +147,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
       });
     }
     return hosts;
-  }, [result.hosts, filter, sortField, sortDir]);
+  }, [result.hosts, filter, statusFilters, sortField, sortDir]);
 
   const hostsWithPorts = result.hosts.filter((h) => h.ports.length > 0);
   const openPortCount = result.hosts.reduce(
@@ -189,14 +201,35 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
       </Card>
 
       {/* Filter */}
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input
-          placeholder="Filter by IP, hostname, vendor, or MAC..."
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          className="pl-9"
-        />
+      <div className="flex flex-col sm:flex-row gap-2">
+        <div className="relative flex-1">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            placeholder="Filter by IP, hostname, vendor, or MAC..."
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            className="pl-9"
+          />
+        </div>
+        <ToggleGroup
+          type="multiple"
+          value={statusFilters}
+          onValueChange={(v) => setStatusFilters(v as StatusFilter[])}
+          className="flex-shrink-0"
+        >
+          <ToggleGroupItem value="online" className="text-xs gap-1">
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500" /> Online
+          </ToggleGroupItem>
+          <ToggleGroupItem value="unregistered" className="text-xs gap-1">
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-yellow-500" /> Unreg
+          </ToggleGroupItem>
+          <ToggleGroupItem value="offline" className="text-xs gap-1">
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500" /> Offline
+          </ToggleGroupItem>
+          <ToggleGroupItem value="free" className="text-xs gap-1">
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-gray-400" /> Free
+          </ToggleGroupItem>
+        </ToggleGroup>
       </div>
 
       {/* Table */}
