@@ -9,7 +9,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 const CONFIG_KEY = "scout_network_config";
 const GENERAL_KEY = "scout_general_config";
-const defaultGeneral: GeneralConfig = { dns1: "", dns2: "" };
+const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "" };
 
 const NetworkTabs = () => {
   const [networks, setNetworks] = useState<NetworkConfig[]>([]);

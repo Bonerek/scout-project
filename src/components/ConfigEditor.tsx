@@ -28,6 +28,19 @@ const validateIp = (ip: string): string | undefined => {
   return undefined;
 };
 
+const validateIpOrFqdn = (value: string): string | undefined => {
+  if (!value.trim()) return undefined;
+  // Try IP first
+  if (/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(value)) {
+    return validateIp(value);
+  }
+  // FQDN validation
+  if (!/^(?!-)[A-Za-z0-9-]{1,63}(?<!-)(\.[A-Za-z0-9-]{1,63})*\.[A-Za-z]{2,}$/.test(value)) {
+    return "Must be a valid IP address or FQDN.";
+  }
+  return undefined;
+};
+
 const validateGateway = (gateway: string, subnet: string): string | undefined => {
   if (!gateway.trim()) return undefined;
   const gwMatch = gateway.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/);
@@ -93,9 +106,9 @@ const emptyNetwork: NetworkConfig = {
 const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
   const [open, setOpen] = useState(false);
   const [draft, setDraft] = useState<NetworkConfig[]>([]);
-  const [generalDraft, setGeneralDraft] = useState<GeneralConfig>({ dns1: "", dns2: "" });
+  const [generalDraft, setGeneralDraft] = useState<GeneralConfig>({ dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "" });
   const [errors, setErrors] = useState<ValidationErrors>({});
-  const [generalErrors, setGeneralErrors] = useState<{ dns1?: string; dns2?: string }>({});
+  const [generalErrors, setGeneralErrors] = useState<Record<string, string | undefined>>({});
   const { toast } = useToast();
 
   const handleOpen = (isOpen: boolean) => {
@@ -148,9 +161,13 @@ const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
     // Validate general
     const dns1Err = validateIp(generalDraft.dns1);
     const dns2Err = validateIp(generalDraft.dns2);
-    if (dns1Err || dns2Err) {
+    const ntp1Err = validateIpOrFqdn(generalDraft.ntp1);
+    const ntp2Err = validateIpOrFqdn(generalDraft.ntp2);
+    const ntp3Err = validateIpOrFqdn(generalDraft.ntp3);
+    const genErrs = { dns1: dns1Err, dns2: dns2Err, ntp1: ntp1Err, ntp2: ntp2Err, ntp3: ntp3Err };
+    if (Object.values(genErrs).some(Boolean)) {
       hasError = true;
-      setGeneralErrors({ dns1: dns1Err, dns2: dns2Err });
+      setGeneralErrors(genErrs);
     } else {
       setGeneralErrors({});
     }
@@ -235,6 +252,29 @@ const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
                     <p className="text-xs text-destructive">{generalErrors.dns2}</p>
                   )}
                 </div>
+              </div>
+            </div>
+
+            <div className="border border-border rounded-lg p-4 space-y-3">
+              <span className="text-sm font-medium text-muted-foreground">NTP Servers</span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                {(["ntp1", "ntp2", "ntp3"] as const).map((field, i) => (
+                  <div key={field} className="space-y-1">
+                    <Label htmlFor={field} className="text-xs">NTP {i + 1}</Label>
+                    <Input
+                      id={field}
+                      value={generalDraft[field]}
+                      onChange={(e) => {
+                        setGeneralDraft((prev) => ({ ...prev, [field]: e.target.value }));
+                        setGeneralErrors((prev) => ({ ...prev, [field]: undefined }));
+                      }}
+                      placeholder={i === 0 ? "e.g. pool.ntp.org" : `e.g. 10.0.0.${i + 1}`}
+                    />
+                    {generalErrors[field] && (
+                      <p className="text-xs text-destructive">{generalErrors[field]}</p>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </TabsContent>
