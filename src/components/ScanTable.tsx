@@ -13,10 +13,24 @@ interface ScanTableProps {
   result: ScanResult;
 }
 
-function PortBadge({ state, portid }: { state: string; portid: string }) {
-  const variant = state === "open" ? "default" : state === "closed" ? "secondary" : "outline";
+const portColors = [
+  "bg-blue-600", "bg-emerald-600", "bg-violet-600", "bg-amber-600",
+  "bg-rose-600", "bg-cyan-600", "bg-pink-600", "bg-teal-600",
+  "bg-indigo-600", "bg-orange-600", "bg-fuchsia-600", "bg-lime-600",
+];
+
+function hashPort(portid: string): number {
+  let hash = 0;
+  for (let i = 0; i < portid.length; i++) {
+    hash = (hash * 31 + portid.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash) % portColors.length;
+}
+
+function PortBadge({ portid }: { portid: string }) {
+  const color = portColors[hashPort(portid)];
   return (
-    <Badge variant={variant} className="mr-0.5 mb-0.5 text-sm rounded-md px-2 py-0.5">
+    <Badge className={`mr-0.5 mb-0.5 text-sm rounded-md px-2 py-0.5 border-transparent text-white ${color}`}>
       {portid}
     </Badge>
   );
@@ -148,11 +162,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         {host.ports
                           .filter((p) => p.state === "open")
                           .map((p) => (
-                            <PortBadge
-                              key={p.portid}
-                              state={p.state}
-                              portid={p.portid}
-                            />
+                            <PortBadge key={p.portid} portid={p.portid} />
                           ))}
                       </div>
                     ) : (
