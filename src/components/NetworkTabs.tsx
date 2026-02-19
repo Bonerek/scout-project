@@ -107,8 +107,9 @@ const NetworkTabs = () => {
                 VLAN: <span className="font-medium text-foreground">{net.vlan}</span>
               </div>
               {errors[net.subnet] ? (
-                <div className="p-6 text-center text-destructive">
-                  Error loading scan: {errors[net.subnet]}
+                <div className="p-12 text-center text-muted-foreground">
+                  <p className="text-lg font-medium">No scan data available</p>
+                  <p className="text-sm mt-1">No scan file found for this subnet. Run a scan or check the file path in configuration.</p>
                 </div>
               ) : scanResults[net.subnet] ? (
                 <ScanTable network={net} result={scanResults[net.subnet]} />
