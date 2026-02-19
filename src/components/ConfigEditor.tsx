@@ -48,7 +48,7 @@ const validateVlan = (vlan: string): string | undefined => {
 const generateScanFile = (subnet: string, vlan: string): string => {
   if (!subnet.trim() || !vlan.trim()) return "";
   const sanitizedSubnet = subnet.replace(/[./]/g, "_");
-  return `/scans/scan_${sanitizedSubnet}_VLAN_${vlan}.xml`;
+  return `/scans/scan_${sanitizedSubnet}_VLAN_${vlan}.json`;
 };
 
 const emptyNetwork: NetworkConfig = {
