@@ -5,8 +5,20 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
 import { NetworkConfig } from "@/lib/configTypes";
-import { Search, Monitor, MonitorOff } from "lucide-react";
+import { Search, Monitor, MonitorOff, ArrowUp, ArrowDown, ArrowUpDown } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+
+type SortField = "ip" | "hostname" | "status" | "os" | null;
+type SortDir = "asc" | "desc";
+
+function compareIp(a: string, b: string) {
+  const pa = a.split(".").map(Number);
+  const pb = b.split(".").map(Number);
+  for (let i = 0; i < 4; i++) {
+    if (pa[i] !== pb[i]) return pa[i] - pb[i];
+  }
+  return 0;
+}
 
 interface ScanTableProps {
   network: NetworkConfig;
@@ -81,18 +93,49 @@ function PortBadgeWithTooltip({ portid, host }: { portid: string; host: ScanHost
 
 const ScanTable = ({ network, result }: ScanTableProps) => {
   const [filter, setFilter] = useState("");
+  const [sortField, setSortField] = useState<SortField>(null);
+  const [sortDir, setSortDir] = useState<SortDir>("asc");
+
+  const toggleSort = (field: SortField) => {
+    if (sortField === field) {
+      setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    } else {
+      setSortField(field);
+      setSortDir("asc");
+    }
+  };
+
+  const SortIcon = ({ field }: { field: SortField }) => {
+    if (sortField !== field) return <ArrowUpDown className="inline h-4 w-4 ml-1 opacity-40" />;
+    return sortDir === "asc" ? <ArrowUp className="inline h-4 w-4 ml-1" /> : <ArrowDown className="inline h-4 w-4 ml-1" />;
+  };
 
   const filtered = useMemo(() => {
-    if (!filter) return result.hosts;
-    const q = filter.toLowerCase();
-    return result.hosts.filter(
-      (h) =>
-        h.ip.includes(q) ||
-        h.hostname.toLowerCase().includes(q) ||
-        h.os.toLowerCase().includes(q) ||
-        h.netbiosName.toLowerCase().includes(q)
-    );
-  }, [result.hosts, filter]);
+    let hosts = result.hosts;
+    if (filter) {
+      const q = filter.toLowerCase();
+      hosts = hosts.filter(
+        (h) =>
+          h.ip.includes(q) ||
+          h.hostname.toLowerCase().includes(q) ||
+          h.os.toLowerCase().includes(q) ||
+          h.netbiosName.toLowerCase().includes(q)
+      );
+    }
+    if (sortField) {
+      hosts = [...hosts].sort((a, b) => {
+        let cmp = 0;
+        switch (sortField) {
+          case "ip": cmp = compareIp(a.ip, b.ip); break;
+          case "hostname": cmp = a.hostname.localeCompare(b.hostname); break;
+          case "status": cmp = a.status.localeCompare(b.status); break;
+          case "os": cmp = a.os.localeCompare(b.os); break;
+        }
+        return sortDir === "asc" ? cmp : -cmp;
+      });
+    }
+    return hosts;
+  }, [result.hosts, filter, sortField, sortDir]);
 
   const hostsWithPorts = result.hosts.filter((h) => h.ports.length > 0);
   const openPortCount = result.hosts.reduce(
@@ -162,10 +205,18 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[140px]">IP Address</TableHead>
-                <TableHead>Reverse DNS</TableHead>
-                <TableHead className="w-[80px] text-center">Status</TableHead>
-                <TableHead className="hidden md:table-cell">OS</TableHead>
+                <TableHead className="w-[140px] cursor-pointer select-none" onClick={() => toggleSort("ip")}>
+                  IP Address <SortIcon field="ip" />
+                </TableHead>
+                <TableHead className="cursor-pointer select-none" onClick={() => toggleSort("hostname")}>
+                  Reverse DNS <SortIcon field="hostname" />
+                </TableHead>
+                <TableHead className="w-[80px] text-center cursor-pointer select-none" onClick={() => toggleSort("status")}>
+                  Status <SortIcon field="status" />
+                </TableHead>
+                <TableHead className="hidden md:table-cell cursor-pointer select-none" onClick={() => toggleSort("os")}>
+                  OS <SortIcon field="os" />
+                </TableHead>
                 
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
                 <TableHead>Ports</TableHead>
