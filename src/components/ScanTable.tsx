@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import tuxLogo from "@/assets/tux-linux.png";
 import { ScanHost, ScanResult } from "@/lib/scanParser";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -308,7 +309,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                             {host.os.toLowerCase().includes("windows") ? (
                               <svg className="inline-block h-7 w-7 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.5l8-1.1V12H3zm9-6.8L22 3.5V12H12V5.2zM12 13h10v8.5l-10-1.3V13zM3 13h8v6.6l-8-1.1V13z"/></svg>
                             ) : host.os.toLowerCase().includes("linux") ? (
-                              <svg className="inline-block h-7 w-7" viewBox="0 0 24 24"><path d="M12 2C9.5 2 8 4.5 8 6.5c0 1 .3 1.8.8 2.5C7.5 10 7 11.5 7 13c0 1 .2 1.8.5 2.5-.3.5-.5 1-.5 1.5 0 .8.3 1.5 1 2v.5c0 .8.5 1.5 1.2 1.8L9 22h1.5l.5-1h2l.5 1H15l-.2-.7c.7-.3 1.2-1 1.2-1.8V19c.7-.5 1-1.2 1-2 0-.5-.2-1-.5-1.5.3-.7.5-1.5.5-2.5 0-1.5-.5-3-1.8-4 .5-.7.8-1.5.8-2.5C16 4.5 14.5 2 12 2z" fill="#333"/><ellipse cx="10.5" cy="7" rx=".8" ry="1" fill="white"/><ellipse cx="13.5" cy="7" rx=".8" ry="1" fill="white"/><ellipse cx="10.5" cy="7.2" rx=".4" ry=".5" fill="black"/><ellipse cx="13.5" cy="7.2" rx=".4" ry=".5" fill="black"/><path d="M10.5 9.5Q12 10.5 13.5 9.5" stroke="#f59e0b" strokeWidth=".8" fill="none"/><rect x="8" y="13" width="8" height="5" rx="1" fill="white" stroke="#333" strokeWidth=".5"/></svg>
+                              <img src={tuxLogo} alt="Linux" className="inline-block h-7 w-7 object-contain" />
                             ) : (
                               <MonitorSmartphone className="inline-block h-7 w-7 text-muted-foreground" />
                             )}
