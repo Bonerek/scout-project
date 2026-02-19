@@ -16,7 +16,7 @@ interface ScanTableProps {
 function PortBadge({ state, portid }: { state: string; portid: string }) {
   const variant = state === "open" ? "default" : state === "closed" ? "secondary" : "outline";
   return (
-    <Badge variant={variant} className="mr-1 mb-1 text-xs">
+    <Badge variant={variant} className="mr-0.5 mb-0.5 text-xs rounded-md px-1.5 py-0">
       {portid}
     </Badge>
   );
