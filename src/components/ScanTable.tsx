@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import tuxLogo from "@/assets/tux-linux.svg";
 import rj45Icon from "@/assets/rj45.svg";
+import netbiosIcon from "@/assets/netbios.svg";
 import { ScanHost, ScanResult } from "@/lib/scanParser";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -340,9 +341,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       <TooltipProvider>
                         <Tooltip>
                           <TooltipTrigger>
-                            <svg className="inline-block h-7 w-7 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
-                              <path d="M3 12V6.5l8-1.1V12H3zm9-6.8L22 3.5V12H12V5.2zM12 13h10v8.5l-10-1.3V13zM3 13h8v6.6l-8-1.1V13z"/>
-                            </svg>
+                            <img src={netbiosIcon} alt="NetBIOS" className="inline-block h-7 w-7" />
                           </TooltipTrigger>
                           <TooltipContent>{host.netbiosName || "—"}/{host.netbiosGroup || "—"}</TooltipContent>
                         </Tooltip>
