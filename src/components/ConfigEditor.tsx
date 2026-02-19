@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Settings, Plus, Trash2, Save, ChevronUp, ChevronDown } from "lucide-react";
 import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { useToast } from "@/hooks/use-toast";
@@ -106,7 +107,7 @@ const emptyNetwork: NetworkConfig = {
 const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
   const [open, setOpen] = useState(false);
   const [draft, setDraft] = useState<NetworkConfig[]>([]);
-  const [generalDraft, setGeneralDraft] = useState<GeneralConfig>({ dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "" });
+  const [generalDraft, setGeneralDraft] = useState<GeneralConfig>({ dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "", refreshInterval: 0 });
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [generalErrors, setGeneralErrors] = useState<Record<string, string | undefined>>({});
   const { toast } = useToast();
@@ -284,6 +285,31 @@ const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
                     )}
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div className="border border-border rounded-lg p-4 space-y-3">
+              <span className="text-sm font-medium text-muted-foreground">Auto Refresh</span>
+              <div className="space-y-1">
+                <Label htmlFor="refreshInterval" className="text-xs">Page refresh interval</Label>
+                <Select
+                  value={String(generalDraft.refreshInterval || 0)}
+                  onValueChange={(val) => setGeneralDraft((prev) => ({ ...prev, refreshInterval: Number(val) }))}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select interval" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="0">Disabled</SelectItem>
+                    <SelectItem value="60">1 minute</SelectItem>
+                    <SelectItem value="120">2 minutes</SelectItem>
+                    <SelectItem value="300">5 minutes</SelectItem>
+                    <SelectItem value="600">10 minutes</SelectItem>
+                    <SelectItem value="900">15 minutes</SelectItem>
+                    <SelectItem value="1800">30 minutes</SelectItem>
+                    <SelectItem value="3600">1 hour</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
             </div>
           </TabsContent>
