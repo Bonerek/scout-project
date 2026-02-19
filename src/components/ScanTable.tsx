@@ -166,7 +166,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableHead>Reverse DNS</TableHead>
                 <TableHead className="w-[80px]">Status</TableHead>
                 <TableHead className="hidden md:table-cell">OS</TableHead>
-                <TableHead className="hidden lg:table-cell">NetBIOS</TableHead>
+                
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
                 <TableHead>Ports</TableHead>
               </TableRow>
@@ -196,9 +196,6 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                   </TableCell>
                   <TableCell className="hidden md:table-cell text-base text-muted-foreground">
                     {host.os || "—"}
-                  </TableCell>
-                  <TableCell className="hidden lg:table-cell text-base text-muted-foreground">
-                    {host.netbiosName || "—"}
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
                     {host.roles && host.roles.length > 0 ? (
@@ -230,7 +227,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
               ))}
               {filtered.length === 0 && (
                 <TableRow>
-                  <TableCell colSpan={7} className="text-center py-8 text-muted-foreground">
+                  <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
                     No hosts match the filter.
                   </TableCell>
                 </TableRow>
