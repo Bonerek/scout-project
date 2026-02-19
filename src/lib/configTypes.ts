@@ -6,6 +6,12 @@ export interface NetworkConfig {
   scanFile: string;
 }
 
+export interface GeneralConfig {
+  dns1: string;
+  dns2: string;
+}
+
 export interface AppConfig {
   networks: NetworkConfig[];
+  general: GeneralConfig;
 }

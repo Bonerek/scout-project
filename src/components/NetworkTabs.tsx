@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { NetworkConfig } from "@/lib/configTypes";
+import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
 import ScanTable from "@/components/ScanTable";
 import SubnetInfo from "@/components/SubnetInfo";
@@ -8,9 +8,12 @@ import ConfigEditor from "@/components/ConfigEditor";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const CONFIG_KEY = "scout_network_config";
+const GENERAL_KEY = "scout_general_config";
+const defaultGeneral: GeneralConfig = { dns1: "", dns2: "" };
 
 const NetworkTabs = () => {
   const [networks, setNetworks] = useState<NetworkConfig[]>([]);
+  const [general, setGeneral] = useState<GeneralConfig>(defaultGeneral);
   const [scanResults, setScanResults] = useState<Record<string, ScanResult>>({});
   const [loading, setLoading] = useState(true);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -42,6 +45,11 @@ const NetworkTabs = () => {
   }, []);
 
   useEffect(() => {
+    // Load general config
+    const storedGeneral = localStorage.getItem(GENERAL_KEY);
+    if (storedGeneral) {
+      try { setGeneral(JSON.parse(storedGeneral)); } catch { /* ignore */ }
+    }
     const stored = localStorage.getItem(CONFIG_KEY);
     if (stored) {
       try {
@@ -67,10 +75,12 @@ const NetworkTabs = () => {
       .finally(() => setLoading(false));
   }, [loadScans]);
 
-  const handleSaveConfig = (updated: NetworkConfig[]) => {
-    localStorage.setItem(CONFIG_KEY, JSON.stringify(updated));
-    setNetworks(updated);
-    loadScans(updated);
+  const handleSaveConfig = (updatedNetworks: NetworkConfig[], updatedGeneral: GeneralConfig) => {
+    localStorage.setItem(CONFIG_KEY, JSON.stringify(updatedNetworks));
+    localStorage.setItem(GENERAL_KEY, JSON.stringify(updatedGeneral));
+    setNetworks(updatedNetworks);
+    setGeneral(updatedGeneral);
+    loadScans(updatedNetworks);
   };
 
   if (loading) {
@@ -85,7 +95,7 @@ const NetworkTabs = () => {
   return (
     <div className="space-y-4">
       <div className="flex justify-end">
-        <ConfigEditor networks={networks} onSave={handleSaveConfig} />
+        <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />
       </div>
 
       {networks.length === 0 ? (

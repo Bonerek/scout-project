@@ -6,17 +6,27 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Settings, Plus, Trash2, Save } from "lucide-react";
-import { NetworkConfig } from "@/lib/configTypes";
+import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { useToast } from "@/hooks/use-toast";
 
 interface ConfigEditorProps {
   networks: NetworkConfig[];
-  onSave: (networks: NetworkConfig[]) => void;
+  general: GeneralConfig;
+  onSave: (networks: NetworkConfig[], general: GeneralConfig) => void;
 }
 
 interface ValidationErrors {
   [key: string]: { name?: string; subnet?: string; vlan?: string; gateway?: string };
 }
+
+const validateIp = (ip: string): string | undefined => {
+  if (!ip.trim()) return undefined;
+  const match = ip.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/);
+  if (!match) return "Must be a valid IP address.";
+  const octets = [match[1], match[2], match[3], match[4]].map(Number);
+  if (octets.some((o) => o > 255)) return "Each octet must be 0–255.";
+  return undefined;
+};
 
 const validateGateway = (gateway: string, subnet: string): string | undefined => {
   if (!gateway.trim()) return undefined;
@@ -80,16 +90,20 @@ const emptyNetwork: NetworkConfig = {
   scanFile: "",
 };
 
-const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
+const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
   const [open, setOpen] = useState(false);
   const [draft, setDraft] = useState<NetworkConfig[]>([]);
+  const [generalDraft, setGeneralDraft] = useState<GeneralConfig>({ dns1: "", dns2: "" });
   const [errors, setErrors] = useState<ValidationErrors>({});
+  const [generalErrors, setGeneralErrors] = useState<{ dns1?: string; dns2?: string }>({});
   const { toast } = useToast();
 
   const handleOpen = (isOpen: boolean) => {
     if (isOpen) {
       setDraft(networks.map((n) => ({ ...n })));
+      setGeneralDraft({ ...general });
       setErrors({});
+      setGeneralErrors({});
     }
     setOpen(isOpen);
   };
@@ -131,6 +145,16 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
     const newErrors: ValidationErrors = {};
     let hasError = false;
 
+    // Validate general
+    const dns1Err = validateIp(generalDraft.dns1);
+    const dns2Err = validateIp(generalDraft.dns2);
+    if (dns1Err || dns2Err) {
+      hasError = true;
+      setGeneralErrors({ dns1: dns1Err, dns2: dns2Err });
+    } else {
+      setGeneralErrors({});
+    }
+
     draft.forEach((n, idx) => {
       const nameErr = validateName(n.name);
       const subnetErr = validateSubnet(n.subnet);
@@ -153,7 +177,7 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
     }
 
     setErrors({});
-    onSave(draft);
+    onSave(draft, generalDraft);
     setOpen(false);
     toast({ title: "Configuration updated", description: "Network list has been saved." });
   };
@@ -178,8 +202,40 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
           </TabsList>
 
           <TabsContent value="general" className="space-y-4 py-4 flex-1 overflow-y-auto">
-            <div className="p-6 text-center text-muted-foreground">
-              <p className="text-sm">General settings will be available here.</p>
+            <div className="border border-border rounded-lg p-4 space-y-3">
+              <span className="text-sm font-medium text-muted-foreground">DNS Servers</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="space-y-1">
+                  <Label htmlFor="dns1" className="text-xs">DNS 1</Label>
+                  <Input
+                    id="dns1"
+                    value={generalDraft.dns1}
+                    onChange={(e) => {
+                      setGeneralDraft((prev) => ({ ...prev, dns1: e.target.value }));
+                      setGeneralErrors((prev) => ({ ...prev, dns1: undefined }));
+                    }}
+                    placeholder="e.g. 8.8.8.8"
+                  />
+                  {generalErrors.dns1 && (
+                    <p className="text-xs text-destructive">{generalErrors.dns1}</p>
+                  )}
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="dns2" className="text-xs">DNS 2</Label>
+                  <Input
+                    id="dns2"
+                    value={generalDraft.dns2}
+                    onChange={(e) => {
+                      setGeneralDraft((prev) => ({ ...prev, dns2: e.target.value }));
+                      setGeneralErrors((prev) => ({ ...prev, dns2: undefined }));
+                    }}
+                    placeholder="e.g. 8.8.4.4"
+                  />
+                  {generalErrors.dns2 && (
+                    <p className="text-xs text-destructive">{generalErrors.dns2}</p>
+                  )}
+                </div>
+              </div>
             </div>
           </TabsContent>
 
