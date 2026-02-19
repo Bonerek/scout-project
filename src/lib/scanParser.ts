@@ -11,6 +11,7 @@ export interface ScanHost {
   os: string;
   roles: string[];
   confidence: number;
+  mac: string;
   netbiosName: string;
   netbiosGroup: string;
   ports: ScanPort[];
@@ -41,6 +42,7 @@ interface JsonHost {
   os: string;
   roles: string[];
   confidence: number;
+  mac: string;
   netbios_name: string;
   netbios_group: string;
   ports: Record<string, JsonPort>;
@@ -69,6 +71,7 @@ export function parseScanJson(json: string): ScanResult {
       os: h.os || "",
       roles: h.roles || [],
       confidence: h.confidence ?? 0,
+      mac: h.mac || "",
       netbiosName: h.netbios_name || "",
       netbiosGroup: h.netbios_group || "",
       ports,

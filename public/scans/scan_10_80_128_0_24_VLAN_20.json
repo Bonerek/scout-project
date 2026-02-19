@@ -1,6 +1,6 @@
 {
   "subnet": "10.80.128.0/24",
-  "status": "Scan done at Thu Feb 19 12:31:23 2026; scanned in 3.66 seconds",
+  "status": "Scan done at Thu Feb 19 17:21:12 2026; scanned in 75.20 seconds",
   "results": [
     {
       "ip": "10.80.128.1",
@@ -9,6 +9,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "a2:eb:03:00:00:10",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -127,6 +130,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "a2:eb:03:00:00:11",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -245,6 +251,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "10:bf:48:d7:f5:cf",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -366,6 +375,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "f4:1e:57:4a:3a:26",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -484,6 +496,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -604,6 +619,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:50:56:96:80:ec",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -725,6 +743,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "9c:8e:99:5a:95:80",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -847,6 +868,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "ac:1f:6b:ee:28:db",
+      "netbios_name": "ZODIAC-INMGB34F",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "closed",
@@ -967,6 +991,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "ac:1f:6b:49:a0:5a",
+      "netbios_name": "NURON1",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1087,6 +1114,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "c8:1f:66:bf:7a:ce",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1205,6 +1235,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1323,6 +1356,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1444,6 +1480,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "9c:6b:00:16:1d:20",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1564,6 +1603,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "d8:3a:dd:cc:3a:21",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1679,12 +1721,12 @@
       "ip": "10.80.128.15",
       "ptr": "gppc1.ref.ops.esa.int",
       "status": "online",
-      "os": "Windows",
-      "roles": [
-        "nfs",
-        "rdp"
-      ],
-      "confidence": 60,
+      "os": "Linux(Unix)",
+      "roles": [],
+      "confidence": 55,
+      "mac": "9c:6b:00:16:1d:c2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -1727,8 +1769,8 @@
           "reason": "refused"
         },
         "111": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "2049": {
           "state": "closed",
@@ -1775,8 +1817,8 @@
           "reason": "refused"
         },
         "3389": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5900": {
           "state": "closed",
@@ -1803,6 +1845,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -1921,6 +1966,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "0c:c4:7a:cd:84:ba",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -2043,6 +2091,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "54:04:a6:b9:2d:78",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2163,6 +2214,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:48:3a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -2284,6 +2338,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0f:c9:16:d6:78",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2405,6 +2462,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "3c:ec:ef:9b:f7:78",
+      "netbios_name": "SAFRAN-8B6O6IDN",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "closed",
@@ -2523,6 +2583,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -2648,6 +2711,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:0e:82:63",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2769,6 +2835,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0f:c9:16:be:c6",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -2891,6 +2960,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:60:9f:ab:0b:64",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -3009,6 +3081,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -3132,6 +3207,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "00:30:64:14:cc:5d",
+      "netbios_name": "K-N9040B-30148",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "filtered",
@@ -3252,6 +3330,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:25:4f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3375,6 +3456,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "d4:5d:64:ba:d4:a1",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -3493,6 +3577,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -3613,6 +3700,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:c3:11",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3734,6 +3824,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:fe:22",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3854,6 +3947,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:db:ba",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -3972,6 +4068,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:50:56:8a:1a:02",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4093,6 +4192,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:e0:c2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4214,6 +4316,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:14:4f:f9:8e:3c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -4335,6 +4440,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:14:4f:fb:0c:a1",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -4457,6 +4565,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:14:4f:f9:8a:ba",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -4575,6 +4686,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -4693,6 +4807,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:50:56:8a:ef:f6",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4814,6 +4931,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:e9:37",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -4938,6 +5058,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:3f:73",
+      "netbios_name": "GSC-DATRON-SIM",
+      "netbios_group": "ESPACIO",
       "ports": {
         "21": {
           "state": "open",
@@ -5052,10 +5175,15 @@
     {
       "ip": "10.80.128.43",
       "ptr": "csmc-sim03.ref.ops.esa.int",
-      "status": "offline",
-      "os": "",
-      "roles": [],
-      "confidence": 0,
+      "status": "online",
+      "os": "Windows",
+      "roles": [
+        "rdp"
+      ],
+      "confidence": 60,
+      "mac": "00:50:56:8a:8e:8c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -5146,8 +5274,8 @@
           "reason": "timeout"
         },
         "3389": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "open",
+          "reason": "syn-ack"
         },
         "5900": {
           "state": "filtered",
@@ -5178,6 +5306,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:4c:6f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5300,6 +5431,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:ae:24",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5421,6 +5555,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:ea:94:9d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5543,6 +5680,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "ac:22:0b:8b:f8:71",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -5661,6 +5801,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -5782,6 +5925,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "ac:22:0b:8b:f6:e7",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -5900,6 +6046,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:50:56:8a:70:d8",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -6018,6 +6167,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -6139,6 +6291,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0f:c9:16:c0:b8",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -6261,6 +6416,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "10:bf:48:d7:f5:62",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -6381,6 +6539,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:75:87",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -6502,6 +6663,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:8b:72",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -6623,6 +6787,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "0c:c4:7a:cd:82:6a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -6741,6 +6908,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -6859,6 +7029,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -6979,6 +7152,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:dc:af:0b",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7097,6 +7273,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:0c:29:53:18:95",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7215,6 +7394,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -7336,6 +7518,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:96:5c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -7457,6 +7642,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:03:b6",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -7578,6 +7766,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:28:6a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -7698,6 +7889,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:90:83",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7818,6 +8012,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:06:50",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -7939,6 +8136,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:a7:f0",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -8057,6 +8257,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "00:a0:6e:04:01:a3",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8159,12 +8362,12 @@
           "reason": "refused"
         },
         "5985": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5986": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         }
       }
     },
@@ -8178,6 +8381,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:13:95:0f:be:c2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -8299,6 +8505,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "4c:52:62:1c:56:91",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -8417,6 +8626,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "00:80:2f:11:2c:43",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8537,6 +8749,9 @@
         "postgres"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:d7:87:bc",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8655,6 +8870,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "00:80:2f:10:03:df",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -8773,6 +8991,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -8891,6 +9112,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "00:80:2f:11:0b:87",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -9012,6 +9236,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:3f:da",
+      "netbios_name": "WINVM2",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9133,6 +9360,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:4c:d8",
+      "netbios_name": "WINVM4",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9251,6 +9481,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9369,6 +9602,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -9490,6 +9726,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:0c:29:8b:6c:70",
+      "netbios_name": "PRINTSERVER",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "closed",
@@ -9611,6 +9850,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:e5:6a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -9733,6 +9975,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:55:9e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -9854,6 +10099,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:c5:40",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -9976,6 +10224,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:96:28:e8",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10098,6 +10349,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:08:d2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10221,6 +10475,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "00:50:56:8a:ff:19",
+      "netbios_name": "FEC-SIM-VM",
+      "netbios_group": "FEC",
       "ports": {
         "21": {
           "state": "open",
@@ -10342,6 +10599,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:82:06",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10460,6 +10720,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "08:62:66:a0:64:38",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -10583,6 +10846,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:b0:5e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -10707,6 +10973,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:41:cb",
+      "netbios_name": "ICDB",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "open",
@@ -10827,6 +11096,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:a7:2e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -10945,6 +11217,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11063,6 +11338,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11183,6 +11461,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "2c:4d:54:46:27:8c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11303,6 +11584,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8f:d3:9e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11425,6 +11709,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "a8:a1:59:d0:a7:66",
+      "netbios_name": "GSPC1",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11547,6 +11834,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "a8:a1:59:d0:a7:5b",
+      "netbios_name": "GSPC2",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "filtered",
@@ -11667,6 +11957,9 @@
         "mysql"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:ee:c7",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11787,6 +12080,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:9c:52",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -11905,6 +12201,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12026,6 +12325,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "a8:a1:59:b0:b2:05",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12148,6 +12450,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "a8:a1:59:b0:b1:dc",
+      "netbios_name": "GSPC4",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12271,6 +12576,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:e0:d2:04",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -12392,6 +12700,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:96:df:81",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -12512,6 +12823,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:81:c0",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -12630,6 +12944,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12752,6 +13069,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "a8:a1:59:d0:a6:aa",
+      "netbios_name": "GSPC5",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12874,6 +13194,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "a8:a1:59:d0:a7:50",
+      "netbios_name": "GSPC6",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -12995,6 +13318,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:2c:70",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -13116,6 +13442,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:eb:59",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -13234,6 +13563,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:50:56:96:4d:4f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -13355,6 +13687,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "98:4b:e1:01:30:04",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13476,6 +13811,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:02:cc",
+      "netbios_name": "WINSERVER1",
+      "netbios_group": "ESOC",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13594,6 +13932,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:50:56:96:0e:fd",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -13714,6 +14055,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:47:15",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -13835,6 +14179,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:4b:0f",
+      "netbios_name": "WINVM1-OLD",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -13955,6 +14302,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "7c:10:c9:3d:17:75",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14075,6 +14425,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "7c:10:c9:44:33:75",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14196,6 +14549,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:ab:13",
+      "netbios_name": "WINVM3",
+      "netbios_group": "WORKGROUP",
       "ports": {
         "21": {
           "state": "filtered",
@@ -14316,6 +14672,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:10:e0:c0:06:07",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -14436,6 +14795,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:10:e0:c0:05:fe",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14557,6 +14919,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:0c:29:d7:aa:a1",
+      "netbios_name": "PSS1",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "open",
@@ -14678,6 +15043,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:b9:d8:68",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -14796,6 +15164,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -14914,6 +15285,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "00:50:56:96:eb:ab",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -15032,6 +15406,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15150,14 +15527,17 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "00:30:56:f1:17:c0",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
           "reason": "refused"
         },
         "22": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         },
         "23": {
           "state": "closed",
@@ -15256,8 +15636,8 @@
           "reason": "refused"
         },
         "5986": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         }
       }
     },
@@ -15268,6 +15648,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15386,6 +15769,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15506,6 +15892,9 @@
         "mysql"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:34:9f:2e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -15626,6 +16015,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "40:16:7e:36:89:17",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -15744,6 +16136,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -15864,6 +16259,9 @@
         "mysql"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:aa:7d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -15987,6 +16385,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "e0:3f:49:e8:09:b3",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -16107,6 +16508,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:3f:23",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16227,6 +16631,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:3e:6c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16347,6 +16754,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:38:74",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16467,6 +16877,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:38:97",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16587,6 +17000,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:3f:06",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16707,6 +17123,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:36:20",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16827,6 +17246,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:33:0c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -16947,6 +17369,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:47:be",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17065,6 +17490,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17185,6 +17613,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:31:b2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17305,6 +17736,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:12:b4:00:3e:82",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -17427,6 +17861,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:96:fe:aa",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -17549,6 +17986,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:96:3b:b2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -17671,6 +18111,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:f7:49",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -17793,6 +18236,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:24:24",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -17914,6 +18360,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:3e:c7",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18035,6 +18484,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:1f:27",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18156,6 +18608,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:4c:20",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18276,6 +18731,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:f0:6c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18396,6 +18854,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:98:30",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18516,6 +18977,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:10:e0:e1:2f:22",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -18636,6 +19100,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:10:e0:e1:2f:2b",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -18757,6 +19224,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:14:4f:f9:92:9f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -18878,6 +19348,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "24:5e:be:86:0a:e7",
+      "netbios_name": "NAS2",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "closed",
@@ -18996,6 +19469,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -19116,6 +19592,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:54:b3",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -19236,6 +19715,9 @@
         "postgres"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:3d:7e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -19356,6 +19838,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:d5:5f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19476,6 +19961,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:54:f7",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19598,6 +20086,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "0c:c4:7a:cd:f2:bc",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19720,6 +20211,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "0c:c4:7a:cd:f2:dc",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -19838,6 +20332,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -19956,6 +20453,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20074,6 +20574,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20192,6 +20695,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20313,6 +20819,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "7c:10:c9:3d:17:74",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -20435,6 +20944,9 @@
         "web"
       ],
       "confidence": 60,
+      "mac": "7c:10:c9:44:33:74",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -20555,6 +21067,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:e2:61",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -20673,6 +21188,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -20793,6 +21311,9 @@
         "ftp"
       ],
       "confidence": 0,
+      "mac": "00:1b:82:31:22:de",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -20899,8 +21420,8 @@
           "reason": "refused"
         },
         "5986": {
-          "state": "filtered",
-          "reason": "timeout"
+          "state": "closed",
+          "reason": "refused"
         }
       }
     },
@@ -20913,6 +21434,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:e1:27",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21035,6 +21559,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "00:17:c8:1d:4f:8e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21155,6 +21682,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:c2:21",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21277,6 +21807,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:12:a1",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21399,6 +21932,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:fd:a6",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21520,6 +22056,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "3c:ec:ef:e7:38:4d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -21641,6 +22180,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "3c:ec:ef:0e:c2:c4",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -21763,6 +22305,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:ba:96:54",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21885,6 +22430,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "d4:f0:c9:0e:c5:67",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -21971,28 +22519,28 @@
           "reason": "timeout"
         },
         "5432": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "3389": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5900": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5901": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5985": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "5986": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         }
       }
     },
@@ -22007,6 +22555,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:b9:e0:32",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22129,6 +22680,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:b9:48:fb",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22251,6 +22805,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:b9:95:84",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22373,6 +22930,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:b9:ff:8f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22491,6 +23051,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -22609,6 +23172,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -22732,6 +23298,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:96:52:f1",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22856,6 +23425,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:d9:9d:2e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -22977,6 +23549,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:74:5c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -23095,6 +23670,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23213,6 +23791,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23331,6 +23912,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23452,6 +24036,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:f1:9f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -23574,6 +24161,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:c1:c6:6b",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -23694,6 +24284,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:a5:5c",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -23812,6 +24405,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -23934,6 +24530,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:c6:99:e5",
+      "netbios_name": "INST1",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "closed",
@@ -24056,6 +24655,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:2b:8f:25",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24174,6 +24776,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -24294,6 +24899,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:e9:e9",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24415,6 +25023,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:b3:f7",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24535,6 +25146,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:8b:f5:3a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24657,6 +25271,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:b0:a6:0a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24777,6 +25394,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:e6:2e:8e",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -24895,6 +25515,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -25013,6 +25636,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -25136,6 +25762,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:5b:e2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -25256,6 +25885,9 @@
         "dns"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:5d:c2",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25369,11 +26001,14 @@
     },
     {
       "ip": "10.80.128.212",
-      "ptr": "signpost1-ng.ref.ops.esa.int",
+      "ptr": "signpost-ng.ref.ops.esa.int",
       "status": "online",
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -25496,6 +26131,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "ec:eb:b8:95:0f:38",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -25618,6 +26256,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "2c:4d:54:46:09:93",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -25741,6 +26382,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "e8:fc:af:e7:a4:60",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -25862,6 +26506,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:63:97:d0",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -25980,6 +26627,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -26102,6 +26752,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "10:7c:61:58:fc:bb",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -26223,6 +26876,9 @@
         "ftp"
       ],
       "confidence": 45,
+      "mac": "00:30:d3:04:9c:f8",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26344,6 +27000,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "00:40:9d:d7:46:5f",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -26465,6 +27124,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:d7:7f",
+      "netbios_name": "GSPC01",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -26586,6 +27248,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "00:50:56:8a:6c:cd",
+      "netbios_name": "GSPC02",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "filtered",
@@ -26704,6 +27369,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -26825,6 +27493,9 @@
         "rdp"
       ],
       "confidence": 60,
+      "mac": "40:16:7e:35:e4:05",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -26939,10 +27610,13 @@
     {
       "ip": "10.80.128.225",
       "ptr": "work.ref.ops.esa.int",
-      "status": "offline",
+      "status": "online",
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "00:10:5f:00:01:3d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27064,6 +27738,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:03:00",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -27185,6 +27862,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:c8:ef",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -27306,6 +27986,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:14:4f:f8:0a:0b",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -27427,6 +28110,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "00:14:4f:fb:f8:3d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -27545,6 +28231,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27663,6 +28352,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -27778,17 +28470,20 @@
       "ip": "10.80.128.232",
       "ptr": "",
       "status": "online",
-      "os": "Linux(Unix)",
+      "os": "",
       "roles": [],
-      "confidence": 55,
+      "confidence": 0,
+      "mac": "58:97:bd:50:49:9a",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
           "reason": "refused"
         },
         "22": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "23": {
           "state": "closed",
@@ -27901,6 +28596,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "00:20:4a:8b:2e:24",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -27927,16 +28625,16 @@
           "reason": "refused"
         },
         "8080": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "8443": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "8000": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "8888": {
           "state": "closed",
@@ -28024,6 +28722,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:1f:ef",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -28147,6 +28848,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:b9:84:29",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -28267,6 +28971,9 @@
         "web"
       ],
       "confidence": 0,
+      "mac": "00:12:b4:80:1a:3d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -28385,6 +29092,9 @@
       "os": "",
       "roles": [],
       "confidence": 0,
+      "mac": "",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "filtered",
@@ -28506,6 +29216,9 @@
         "ftp"
       ],
       "confidence": 45,
+      "mac": "00:30:d3:04:fc:ff",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -28627,6 +29340,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "74:56:3c:4e:8a:da",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -28749,6 +29465,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:50:56:96:89:f1",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -28870,6 +29589,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "74:56:3c:4a:25:e3",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -28992,6 +29714,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "30:85:a9:a8:5d:40",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29114,6 +29839,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:28:3a:72",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29229,20 +29957,23 @@
       "ip": "10.80.128.244",
       "ptr": "",
       "status": "online",
-      "os": "Linux(Unix)",
+      "os": "Windows",
       "roles": [
-        "nfs",
-        "web"
+        "file-server",
+        "rdp"
       ],
-      "confidence": 55,
+      "confidence": 60,
+      "mac": "00:0c:29:e4:62:1d",
+      "netbios_name": "GSPC3",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "closed",
           "reason": "refused"
         },
         "22": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "closed",
+          "reason": "refused"
         },
         "23": {
           "state": "closed",
@@ -29253,12 +29984,12 @@
           "reason": "refused"
         },
         "80": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "closed",
+          "reason": "refused"
         },
         "443": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "closed",
+          "reason": "refused"
         },
         "8080": {
           "state": "closed",
@@ -29277,8 +30008,8 @@
           "reason": "refused"
         },
         "111": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "closed",
+          "reason": "refused"
         },
         "2049": {
           "state": "closed",
@@ -29297,8 +30028,8 @@
           "reason": "refused"
         },
         "445": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "open",
+          "reason": "syn-ack"
         },
         "902": {
           "state": "closed",
@@ -29325,8 +30056,8 @@
           "reason": "refused"
         },
         "3389": {
-          "state": "closed",
-          "reason": "refused"
+          "state": "open",
+          "reason": "syn-ack"
         },
         "5900": {
           "state": "closed",
@@ -29355,6 +30086,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:0a:91",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29477,6 +30211,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "74:56:3c:4d:e8:62",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29597,6 +30334,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:30:ea",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29717,6 +30457,9 @@
         "vnc"
       ],
       "confidence": 55,
+      "mac": "00:50:56:8a:d7:97",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -29837,6 +30580,9 @@
         "ftp"
       ],
       "confidence": 55,
+      "mac": "c8:1f:66:f5:75:c0",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "open",
@@ -29955,6 +30701,9 @@
       "os": "Linux(Unix)",
       "roles": [],
       "confidence": 55,
+      "mac": "74:56:3c:4e:ce:15",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30070,17 +30819,20 @@
       "ip": "10.80.128.251",
       "ptr": "",
       "status": "online",
-      "os": "Linux(Unix)",
+      "os": "",
       "roles": [],
-      "confidence": 55,
+      "confidence": 0,
+      "mac": "04:62:73:57:9e:bc",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
           "reason": "refused"
         },
         "22": {
-          "state": "open",
-          "reason": "syn-ack"
+          "state": "filtered",
+          "reason": "timeout"
         },
         "23": {
           "state": "closed",
@@ -30186,7 +30938,7 @@
     },
     {
       "ip": "10.80.128.252",
-      "ptr": "silo1.ref.ops.esa.int",
+      "ptr": "ntp1.ref.ops.esa.int",
       "status": "online",
       "os": "Linux(Unix)",
       "roles": [
@@ -30197,6 +30949,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "74:d0:2b:97:74:71",
+      "netbios_name": "SILO1",
+      "netbios_group": "GSRF",
       "ports": {
         "21": {
           "state": "open",
@@ -30317,6 +31072,9 @@
         "web"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:47:a9:9d",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
@@ -30438,6 +31196,9 @@
         "nfs"
       ],
       "confidence": 55,
+      "mac": "00:0c:29:8e:cb:25",
+      "netbios_name": "",
+      "netbios_group": "",
       "ports": {
         "21": {
           "state": "closed",
