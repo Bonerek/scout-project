@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
 import { NetworkConfig } from "@/lib/configTypes";
-import { Search, Monitor, MonitorOff, ArrowUp, ArrowDown, ArrowUpDown } from "lucide-react";
+import { Search, Monitor, MonitorOff, ArrowUp, ArrowDown, ArrowUpDown, Cable } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
@@ -251,6 +251,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                   OS <SortIcon field="os" />
                 </TableHead>
                 
+                <TableHead className="hidden lg:table-cell w-[50px] text-center">MAC</TableHead>
                 <TableHead className="hidden lg:table-cell">NetBIOS Name</TableHead>
                 <TableHead className="hidden lg:table-cell">NetBIOS Group</TableHead>
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
@@ -301,6 +302,20 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                   </TableCell>
                   <TableCell className="hidden md:table-cell text-lg text-muted-foreground">
                     {host.os || "—"}
+                  </TableCell>
+                  <TableCell className="hidden lg:table-cell text-center">
+                    {host.mac ? (
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger>
+                            <Cable className="h-5 w-5 text-muted-foreground inline-block" />
+                          </TooltipTrigger>
+                          <TooltipContent>{host.mac}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    ) : (
+                      <span className="text-muted-foreground">—</span>
+                    )}
                   </TableCell>
                   <TableCell className="hidden lg:table-cell text-lg">
                     {host.netbiosName || "—"}
