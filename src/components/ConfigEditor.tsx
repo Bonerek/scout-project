@@ -266,7 +266,7 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                     id={`scanFile-${idx}`}
                     value={net.scanFile}
                     readOnly
-                    className="bg-muted text-muted-foreground cursor-not-allowed"
+                    className="bg-muted text-muted-foreground"
                   />
                 </div>
               </div>
