@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { NmapHost, NmapResult } from "@/lib/nmapParser";
+import { ScanHost, ScanResult } from "@/lib/scanParser";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -10,14 +10,14 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 interface ScanTableProps {
   network: NetworkConfig;
-  result: NmapResult;
+  result: ScanResult;
 }
 
-function PortBadge({ state, portid, service }: { state: string; portid: string; service: string }) {
+function PortBadge({ state, portid }: { state: string; portid: string }) {
   const variant = state === "open" ? "default" : state === "closed" ? "secondary" : "outline";
   return (
     <Badge variant={variant} className="mr-1 mb-1 text-xs">
-      {portid}/{service}
+      {portid}
     </Badge>
   );
 }
@@ -32,8 +32,8 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
       (h) =>
         h.ip.includes(q) ||
         h.hostname.toLowerCase().includes(q) ||
-        h.vendor.toLowerCase().includes(q) ||
-        h.mac.toLowerCase().includes(q)
+        h.os.toLowerCase().includes(q) ||
+        h.netbiosName.toLowerCase().includes(q)
     );
   }, [result.hosts, filter]);
 
@@ -83,7 +83,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
       <Card>
         <CardHeader className="p-4 pb-2">
           <CardDescription className="text-xs font-mono break-all">
-            {result.scanInfo.summary}
+            {result.scanInfo.statusText}
           </CardDescription>
         </CardHeader>
       </Card>
@@ -108,8 +108,8 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableHead className="w-[140px]">IP Address</TableHead>
                 <TableHead>Hostname</TableHead>
                 <TableHead className="w-[80px]">Status</TableHead>
-                <TableHead className="hidden md:table-cell">MAC</TableHead>
-                <TableHead className="hidden lg:table-cell">Vendor</TableHead>
+                <TableHead className="hidden md:table-cell">OS</TableHead>
+                <TableHead className="hidden lg:table-cell">NetBIOS</TableHead>
                 <TableHead>Ports</TableHead>
               </TableRow>
             </TableHeader>
@@ -124,33 +124,32 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                         <TooltipTrigger>
                           <span
                             className={`inline-block h-3 w-3 rounded-full ${
-                              host.state === "up"
+                              host.status === "online"
                                 ? "bg-green-500"
                                 : "bg-red-500"
                             }`}
                           />
                         </TooltipTrigger>
                         <TooltipContent>
-                          {host.state === "up" ? "Online" : "Offline"}
+                          {host.status === "online" ? "Online" : "Offline"}
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell font-mono text-xs text-muted-foreground">
-                    {host.mac || "—"}
+                  <TableCell className="hidden md:table-cell text-sm text-muted-foreground">
+                    {host.os || "—"}
                   </TableCell>
                   <TableCell className="hidden lg:table-cell text-sm text-muted-foreground">
-                    {host.vendor || "—"}
+                    {host.netbiosName || "—"}
                   </TableCell>
                   <TableCell>
                     {host.ports.length > 0 ? (
                       <div className="flex flex-wrap">
                         {host.ports.map((p) => (
                           <PortBadge
-                            key={`${p.protocol}-${p.portid}`}
+                            key={p.portid}
                             state={p.state}
                             portid={p.portid}
-                            service={p.service}
                           />
                         ))}
                       </div>

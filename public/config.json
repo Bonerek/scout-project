@@ -4,7 +4,7 @@
       "name": "REF-OPS",
       "subnet": "10.80.128.0/24",
       "vlan": "20",
-      "scanFile": "/scans/scan_10_80_128_0_24_VLAN_20.xml"
+      "scanFile": "/scans/scan_10_80_128_0_24_VLAN_20.json"
     }
   ]
 }

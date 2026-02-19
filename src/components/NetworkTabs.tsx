@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AppConfig, NetworkConfig } from "@/lib/configTypes";
-import { NmapResult, parseNmapXml } from "@/lib/nmapParser";
+import { ScanResult, parseScanJson } from "@/lib/scanParser";
 import ScanTable from "@/components/ScanTable";
 import ConfigEditor from "@/components/ConfigEditor";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -10,7 +10,7 @@ const CONFIG_KEY = "scout_network_config";
 
 const NetworkTabs = () => {
   const [networks, setNetworks] = useState<NetworkConfig[]>([]);
-  const [scanResults, setScanResults] = useState<Record<string, NmapResult>>({});
+  const [scanResults, setScanResults] = useState<Record<string, ScanResult>>({});
   const [loading, setLoading] = useState(true);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -22,12 +22,12 @@ const NetworkTabs = () => {
           if (!r.ok) throw new Error(`Failed to load ${net.scanFile}`);
           return r.text();
         })
-        .then((xml) => ({ subnet: net.subnet, result: parseNmapXml(xml) }))
+        .then((text) => ({ subnet: net.subnet, result: parseScanJson(text) }))
         .catch((err) => ({ subnet: net.subnet, error: err.message }))
     );
     Promise.all(promises)
       .then((results) => {
-        const scans: Record<string, NmapResult> = {};
+        const scans: Record<string, ScanResult> = {};
         const errs: Record<string, string> = {};
         results.forEach((r) => {
           if ("result" in r) scans[r.subnet] = r.result;
