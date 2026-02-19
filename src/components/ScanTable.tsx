@@ -181,11 +181,12 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       <Tooltip>
                         <TooltipTrigger>
                           <span
-                            className={`inline-block h-3 w-3 rounded-full ${
+                            className={`inline-block h-4 w-4 rounded-full shadow-md ${
                               host.status === "online"
-                                ? "bg-green-500"
-                                : "bg-red-500"
+                                ? "bg-green-500 shadow-green-500/40"
+                                : "bg-red-500 shadow-red-500/40"
                             }`}
+                            style={{ boxShadow: host.status === "online" ? "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(34,197,94,0.4)" : "inset 0 -2px 4px rgba(0,0,0,0.2), 0 0 6px rgba(239,68,68,0.4)" }}
                           />
                         </TooltipTrigger>
                         <TooltipContent>
