@@ -164,7 +164,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
               <TableRow>
                 <TableHead className="w-[140px]">IP Address</TableHead>
                 <TableHead>Reverse DNS</TableHead>
-                <TableHead className="w-[80px]">Status</TableHead>
+                <TableHead className="w-[80px] text-center">Status</TableHead>
                 <TableHead className="hidden md:table-cell">OS</TableHead>
                 
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
@@ -176,7 +176,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableRow key={host.ip}>
                   <TableCell className="font-mono text-lg">{host.ip}</TableCell>
                   <TableCell className="text-lg">{host.hostname || "—"}</TableCell>
-                  <TableCell>
+                  <TableCell className="text-center">
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger>
