@@ -116,9 +116,9 @@ const NetworkTabs = () => {
         </div>
       ) : (
         <Tabs defaultValue={networks[0].subnet} className="w-full">
-          <TabsList className="w-full flex-wrap h-auto gap-1 justify-start bg-card">
+          <TabsList className="w-full flex-wrap h-auto gap-1 justify-start bg-card p-1">
             {networks.map((net) => (
-              <TabsTrigger key={net.subnet} value={net.subnet} className="text-xs md:text-sm">
+              <TabsTrigger key={net.subnet} value={net.subnet} className="text-sm md:text-base font-semibold px-4 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md">
                 {net.name}
               </TabsTrigger>
             ))}
