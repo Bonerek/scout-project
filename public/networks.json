@@ -1,0 +1,79 @@
+[
+  {
+    "name": "REF-OPS",
+    "subnet": "10.80.128.0/24",
+    "vlan": "20",
+    "gateway": "10.80.128.1",
+    "scanFile": "/scans/scan_10_80_128_0_24_VLAN_20.json"
+  },
+  {
+    "name": "MGMT",
+    "subnet": "10.10.1.0/24",
+    "vlan": "10",
+    "gateway": "10.10.1.1",
+    "scanFile": "/scans/scan_10_10_1_0_24_VLAN_10.json"
+  },
+  {
+    "name": "SERVERS",
+    "subnet": "10.20.10.0/24",
+    "vlan": "30",
+    "gateway": "10.20.10.1",
+    "scanFile": "/scans/scan_10_20_10_0_24_VLAN_30.json"
+  },
+  {
+    "name": "DMZ",
+    "subnet": "172.16.0.0/24",
+    "vlan": "50",
+    "gateway": "172.16.0.1",
+    "scanFile": "/scans/scan_172_16_0_0_24_VLAN_50.json"
+  },
+  {
+    "name": "VOIP",
+    "subnet": "10.30.5.0/24",
+    "vlan": "100",
+    "gateway": "10.30.5.1",
+    "scanFile": "/scans/scan_10_30_5_0_24_VLAN_100.json"
+  },
+  {
+    "name": "WIFI-STAFF",
+    "subnet": "10.40.20.0/24",
+    "vlan": "200",
+    "gateway": "10.40.20.1",
+    "scanFile": "/scans/scan_10_40_20_0_24_VLAN_200.json"
+  },
+  {
+    "name": "WIFI-GUEST",
+    "subnet": "10.40.30.0/24",
+    "vlan": "210",
+    "gateway": "10.40.30.1",
+    "scanFile": "/scans/scan_10_40_30_0_24_VLAN_210.json"
+  },
+  {
+    "name": "PRINTERS",
+    "subnet": "10.50.1.0/24",
+    "vlan": "60",
+    "gateway": "10.50.1.1",
+    "scanFile": "/scans/scan_10_50_1_0_24_VLAN_60.json"
+  },
+  {
+    "name": "CCTV",
+    "subnet": "10.60.10.0/24",
+    "vlan": "70",
+    "gateway": "10.60.10.1",
+    "scanFile": "/scans/scan_10_60_10_0_24_VLAN_70.json"
+  },
+  {
+    "name": "IOT",
+    "subnet": "10.70.1.0/24",
+    "vlan": "80",
+    "gateway": "10.70.1.1",
+    "scanFile": "/scans/scan_10_70_1_0_24_VLAN_80.json"
+  },
+  {
+    "name": "BACKUP",
+    "subnet": "10.80.50.0/24",
+    "vlan": "90",
+    "gateway": "10.80.50.1",
+    "scanFile": "/scans/scan_10_80_50_0_24_VLAN_90.json"
+  }
+]
