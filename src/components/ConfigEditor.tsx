@@ -260,7 +260,7 @@ const ConfigEditor = ({ networks, onSave }: ConfigEditorProps) => {
                     <p className="text-xs text-destructive">{errors[idx].gateway}</p>
                   )}
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 md:col-span-2">
                   <Label htmlFor={`scanFile-${idx}`} className="text-xs">Scan File Path (auto-generated)</Label>
                   <Input
                     id={`scanFile-${idx}`}
