@@ -47,14 +47,18 @@ const NetworkTabs = () => {
   useEffect(() => {
     // Migrate old unified config to split format
     const oldUnified = localStorage.getItem(CONFIG_KEY);
-    if (oldUnified && !localStorage.getItem(NETWORKS_KEY)) {
+    if (oldUnified) {
       try {
         const cfg = JSON.parse(oldUnified);
-        if (cfg.networks) {
+        if (cfg.networks && !localStorage.getItem(NETWORKS_KEY)) {
           localStorage.setItem(NETWORKS_KEY, JSON.stringify(cfg.networks));
         }
+        // Remove networks from config, keep only general
         if (cfg.general) {
           localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: cfg.general }));
+        } else if (cfg.networks) {
+          // Old format had only networks inside config - remove it
+          localStorage.removeItem(CONFIG_KEY);
         }
       } catch { /* ignore */ }
     }
