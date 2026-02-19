@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Settings, Plus, Trash2, Save } from "lucide-react";
+import { Settings, Plus, Trash2, Save, ChevronUp, ChevronDown } from "lucide-react";
 import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { useToast } from "@/hooks/use-toast";
 
@@ -154,6 +154,15 @@ const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
     setDraft((prev) => prev.filter((_, i) => i !== index));
   };
 
+  const moveNetwork = (index: number, direction: "up" | "down") => {
+    setDraft((prev) => {
+      const next = [...prev];
+      const target = direction === "up" ? index - 1 : index + 1;
+      [next[index], next[target]] = [next[target], next[index]];
+      return next;
+    });
+  };
+
   const handleSave = () => {
     const newErrors: ValidationErrors = {};
     let hasError = false;
@@ -289,29 +298,49 @@ const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
                   <span className="text-sm font-medium text-muted-foreground">
                     Network #{idx + 1}
                   </span>
-                  <AlertDialog>
-                    <AlertDialogTrigger asChild>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-7 w-7 text-destructive"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
-                    </AlertDialogTrigger>
-                    <AlertDialogContent>
-                      <AlertDialogHeader>
-                        <AlertDialogTitle>Smazat síť?</AlertDialogTitle>
-                        <AlertDialogDescription>
-                          Opravdu chcete smazat síť {net.name || `#${idx + 1}`}? Tuto akci nelze vrátit zpět.
-                        </AlertDialogDescription>
-                      </AlertDialogHeader>
-                      <AlertDialogFooter>
-                        <AlertDialogCancel>Zrušit</AlertDialogCancel>
-                        <AlertDialogAction onClick={() => removeNetwork(idx)}>Smazat</AlertDialogAction>
-                      </AlertDialogFooter>
-                    </AlertDialogContent>
-                  </AlertDialog>
+                  <div className="flex items-center gap-1">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-7 w-7"
+                      disabled={idx === 0}
+                      onClick={() => moveNetwork(idx, "up")}
+                    >
+                      <ChevronUp className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-7 w-7"
+                      disabled={idx === draft.length - 1}
+                      onClick={() => moveNetwork(idx, "down")}
+                    >
+                      <ChevronDown className="h-4 w-4" />
+                    </Button>
+                    <AlertDialog>
+                      <AlertDialogTrigger asChild>
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-7 w-7 text-destructive"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </Button>
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>Smazat síť?</AlertDialogTitle>
+                          <AlertDialogDescription>
+                            Opravdu chcete smazat síť {net.name || `#${idx + 1}`}? Tuto akci nelze vrátit zpět.
+                          </AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                          <AlertDialogCancel>Zrušit</AlertDialogCancel>
+                          <AlertDialogAction onClick={() => removeNetwork(idx)}>Smazat</AlertDialogAction>
+                        </AlertDialogFooter>
+                      </AlertDialogContent>
+                    </AlertDialog>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
