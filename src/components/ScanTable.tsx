@@ -217,16 +217,16 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
           onValueChange={(v) => setStatusFilters(v as StatusFilter[])}
           className="flex-shrink-0"
         >
-          <ToggleGroupItem value="online" className="text-xs gap-1">
+          <ToggleGroupItem value="online" className="text-xs gap-1 data-[state=on]:bg-green-700 data-[state=on]:text-white">
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500" /> Online
           </ToggleGroupItem>
-          <ToggleGroupItem value="unregistered" className="text-xs gap-1">
+          <ToggleGroupItem value="unregistered" className="text-xs gap-1 data-[state=on]:bg-yellow-600 data-[state=on]:text-white">
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-yellow-500" /> Unreg
           </ToggleGroupItem>
-          <ToggleGroupItem value="offline" className="text-xs gap-1">
+          <ToggleGroupItem value="offline" className="text-xs gap-1 data-[state=on]:bg-red-700 data-[state=on]:text-white">
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500" /> Offline
           </ToggleGroupItem>
-          <ToggleGroupItem value="free" className="text-xs gap-1">
+          <ToggleGroupItem value="free" className="text-xs gap-1 data-[state=on]:bg-gray-600 data-[state=on]:text-white">
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-gray-400" /> Free
           </ToggleGroupItem>
         </ToggleGroup>
