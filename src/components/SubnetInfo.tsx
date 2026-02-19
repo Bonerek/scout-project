@@ -65,13 +65,23 @@ const SubnetInfo = ({ network }: SubnetInfoProps) => {
   return (
     <Card>
       <CardContent className="p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-x-6 gap-y-2">
-          {items.map((item) => (
-            <div key={item.label}>
-              <p className="text-xs text-muted-foreground">{item.label}</p>
-              <p className="text-sm font-medium text-foreground">{item.value}</p>
-            </div>
-          ))}
+        <div className="space-y-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-2">
+            {items.slice(0, 4).map((item) => (
+              <div key={item.label}>
+                <p className="text-xs text-muted-foreground">{item.label}</p>
+                <p className="text-sm font-medium text-foreground">{item.value}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2">
+            {items.slice(4).map((item) => (
+              <div key={item.label}>
+                <p className="text-xs text-muted-foreground">{item.label}</p>
+                <p className="text-sm font-medium text-foreground">{item.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </CardContent>
     </Card>
