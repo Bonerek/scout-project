@@ -16,7 +16,7 @@ interface ScanTableProps {
 function PortBadge({ state, portid }: { state: string; portid: string }) {
   const variant = state === "open" ? "default" : state === "closed" ? "secondary" : "outline";
   return (
-    <Badge variant={variant} className="mr-0.5 mb-0.5 text-xs rounded-md px-1.5 py-0">
+    <Badge variant={variant} className="mr-0.5 mb-0.5 text-sm rounded-md px-2 py-0.5">
       {portid}
     </Badge>
   );
@@ -116,8 +116,8 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
             <TableBody>
               {filtered.map((host) => (
                 <TableRow key={host.ip}>
-                  <TableCell className="font-mono text-sm">{host.ip}</TableCell>
-                  <TableCell className="text-sm">{host.hostname || "—"}</TableCell>
+                  <TableCell className="font-mono text-base">{host.ip}</TableCell>
+                  <TableCell className="text-base">{host.hostname || "—"}</TableCell>
                   <TableCell>
                     <TooltipProvider>
                       <Tooltip>
@@ -136,10 +136,10 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       </Tooltip>
                     </TooltipProvider>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell text-sm text-muted-foreground">
+                  <TableCell className="hidden md:table-cell text-base text-muted-foreground">
                     {host.os || "—"}
                   </TableCell>
-                  <TableCell className="hidden lg:table-cell text-sm text-muted-foreground">
+                  <TableCell className="hidden lg:table-cell text-base text-muted-foreground">
                     {host.netbiosName || "—"}
                   </TableCell>
                   <TableCell>
