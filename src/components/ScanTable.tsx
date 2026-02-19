@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import tuxLogo from "@/assets/tux-linux.svg";
+import rj45Icon from "@/assets/rj45.svg";
 import { ScanHost, ScanResult } from "@/lib/scanParser";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -326,7 +327,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       <TooltipProvider>
                         <Tooltip>
                           <TooltipTrigger>
-                            <Cable className="h-5 w-5 text-muted-foreground inline-block" />
+                            <img src={rj45Icon} alt="MAC" className="h-7 w-7 inline-block" />
                           </TooltipTrigger>
                           <TooltipContent>{host.mac}</TooltipContent>
                         </Tooltip>
