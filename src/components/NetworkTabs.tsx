@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { NetworkConfig, GeneralConfig, AppConfig } from "@/lib/configTypes";
+import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
 import ScanTable from "@/components/ScanTable";
 import SubnetInfo from "@/components/SubnetInfo";
@@ -8,6 +8,7 @@ import ConfigEditor from "@/components/ConfigEditor";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const CONFIG_KEY = "scout_config";
+const NETWORKS_KEY = "scout_networks";
 const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "" };
 
 const NetworkTabs = () => {
@@ -44,52 +45,80 @@ const NetworkTabs = () => {
   }, []);
 
   useEffect(() => {
-    // Migrate old localStorage keys to new unified format
+    // Migrate old unified config to split format
+    const oldUnified = localStorage.getItem(CONFIG_KEY);
+    if (oldUnified && !localStorage.getItem(NETWORKS_KEY)) {
+      try {
+        const cfg = JSON.parse(oldUnified);
+        if (cfg.networks) {
+          localStorage.setItem(NETWORKS_KEY, JSON.stringify(cfg.networks));
+        }
+        if (cfg.general) {
+          localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: cfg.general }));
+        }
+      } catch { /* ignore */ }
+    }
+
+    // Migrate even older keys
     const oldNetworks = localStorage.getItem("scout_network_config");
     const oldGeneral = localStorage.getItem("scout_general_config");
-    if (oldNetworks && !localStorage.getItem(CONFIG_KEY)) {
+    if (oldNetworks && !localStorage.getItem(NETWORKS_KEY)) {
       try {
-        const nets: NetworkConfig[] = JSON.parse(oldNetworks);
-        let gen = defaultGeneral;
-        if (oldGeneral) {
-          try { gen = { ...defaultGeneral, ...JSON.parse(oldGeneral) }; } catch { /* ignore */ }
-        }
-        const cfg: AppConfig = { general: gen, networks: nets };
-        localStorage.setItem(CONFIG_KEY, JSON.stringify(cfg));
+        localStorage.setItem(NETWORKS_KEY, oldNetworks);
         localStorage.removeItem("scout_network_config");
+      } catch { /* ignore */ }
+    }
+    if (oldGeneral && !localStorage.getItem(CONFIG_KEY)) {
+      try {
+        const gen = { ...defaultGeneral, ...JSON.parse(oldGeneral) };
+        localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: gen }));
         localStorage.removeItem("scout_general_config");
       } catch { /* ignore */ }
     }
 
-    const stored = localStorage.getItem(CONFIG_KEY);
-    if (stored) {
+    // Load general config
+    const storedConfig = localStorage.getItem(CONFIG_KEY);
+    if (storedConfig) {
       try {
-        const cfg: AppConfig = JSON.parse(stored);
-        const nets = (cfg.networks || []).map((n) => ({
+        const cfg = JSON.parse(storedConfig);
+        if (cfg.general) setGeneral({ ...defaultGeneral, ...cfg.general });
+      } catch { /* ignore */ }
+    } else {
+      fetch("/config.json")
+        .then((r) => r.json())
+        .then((cfg) => {
+          if (cfg.general) setGeneral({ ...defaultGeneral, ...cfg.general });
+        })
+        .catch(console.error);
+    }
+
+    // Load networks
+    const storedNetworks = localStorage.getItem(NETWORKS_KEY);
+    if (storedNetworks) {
+      try {
+        const nets: NetworkConfig[] = JSON.parse(storedNetworks).map((n: NetworkConfig) => ({
           ...n,
           gateway: n.gateway || "",
           scanFile: n.scanFile.replace(/\.xml$/, ".json"),
         }));
-        setGeneral({ ...defaultGeneral, ...cfg.general });
         setNetworks(nets);
         loadScans(nets);
         return;
       } catch { /* fall through */ }
     }
-    fetch("/config.json")
+    fetch("/networks.json")
       .then((r) => r.json())
-      .then((cfg: AppConfig) => {
-        setGeneral({ ...defaultGeneral, ...cfg.general });
-        setNetworks(cfg.networks || []);
-        loadScans(cfg.networks || []);
+      .then((nets: NetworkConfig[]) => {
+        setNetworks(nets);
+        loadScans(nets);
       })
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [loadScans]);
 
   const handleSaveConfig = (updatedNetworks: NetworkConfig[], updatedGeneral: GeneralConfig) => {
-    const cfg: AppConfig = { general: updatedGeneral, networks: updatedNetworks };
-    localStorage.setItem(CONFIG_KEY, JSON.stringify(cfg));
+    localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: updatedGeneral }));
+    localStorage.setItem(NETWORKS_KEY, JSON.stringify(updatedNetworks));
     setNetworks(updatedNetworks);
     setGeneral(updatedGeneral);
     loadScans(updatedNetworks);
