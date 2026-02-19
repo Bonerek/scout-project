@@ -74,7 +74,7 @@ const SubnetInfo = ({ network }: SubnetInfoProps) => {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-2">
             {items.slice(4).map((item) => (
               <div key={item.label}>
                 <p className="text-xs text-muted-foreground">{item.label}</p>
