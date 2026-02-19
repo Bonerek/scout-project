@@ -174,8 +174,8 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
             <TableBody>
               {filtered.map((host) => (
                 <TableRow key={host.ip}>
-                  <TableCell className="font-mono text-base">{host.ip}</TableCell>
-                  <TableCell className="text-base">{host.hostname || "—"}</TableCell>
+                  <TableCell className="font-mono text-lg">{host.ip}</TableCell>
+                  <TableCell className="text-lg">{host.hostname || "—"}</TableCell>
                   <TableCell>
                     <TooltipProvider>
                       <Tooltip>
@@ -194,7 +194,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       </Tooltip>
                     </TooltipProvider>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell text-base text-muted-foreground">
+                  <TableCell className="hidden md:table-cell text-lg text-muted-foreground">
                     {host.os || "—"}
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
