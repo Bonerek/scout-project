@@ -75,5 +75,47 @@
     "vlan": "90",
     "gateway": "10.80.50.1",
     "scanFile": "/scans/scan_10_80_50_0_24_VLAN_90.json"
+  },
+  {
+    "name": "DEV",
+    "subnet": "10.90.1.0/24",
+    "vlan": "110",
+    "gateway": "10.90.1.1",
+    "scanFile": "/scans/scan_10_90_1_0_24_VLAN_110.json"
+  },
+  {
+    "name": "STAGING",
+    "subnet": "10.90.2.0/24",
+    "vlan": "120",
+    "gateway": "10.90.2.1",
+    "scanFile": "/scans/scan_10_90_2_0_24_VLAN_120.json"
+  },
+  {
+    "name": "HR",
+    "subnet": "10.100.1.0/24",
+    "vlan": "130",
+    "gateway": "10.100.1.1",
+    "scanFile": "/scans/scan_10_100_1_0_24_VLAN_130.json"
+  },
+  {
+    "name": "FINANCE",
+    "subnet": "10.100.2.0/24",
+    "vlan": "140",
+    "gateway": "10.100.2.1",
+    "scanFile": "/scans/scan_10_100_2_0_24_VLAN_140.json"
+  },
+  {
+    "name": "LAB",
+    "subnet": "10.110.1.0/24",
+    "vlan": "150",
+    "gateway": "10.110.1.1",
+    "scanFile": "/scans/scan_10_110_1_0_24_VLAN_150.json"
+  },
+  {
+    "name": "SCADA",
+    "subnet": "10.120.1.0/24",
+    "vlan": "160",
+    "gateway": "10.120.1.1",
+    "scanFile": "/scans/scan_10_120_1_0_24_VLAN_160.json"
   }
 ]
