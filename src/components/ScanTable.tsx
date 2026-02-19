@@ -143,18 +143,20 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                     {host.netbiosName || "—"}
                   </TableCell>
                   <TableCell>
-                    {host.ports.length > 0 ? (
+                    {host.ports.filter((p) => p.state === "open").length > 0 ? (
                       <div className="flex flex-wrap">
-                        {host.ports.map((p) => (
-                          <PortBadge
-                            key={p.portid}
-                            state={p.state}
-                            portid={p.portid}
-                          />
-                        ))}
+                        {host.ports
+                          .filter((p) => p.state === "open")
+                          .map((p) => (
+                            <PortBadge
+                              key={p.portid}
+                              state={p.state}
+                              portid={p.portid}
+                            />
+                          ))}
                       </div>
                     ) : (
-                      <span className="text-xs text-muted-foreground">no data</span>
+                      <span className="text-xs text-muted-foreground">—</span>
                     )}
                   </TableCell>
                 </TableRow>
