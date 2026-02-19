@@ -327,7 +327,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       <TooltipProvider>
                         <Tooltip>
                           <TooltipTrigger>
-                            <img src={rj45Icon} alt="MAC" className="h-7 w-7 inline-block" />
+                            <img src={rj45Icon} alt="MAC" className="h-9 w-9 inline-block" />
                           </TooltipTrigger>
                           <TooltipContent>{host.mac}</TooltipContent>
                         </Tooltip>
