@@ -147,7 +147,7 @@ const NetworkTabs = () => {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-2">
       <div className="flex justify-end">
         <ConfigEditor networks={networks} general={general} onSave={handleSaveConfig} />
       </div>
