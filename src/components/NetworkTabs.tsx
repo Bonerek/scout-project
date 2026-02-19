@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { AppConfig, NetworkConfig } from "@/lib/configTypes";
+import { NetworkConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
 import ScanTable from "@/components/ScanTable";
 import SubnetInfo from "@/components/SubnetInfo";
@@ -46,7 +46,6 @@ const NetworkTabs = () => {
     if (stored) {
       try {
         const nets: NetworkConfig[] = JSON.parse(stored);
-        // Migrate .xml to .json
         const migrated = nets.map((n) => ({
           ...n,
           gateway: n.gateway || "",
@@ -58,11 +57,11 @@ const NetworkTabs = () => {
         return;
       } catch { /* fall through */ }
     }
-    fetch("/config.json")
+    fetch("/networks.json")
       .then((r) => r.json())
-      .then((cfg: AppConfig) => {
-        setNetworks(cfg.networks);
-        loadScans(cfg.networks);
+      .then((nets: NetworkConfig[]) => {
+        setNetworks(nets);
+        loadScans(nets);
       })
       .catch(console.error)
       .finally(() => setLoading(false));

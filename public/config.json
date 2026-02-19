@@ -1,11 +1,1 @@
-{
-  "networks": [
-    {
-      "name": "REF-OPS",
-      "subnet": "10.80.128.0/24",
-      "vlan": "20",
-      "gateway": "10.80.128.1",
-      "scanFile": "/scans/scan_10_80_128_0_24_VLAN_20.json"
-    }
-  ]
-}
+{}
