@@ -254,8 +254,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 </TableHead>
                 
                 <TableHead className="hidden lg:table-cell w-[50px] text-center">MAC</TableHead>
-                <TableHead className="hidden lg:table-cell">NetBIOS Name</TableHead>
-                <TableHead className="hidden lg:table-cell">NetBIOS Group</TableHead>
+                <TableHead className="hidden lg:table-cell">NetBIOS</TableHead>
                 <TableHead className="hidden md:table-cell">Roles</TableHead>
                 <TableHead>Ports</TableHead>
               </TableRow>
@@ -337,10 +336,9 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                     )}
                   </TableCell>
                   <TableCell className="hidden lg:table-cell text-lg">
-                    {host.netbiosName || "—"}
-                  </TableCell>
-                  <TableCell className="hidden lg:table-cell text-lg">
-                    {host.netbiosGroup || "—"}
+                    {host.netbiosName || host.netbiosGroup
+                      ? `${host.netbiosName || "—"}/${host.netbiosGroup || "—"}`
+                      : "—"}
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
                     {host.roles && host.roles.length > 0 ? (
