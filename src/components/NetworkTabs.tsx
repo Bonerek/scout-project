@@ -45,8 +45,14 @@ const NetworkTabs = () => {
     if (stored) {
       try {
         const nets: NetworkConfig[] = JSON.parse(stored);
-        setNetworks(nets);
-        loadScans(nets);
+        // Migrate .xml to .json
+        const migrated = nets.map((n) => ({
+          ...n,
+          scanFile: n.scanFile.replace(/\.xml$/, ".json"),
+        }));
+        localStorage.setItem(CONFIG_KEY, JSON.stringify(migrated));
+        setNetworks(migrated);
+        loadScans(migrated);
         return;
       } catch { /* fall through */ }
     }
