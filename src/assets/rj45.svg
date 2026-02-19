@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12 16h40v32H42v8H22v-8H12z" />
-  <rect x="20" y="22" width="4" height="8" rx="0.5" />
-  <rect x="28" y="22" width="4" height="8" rx="0.5" />
-  <rect x="36" y="22" width="4" height="8" rx="0.5" />
-  <line x1="26" y1="48" x2="26" y2="54" />
-  <line x1="32" y1="48" x2="32" y2="54" />
-  <line x1="38" y1="48" x2="38" y2="54" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Body -->
+  <rect x="8" y="12" width="48" height="40" rx="6" fill="#b0b0b0"/>
+  <!-- Socket hole -->
+  <path d="M14 20h36v28h-6v6H20v-6h-6z" fill="#2d2d2d"/>
+  <!-- Pins -->
+  <rect x="20" y="24" width="4" height="10" rx="0.5" fill="#f0a500"/>
+  <rect x="26" y="24" width="4" height="10" rx="0.5" fill="#f0a500"/>
+  <rect x="32" y="24" width="4" height="10" rx="0.5" fill="#f0a500"/>
+  <rect x="38" y="24" width="4" height="10" rx="0.5" fill="#f0a500"/>
 </svg>
