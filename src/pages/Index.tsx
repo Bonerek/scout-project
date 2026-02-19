@@ -1,4 +1,5 @@
 import NetworkTabs from "@/components/NetworkTabs";
+import FooterSection from "@/components/FooterSection";
 import { Wifi } from "lucide-react";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-6">
         <NetworkTabs />
       </main>
+      <FooterSection />
     </div>
   );
 };
