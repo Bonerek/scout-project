@@ -1,5 +1,6 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import tuxLogo from "@/assets/tux-linux.svg";
+import { lookupMacVendor } from "@/lib/ouiLookup";
 import rj45Icon from "@/assets/rj45.svg";
 import netbiosIcon from "@/assets/netbios.svg";
 import { ScanHost, ScanResult } from "@/lib/scanParser";
@@ -107,6 +108,22 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
   const [statusFilters, setStatusFilters] = useState<StatusFilter[]>([]);
   const [sortField, setSortField] = useState<SortField>(null);
   const [sortDir, setSortDir] = useState<SortDir>("asc");
+  const [macVendors, setMacVendors] = useState<Map<string, string>>(new Map());
+
+  useEffect(() => {
+    const macs = result.hosts.filter((h) => h.mac).map((h) => h.mac);
+    if (macs.length === 0) return;
+    Promise.all(macs.map(async (mac) => {
+      const vendor = await lookupMacVendor(mac);
+      return [mac, vendor] as const;
+    })).then((entries) => {
+      const map = new Map<string, string>();
+      for (const [mac, vendor] of entries) {
+        if (vendor) map.set(mac, vendor);
+      }
+      setMacVendors(map);
+    });
+  }, [result.hosts]);
 
   const toggleSort = (field: SortField) => {
     if (sortField === field) {
@@ -329,7 +346,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                           <TooltipTrigger>
                             <img src={rj45Icon} alt="MAC" className="h-9 w-9 inline-block" />
                           </TooltipTrigger>
-                          <TooltipContent>{host.mac}</TooltipContent>
+                          <TooltipContent>{host.mac}{macVendors.get(host.mac) ? ` (${macVendors.get(host.mac)})` : ""}</TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
                     ) : (
