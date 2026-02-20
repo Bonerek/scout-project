@@ -8,8 +8,6 @@ import SubnetInfo from "@/components/SubnetInfo";
 import ConfigEditor from "@/components/ConfigEditor";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const CONFIG_KEY = "scout_config";
-const NETWORKS_KEY = "scout_networks";
 const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "", refreshInterval: 0 };
 
 const NetworkTabs = () => {
@@ -46,71 +44,15 @@ const NetworkTabs = () => {
   }, []);
 
   useEffect(() => {
-    // Migrate old unified config to split format
-    const oldUnified = localStorage.getItem(CONFIG_KEY);
-    if (oldUnified) {
-      try {
-        const cfg = JSON.parse(oldUnified);
-        if (cfg.networks && !localStorage.getItem(NETWORKS_KEY)) {
-          localStorage.setItem(NETWORKS_KEY, JSON.stringify(cfg.networks));
-        }
-        // Remove networks from config, keep only general
-        if (cfg.general) {
-          localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: cfg.general }));
-        } else if (cfg.networks) {
-          // Old format had only networks inside config - remove it
-          localStorage.removeItem(CONFIG_KEY);
-        }
-      } catch { /* ignore */ }
-    }
-
-    // Migrate even older keys
-    const oldNetworks = localStorage.getItem("scout_network_config");
-    const oldGeneral = localStorage.getItem("scout_general_config");
-    if (oldNetworks && !localStorage.getItem(NETWORKS_KEY)) {
-      try {
-        localStorage.setItem(NETWORKS_KEY, oldNetworks);
-        localStorage.removeItem("scout_network_config");
-      } catch { /* ignore */ }
-    }
-    if (oldGeneral && !localStorage.getItem(CONFIG_KEY)) {
-      try {
-        const gen = { ...defaultGeneral, ...JSON.parse(oldGeneral) };
-        localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: gen }));
-        localStorage.removeItem("scout_general_config");
-      } catch { /* ignore */ }
-    }
-
-    // Load general config
-    const storedConfig = localStorage.getItem(CONFIG_KEY);
-    if (storedConfig) {
-      try {
-        const cfg = JSON.parse(storedConfig);
+    // Load general config from server
+    fetch("/config.json")
+      .then((r) => r.json())
+      .then((cfg) => {
         if (cfg.general) setGeneral({ ...defaultGeneral, ...cfg.general });
-      } catch { /* ignore */ }
-    } else {
-      fetch("/config.json")
-        .then((r) => r.json())
-        .then((cfg) => {
-          if (cfg.general) setGeneral({ ...defaultGeneral, ...cfg.general });
-        })
-        .catch(console.error);
-    }
+      })
+      .catch(console.error);
 
-    // Load networks
-    const storedNetworks = localStorage.getItem(NETWORKS_KEY);
-    if (storedNetworks) {
-      try {
-        const nets: NetworkConfig[] = JSON.parse(storedNetworks).map((n: NetworkConfig) => ({
-          ...n,
-          gateway: n.gateway || "",
-          scanFile: n.scanFile.replace(/\.xml$/, ".json"),
-        }));
-        setNetworks(nets);
-        loadScans(nets);
-        return;
-      } catch { /* fall through */ }
-    }
+    // Load networks from server
     fetch("/networks.json")
       .then((r) => r.json())
       .then((nets: NetworkConfig[]) => {
@@ -131,8 +73,6 @@ const NetworkTabs = () => {
   }, [general.refreshInterval, networks, loadScans]);
 
   const handleSaveConfig = (updatedNetworks: NetworkConfig[], updatedGeneral: GeneralConfig) => {
-    localStorage.setItem(CONFIG_KEY, JSON.stringify({ general: updatedGeneral }));
-    localStorage.setItem(NETWORKS_KEY, JSON.stringify(updatedNetworks));
     setNetworks(updatedNetworks);
     setGeneral(updatedGeneral);
     loadScans(updatedNetworks);
