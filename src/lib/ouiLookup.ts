@@ -14,17 +14,23 @@ async function loadOuiDatabase(): Promise<Map<string, string>> {
     .then((res) => res.text())
     .then((text) => {
       const map = new Map<string, string>();
-      const lines = text.split("\n");
+      const lines = text.split(/\r?\n/);
       for (const line of lines) {
         // Match lines like: "28-6F-B9   (hex)		Nokia Shanghai Bell Co., Ltd."
-        const match = line.match(/^([0-9A-F]{2}-[0-9A-F]{2}-[0-9A-F]{2})\s+\(hex\)\s+(.+)$/i);
+        const match = line.match(/^\s*([0-9A-Fa-f]{2}-[0-9A-Fa-f]{2}-[0-9A-Fa-f]{2})\s+\(hex\)\s+(.+)$/);
         if (match) {
           const prefix = match[1].replace(/-/g, "").toUpperCase();
           map.set(prefix, match[2].trim());
         }
       }
+      
       ouiMap = map;
       return map;
+    })
+    .catch((err) => {
+      console.error("[OUI] Failed to load:", err);
+      ouiMap = new Map();
+      return ouiMap;
     });
 
   return loading;
