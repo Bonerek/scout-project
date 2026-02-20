@@ -151,7 +151,9 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
           h.ip.includes(q) ||
           h.hostname.toLowerCase().includes(q) ||
           h.os.toLowerCase().includes(q) ||
-          h.netbiosName.toLowerCase().includes(q)
+          h.netbiosName.toLowerCase().includes(q) ||
+          h.mac?.toLowerCase().includes(q) ||
+          (macVendors.get(h.mac)?.toLowerCase().includes(q) ?? false)
       );
     }
     if (sortField) {
@@ -167,7 +169,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
       });
     }
     return hosts;
-  }, [result.hosts, filter, statusFilters, sortField, sortDir]);
+  }, [result.hosts, filter, statusFilters, sortField, sortDir, macVendors]);
 
   const hostsWithPorts = result.hosts.filter((h) => h.ports.length > 0);
   const openPortCount = result.hosts.reduce(
