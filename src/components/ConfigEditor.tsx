@@ -212,7 +212,7 @@ const ConfigEditor = ({ networks, general, onSave }: ConfigEditorProps) => {
   return (
     <Dialog open={open} onOpenChange={handleOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-2">
+        <Button variant="outline" size="sm" className="gap-2" disabled>
           <Settings className="h-4 w-4" />
           Configure
         </Button>
