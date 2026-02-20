@@ -8,7 +8,7 @@ import SubnetInfo from "@/components/SubnetInfo";
 import ConfigEditor from "@/components/ConfigEditor";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "", refreshInterval: 0 };
+const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "", refreshInterval: 3600 };
 
 const NetworkTabs = () => {
   const [networks, setNetworks] = useState<NetworkConfig[]>([]);
