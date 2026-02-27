@@ -284,7 +284,7 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                 <TableRow key={host.ip}>
                   <TableCell className="font-mono text-lg">{host.ip}</TableCell>
                   <TableCell className="text-lg">{host.hostname || ""}</TableCell>
-                  <TableCell className="text-center">
+                  <TableCell className="text-center align-middle">
                     {(() => {
                       const isOnline = host.status === "online";
                       const isFree = !isOnline && !host.hostname;
