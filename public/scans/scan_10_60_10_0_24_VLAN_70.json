@@ -1,0 +1,15 @@
+{
+  "subnet": "10.60.10.0/24",
+  "status": "Scan done at Wed Feb 25 09:50:07 2026; scanned in 66.44 seconds",
+  "results": [
+    {"ip":"10.60.10.1","ptr":"gw-cctv.cctv.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:c1:c2:c3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.60.10.10","ptr":"nvr-01.cctv.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":70,"mac":"c0:56:e3:11:22:33","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"},"8000":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.11","ptr":"nvr-02.cctv.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":70,"mac":"c0:56:e3:44:55:66","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.20","ptr":"cam-entrance.cctv.local","status":"online","os":"","roles":[],"confidence":0,"mac":"a0:bd:1d:11:22:33","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.21","ptr":"cam-parking.cctv.local","status":"online","os":"","roles":[],"confidence":0,"mac":"a0:bd:1d:44:55:66","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.22","ptr":"cam-hallway1.cctv.local","status":"online","os":"","roles":[],"confidence":0,"mac":"a0:bd:1d:77:88:99","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.23","ptr":"cam-serverroom.cctv.local","status":"online","os":"","roles":[],"confidence":0,"mac":"c0:56:e3:aa:bb:cc","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.24","ptr":"cam-lobby.cctv.local","status":"online","os":"","roles":[],"confidence":0,"mac":"c0:56:e3:dd:ee:ff","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"554":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.60.10.30","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

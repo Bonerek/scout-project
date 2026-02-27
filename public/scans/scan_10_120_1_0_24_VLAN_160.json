@@ -1,0 +1,14 @@
+{
+  "subnet": "10.120.1.0/24",
+  "status": "Scan done at Wed Feb 25 10:30:19 2026; scanned in 45.66 seconds",
+  "results": [
+    {"ip":"10.120.1.1","ptr":"gw-scada.scada.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:07:08:09","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.120.1.10","ptr":"scada-hmi.scada.local","status":"online","os":"Windows","roles":["web"],"confidence":70,"mac":"00:80:f4:aa:bb:cc","netbios_name":"SCADA-HMI","netbios_group":"OT","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"502":{"state":"open","reason":"syn-ack"},"3389":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.120.1.11","ptr":"scada-historian.scada.local","status":"online","os":"Windows","roles":["database"],"confidence":75,"mac":"00:80:f4:dd:ee:ff","netbios_name":"HISTORIAN","netbios_group":"OT","ports":{"1433":{"state":"open","reason":"syn-ack"},"3389":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.120.1.20","ptr":"plc-pump-01.scada.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:80:f4:11:11:11","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"502":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.120.1.21","ptr":"plc-valve-01.scada.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:80:f4:22:22:22","netbios_name":"","netbios_group":"","ports":{"502":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.120.1.22","ptr":"plc-motor-01.scada.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:80:f4:33:33:33","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"502":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.120.1.30","ptr":"rtu-field-01.scada.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:80:f4:44:44:44","netbios_name":"","netbios_group":"","ports":{"502":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.120.1.40","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

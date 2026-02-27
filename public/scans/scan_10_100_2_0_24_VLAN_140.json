@@ -1,0 +1,13 @@
+{
+  "subnet": "10.100.2.0/24",
+  "status": "Scan done at Wed Feb 25 10:20:44 2026; scanned in 65.21 seconds",
+  "results": [
+    {"ip":"10.100.2.1","ptr":"gw-finance.fin.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:01:02:03","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.100.2.10","ptr":"erp.fin.local","status":"online","os":"Windows","roles":["web","database"],"confidence":90,"mac":"f8:db:88:f1:f2:f3","netbios_name":"ERP-SRV","netbios_group":"CORP","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"1433":{"state":"open","reason":"syn-ack"},"3389":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.2.11","ptr":"sap-app.fin.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":82,"mac":"a4:bf:01:f4:f5:f6","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"8443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.2.20","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"f8:db:88:a4:a5:a6","netbios_name":"FIN-PC01","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.2.21","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"f8:db:88:b7:b8:b9","netbios_name":"FIN-PC02","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.2.22","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"10:bf:48:c1:c2:c3","netbios_name":"FIN-PC03","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"},"3389":{"state":"closed","reason":"refused"}}},
+    {"ip":"10.100.2.30","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

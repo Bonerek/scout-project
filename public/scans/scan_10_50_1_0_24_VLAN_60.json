@@ -1,0 +1,13 @@
+{
+  "subnet": "10.50.1.0/24",
+  "status": "Scan done at Wed Feb 25 09:45:22 2026; scanned in 48.91 seconds",
+  "results": [
+    {"ip":"10.50.1.1","ptr":"gw-printers.print.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:f1:f2:f3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.50.1.10","ptr":"mfp-floor1.print.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"00:00:aa:11:22:33","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"9100":{"state":"open","reason":"syn-ack"},"631":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.50.1.11","ptr":"mfp-floor2.print.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"00:00:aa:44:55:66","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"9100":{"state":"open","reason":"syn-ack"},"631":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.50.1.12","ptr":"mfp-floor3.print.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"00:00:aa:77:88:99","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"9100":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.50.1.13","ptr":"label-printer.print.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:00:aa:aa:bb:cc","netbios_name":"","netbios_group":"","ports":{"9100":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.50.1.20","ptr":"print-server.print.local","status":"online","os":"Windows","roles":["smb"],"confidence":75,"mac":"f8:db:88:99:88:77","netbios_name":"PRINTSRV","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"},"3389":{"state":"open","reason":"syn-ack"},"631":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.50.1.30","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}
