@@ -309,9 +309,9 @@ const ScanTable = ({ network, result }: ScanTableProps) => {
                       return (
                         <TooltipProvider>
                           <Tooltip>
-                            <TooltipTrigger>
+                            <TooltipTrigger asChild>
                               <span
-                                className={`inline-block h-5 w-5 rounded-full shadow-md ${color}`}
+                                className={`inline-flex h-5 w-5 rounded-full shadow-md ${color} align-middle`}
                                 style={{ boxShadow: glow }}
                               />
                             </TooltipTrigger>
