@@ -1,0 +1,12 @@
+{
+  "subnet": "10.80.50.0/24",
+  "status": "Scan done at Wed Feb 25 10:00:15 2026; scanned in 53.88 seconds",
+  "results": [
+    {"ip":"10.80.50.1","ptr":"gw-backup.bak.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:e1:e2:e3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.80.50.10","ptr":"nas-primary.bak.local","status":"online","os":"Linux(Unix)","roles":["web","nfs","smb"],"confidence":88,"mac":"00:11:32:dd:ee:ff","netbios_name":"NAS-PRI","netbios_group":"BACKUP","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"},"111":{"state":"open","reason":"syn-ack"},"2049":{"state":"open","reason":"syn-ack"},"5000":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.80.50.11","ptr":"nas-secondary.bak.local","status":"online","os":"Linux(Unix)","roles":["web","nfs","smb"],"confidence":88,"mac":"00:11:32:11:22:33","netbios_name":"NAS-SEC","netbios_group":"BACKUP","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"},"111":{"state":"open","reason":"syn-ack"},"2049":{"state":"open","reason":"syn-ack"},"5000":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.80.50.20","ptr":"veeam.bak.local","status":"online","os":"Windows","roles":["web"],"confidence":82,"mac":"f8:db:88:bb:cc:dd","netbios_name":"VEEAM","netbios_group":"CORP","ports":{"443":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"},"3389":{"state":"open","reason":"syn-ack"},"9392":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.80.50.30","ptr":"tape-lib.bak.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"f8:db:88:ee:ff:00","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.80.50.40","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

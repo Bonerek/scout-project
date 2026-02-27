@@ -1,0 +1,17 @@
+{
+  "subnet": "10.40.20.0/24",
+  "status": "Scan done at Wed Feb 25 09:35:02 2026; scanned in 94.30 seconds",
+  "results": [
+    {"ip":"10.40.20.1","ptr":"gw-wifi-staff.wifi.local","status":"online","os":"","roles":[],"confidence":0,"mac":"fc:ec:da:11:22:33","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"},"443":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.40.20.2","ptr":"ap-floor1.wifi.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"fc:ec:da:44:55:66","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.40.20.3","ptr":"ap-floor2.wifi.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"fc:ec:da:77:88:99","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.40.20.4","ptr":"ap-floor3.wifi.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"fc:ec:da:aa:bb:cc","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.40.20.100","ptr":"","status":"online","os":"macOS","roles":[],"confidence":60,"mac":"a4:83:e7:11:22:33","netbios_name":"","netbios_group":"","ports":{"22":{"state":"closed","reason":"refused"},"445":{"state":"closed","reason":"refused"}}},
+    {"ip":"10.40.20.101","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"a4:bf:01:fa:fb:fc","netbios_name":"LAPTOP-JAN","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"},"3389":{"state":"closed","reason":"refused"}}},
+    {"ip":"10.40.20.102","ptr":"","status":"online","os":"macOS","roles":[],"confidence":50,"mac":"a4:83:e7:44:55:66","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.20.103","ptr":"","status":"online","os":"Linux(Unix)","roles":[],"confidence":45,"mac":"10:bf:48:aa:bb:cc","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.40.20.104","ptr":"","status":"online","os":"Windows","roles":[],"confidence":50,"mac":"8c:f5:a3:11:22:33","netbios_name":"LAPTOP-PETRA","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.40.20.150","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.20.151","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

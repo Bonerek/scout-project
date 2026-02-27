@@ -1,0 +1,15 @@
+{
+  "subnet": "10.30.5.0/24",
+  "status": "Scan done at Wed Feb 25 09:30:18 2026; scanned in 71.55 seconds",
+  "results": [
+    {"ip":"10.30.5.1","ptr":"gw-voip.voip.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:10:20:30","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.30.5.10","ptr":"pbx.voip.local","status":"online","os":"Linux(Unix)","roles":["web","sip"],"confidence":85,"mac":"a4:bf:01:55:66:77","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"5060":{"state":"open","reason":"syn-ack"},"5061":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.30.5.20","ptr":"phone-conf-01.voip.local","status":"online","os":"","roles":[],"confidence":0,"mac":"3c:d9:2b:aa:11:22","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.30.5.21","ptr":"phone-lobby.voip.local","status":"online","os":"","roles":[],"confidence":0,"mac":"3c:d9:2b:bb:33:44","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.30.5.22","ptr":"phone-exec.voip.local","status":"online","os":"","roles":[],"confidence":0,"mac":"3c:d9:2b:cc:55:66","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.30.5.23","ptr":"","status":"online","os":"","roles":[],"confidence":0,"mac":"3c:d9:2b:dd:77:88","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.30.5.24","ptr":"","status":"online","os":"","roles":[],"confidence":0,"mac":"3c:d9:2b:ee:99:00","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.30.5.30","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.30.5.31","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

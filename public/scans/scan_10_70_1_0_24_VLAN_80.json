@@ -1,0 +1,15 @@
+{
+  "subnet": "10.70.1.0/24",
+  "status": "Scan done at Wed Feb 25 09:55:33 2026; scanned in 78.20 seconds",
+  "results": [
+    {"ip":"10.70.1.1","ptr":"gw-iot.iot.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:b1:b2:b3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.70.1.10","ptr":"hvac-controller.iot.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"00:80:f4:22:33:44","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"502":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.70.1.11","ptr":"bms-main.iot.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"00:80:f4:55:66:77","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.70.1.20","ptr":"sensor-temp-01.iot.local","status":"online","os":"","roles":[],"confidence":0,"mac":"b8:27:eb:11:22:33","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.70.1.21","ptr":"sensor-humid-01.iot.local","status":"online","os":"","roles":[],"confidence":0,"mac":"b8:27:eb:44:55:66","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.70.1.22","ptr":"sensor-door-01.iot.local","status":"online","os":"","roles":[],"confidence":0,"mac":"b8:27:eb:77:88:99","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.70.1.30","ptr":"smart-display.iot.local","status":"online","os":"","roles":[],"confidence":0,"mac":"8c:f5:a3:dd:ee:ff","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"8080":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.70.1.40","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.70.1.41","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

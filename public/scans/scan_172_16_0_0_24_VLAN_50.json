@@ -1,0 +1,13 @@
+{
+  "subnet": "172.16.0.0/24",
+  "status": "Scan done at Wed Feb 25 09:25:44 2026; scanned in 55.12 seconds",
+  "results": [
+    {"ip":"172.16.0.1","ptr":"fw-dmz.dmz.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:dd:ee:ff","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"},"443":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"172.16.0.10","ptr":"web-public.dmz.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":92,"mac":"a4:bf:01:d1:e2:f3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"172.16.0.11","ptr":"api-gw.dmz.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":88,"mac":"a4:bf:01:a1:b2:c3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"8443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"172.16.0.20","ptr":"dns-ext.dmz.local","status":"online","os":"Linux(Unix)","roles":["dns"],"confidence":85,"mac":"a4:bf:01:f4:e5:d6","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"53":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"172.16.0.30","ptr":"vpn.dmz.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":78,"mac":"a4:bf:01:c7:b8:a9","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"1194":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"172.16.0.40","ptr":"revproxy.dmz.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":90,"mac":"a4:bf:01:12:34:56","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"172.16.0.50","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

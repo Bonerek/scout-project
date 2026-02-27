@@ -1,0 +1,14 @@
+{
+  "subnet": "10.100.1.0/24",
+  "status": "Scan done at Wed Feb 25 10:15:09 2026; scanned in 70.55 seconds",
+  "results": [
+    {"ip":"10.100.1.1","ptr":"gw-hr.hr.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:f1:f2:f4","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.100.1.10","ptr":"hr-app.hr.local","status":"online","os":"Windows","roles":["web"],"confidence":80,"mac":"f8:db:88:a1:a2:a3","netbios_name":"HR-APP","netbios_group":"CORP","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"},"3389":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.1.20","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"f8:db:88:b4:b5:b6","netbios_name":"HR-PC01","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"},"3389":{"state":"closed","reason":"refused"}}},
+    {"ip":"10.100.1.21","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"f8:db:88:c7:c8:c9","netbios_name":"HR-PC02","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.1.22","ptr":"","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"10:bf:48:d1:d2:d3","netbios_name":"HR-PC03","netbios_group":"CORP","ports":{"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.100.1.23","ptr":"","status":"online","os":"macOS","roles":[],"confidence":50,"mac":"a4:83:e7:e1:e2:e3","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.100.1.30","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.100.1.31","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

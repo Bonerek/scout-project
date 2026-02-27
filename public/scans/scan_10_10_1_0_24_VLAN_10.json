@@ -1,0 +1,17 @@
+{
+  "subnet": "10.10.1.0/24",
+  "status": "Scan done at Wed Feb 25 09:15:33 2026; scanned in 62.41 seconds",
+  "results": [
+    {"ip":"10.10.1.1","ptr":"gw-core.mgmt.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:11:22:33","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"},"80":{"state":"filtered","reason":"timeout"},"443":{"state":"filtered","reason":"timeout"},"23":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.2","ptr":"sw-access-01.mgmt.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:44:55:66","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"closed","reason":"refused"}}},
+    {"ip":"10.10.1.3","ptr":"sw-access-02.mgmt.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:77:88:99","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.10","ptr":"vcenter.mgmt.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":80,"mac":"f8:db:88:a1:b2:c3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"closed","reason":"refused"},"443":{"state":"open","reason":"syn-ack"},"902":{"state":"open","reason":"syn-ack"},"9443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.11","ptr":"esxi-01.mgmt.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":75,"mac":"f8:db:88:d4:e5:f6","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"902":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.12","ptr":"esxi-02.mgmt.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":75,"mac":"f8:db:88:a7:b8:c9","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"902":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.20","ptr":"idrac-srv01.mgmt.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"f8:db:88:01:02:03","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.21","ptr":"idrac-srv02.mgmt.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"f8:db:88:04:05:06","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.30","ptr":"pdu-rack01.mgmt.local","status":"online","os":"","roles":["web"],"confidence":0,"mac":"00:80:f4:11:22:33","netbios_name":"","netbios_group":"","ports":{"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.50","ptr":"mon-zabbix.mgmt.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":90,"mac":"a4:bf:01:aa:bb:cc","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"3306":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.10.1.100","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

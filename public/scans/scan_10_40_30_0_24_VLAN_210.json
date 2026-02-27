@@ -1,0 +1,14 @@
+{
+  "subnet": "10.40.30.0/24",
+  "status": "Scan done at Wed Feb 25 09:40:55 2026; scanned in 102.18 seconds",
+  "results": [
+    {"ip":"10.40.30.1","ptr":"gw-wifi-guest.wifi.local","status":"online","os":"","roles":[],"confidence":0,"mac":"fc:ec:da:dd:ee:ff","netbios_name":"","netbios_group":"","ports":{"443":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.40.30.50","ptr":"","status":"online","os":"Android","roles":[],"confidence":30,"mac":"8c:f5:a3:a1:b2:c3","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.30.51","ptr":"","status":"online","os":"iOS","roles":[],"confidence":25,"mac":"a4:83:e7:d4:e5:f6","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.30.52","ptr":"","status":"online","os":"","roles":[],"confidence":0,"mac":"8c:f5:a3:77:88:99","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.30.53","ptr":"","status":"online","os":"Android","roles":[],"confidence":20,"mac":"8c:f5:a3:22:33:44","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.30.54","ptr":"","status":"online","os":"Windows","roles":[],"confidence":40,"mac":"a4:bf:01:99:88:77","netbios_name":"","netbios_group":"","ports":{"445":{"state":"closed","reason":"refused"}}},
+    {"ip":"10.40.30.100","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.40.30.101","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "subnet": "10.90.2.0/24",
+  "status": "Scan done at Wed Feb 25 10:10:28 2026; scanned in 59.77 seconds",
+  "results": [
+    {"ip":"10.90.2.1","ptr":"gw-staging.stg.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:a1:a2:a3","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.90.2.10","ptr":"stg-web01.stg.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":85,"mac":"a4:bf:01:57:a6:01","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.90.2.11","ptr":"stg-web02.stg.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":85,"mac":"a4:bf:01:57:a6:02","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.90.2.20","ptr":"stg-db.stg.local","status":"online","os":"Linux(Unix)","roles":["database"],"confidence":88,"mac":"a4:bf:01:57:a6:03","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"5432":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.90.2.30","ptr":"stg-redis.stg.local","status":"online","os":"Linux(Unix)","roles":[],"confidence":75,"mac":"a4:bf:01:57:a6:04","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"6379":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.90.2.40","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}

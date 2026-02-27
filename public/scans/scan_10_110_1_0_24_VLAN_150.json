@@ -1,0 +1,14 @@
+{
+  "subnet": "10.110.1.0/24",
+  "status": "Scan done at Wed Feb 25 10:25:33 2026; scanned in 73.90 seconds",
+  "results": [
+    {"ip":"10.110.1.1","ptr":"gw-lab.lab.local","status":"online","os":"","roles":[],"confidence":0,"mac":"00:1a:a1:04:05:06","netbios_name":"","netbios_group":"","ports":{"22":{"state":"filtered","reason":"timeout"}}},
+    {"ip":"10.110.1.10","ptr":"lab-cluster-01.lab.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":85,"mac":"a4:bf:01:1a:2b:3c","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"8006":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.110.1.11","ptr":"lab-cluster-02.lab.local","status":"online","os":"Linux(Unix)","roles":["web"],"confidence":85,"mac":"a4:bf:01:4d:5e:6f","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"443":{"state":"open","reason":"syn-ack"},"8006":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.110.1.20","ptr":"gpu-node.lab.local","status":"online","os":"Linux(Unix)","roles":[],"confidence":75,"mac":"a4:bf:01:7a:8b:9c","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"8888":{"state":"open","reason":"syn-ack"},"6006":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.110.1.30","ptr":"test-vm-01.lab.local","status":"online","os":"Linux(Unix)","roles":[],"confidence":60,"mac":"b8:27:eb:aa:bb:cc","netbios_name":"","netbios_group":"","ports":{"22":{"state":"open","reason":"syn-ack"},"80":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.110.1.31","ptr":"test-vm-02.lab.local","status":"online","os":"Windows","roles":[],"confidence":55,"mac":"f8:db:88:dd:ee:ff","netbios_name":"TEST-VM02","netbios_group":"LAB","ports":{"3389":{"state":"open","reason":"syn-ack"},"445":{"state":"open","reason":"syn-ack"}}},
+    {"ip":"10.110.1.40","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}},
+    {"ip":"10.110.1.41","ptr":"","status":"offline","os":"","roles":[],"confidence":0,"mac":"","netbios_name":"","netbios_group":"","ports":{}}
+  ]
+}
