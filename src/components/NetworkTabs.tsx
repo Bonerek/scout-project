@@ -1,5 +1,6 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import { createPortal } from "react-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { NetworkConfig, GeneralConfig } from "@/lib/configTypes";
 import { ScanResult, parseScanJson } from "@/lib/scanParser";
@@ -11,11 +12,29 @@ import { Skeleton } from "@/components/ui/skeleton";
 const defaultGeneral: GeneralConfig = { dns1: "", dns2: "", ntp1: "", ntp2: "", ntp3: "", refreshInterval: 3600 };
 
 const NetworkTabs = () => {
+  const { networkSlug } = useParams();
+  const navigate = useNavigate();
   const [networks, setNetworks] = useState<NetworkConfig[]>([]);
   const [general, setGeneral] = useState<GeneralConfig>(defaultGeneral);
   const [scanResults, setScanResults] = useState<Record<string, ScanResult>>({});
   const [loading, setLoading] = useState(true);
   const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+  const activeNetwork = useMemo(() => {
+    if (!networks.length) return undefined;
+    if (networkSlug) {
+      const found = networks.find((n) => slugify(n.name) === networkSlug);
+      if (found) return found;
+    }
+    return networks[0];
+  }, [networks, networkSlug]);
+
+  const handleTabChange = (subnet: string) => {
+    const net = networks.find((n) => n.subnet === subnet);
+    if (net) navigate(`/${slugify(net.name)}`, { replace: true });
+  };
 
   const loadScans = useCallback((nets: NetworkConfig[]) => {
     setLoading(true);
@@ -107,7 +126,7 @@ const NetworkTabs = () => {
           No networks configured. Click <strong>Configure</strong> to add networks.
         </div>
       ) : (
-        <Tabs defaultValue={networks[0].subnet} className="w-full">
+        <Tabs value={activeNetwork?.subnet ?? networks[0].subnet} onValueChange={handleTabChange} className="w-full">
           <TabsList className="w-full flex-wrap h-auto gap-1 justify-start bg-card p-1">
             {networks.map((net) => (
               <TabsTrigger key={net.subnet} value={net.subnet} className="text-sm md:text-base font-semibold px-4 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md">
