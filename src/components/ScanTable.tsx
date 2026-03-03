@@ -70,16 +70,24 @@ function PortBadge({ portid }: { portid: string }) {
 }
 
 function PortBadgeWithTooltip({ portid, host }: { portid: string; host: ScanHost }) {
+  const target = host.hostname || host.ip;
   const httpPorts = ["80", "443", "8080", "8443"];
   const isHttp = httpPorts.includes(portid);
-  const protocol = portid === "443" || portid === "8443" ? "https" : "http";
-  const port = portid === "80" || portid === "443" ? "" : `:${portid}`;
-  const target = host.hostname || host.ip;
-  const url = `${protocol}://${target}${port}`;
+  const isSsh = portid === "22";
+  const isClickable = isHttp || isSsh;
+
+  let url = "";
+  if (isHttp) {
+    const protocol = portid === "443" || portid === "8443" ? "https" : "http";
+    const port = portid === "80" || portid === "443" ? "" : `:${portid}`;
+    url = `${protocol}://${target}${port}`;
+  } else if (isSsh) {
+    url = `ssh://${target}`;
+  }
 
   const badge = <PortBadge portid={portid} />;
 
-  if (isHttp) {
+  if (isClickable) {
     return (
       <TooltipProvider>
         <Tooltip>
